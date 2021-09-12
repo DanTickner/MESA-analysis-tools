@@ -1,0 +1,577 @@
+Okay
+run z_Inlists/inlist_D12
+DATE: 2021-08-05
+TIME: 12:40:19
+ version_number 12778
+
+
+ The terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'lg_Tcntr' is log10 center temperature (K),
+      'lg_Dcntr' is log10 center density (g/cm^3),
+      'lg_Pcntr' is log10 center pressure (ergs/cm^3),
+      'Teff' is the surface temperature (K),
+      'lg_R' is log10 surface radius (Rsun),
+      'lg_L' is log10 surface luminosity (Lsun),
+      'lg_LH' is log10 total PP and CNO hydrogen burning power (Lsun),
+      'lg_L3a' is log10 total triple-alpha helium burning power (Lsun),
+      'lg_gsurf' is log10 surface gravity,
+      'lg_LNuc' is log10 nuclear power excluding photodisintegration (Lsun),
+      'lg_LNeu' is log10 total neutrino power (Lsun),
+      'lg_Psurf' is log10 surface pressure (gas + radiation),
+      'Mass' is the total stellar baryonic mass (Msun),
+      'lg_Mdot' is log10 magnitude of rate of change of mass (Msun/year),
+      'lg_Dsurf' is log10 surface density (g/cm^3),
+      'H_env' is the amount of mass where H is the most abundant iso,
+      'He_core' is the largest mass where He is most abundant iso.
+      'C_core' is the largest mass where C is most abundant iso.
+      'H_cntr' is the center H1 mass fraction,
+      'He_cntr' is the center He4 mass fraction,
+      'C_cntr' is the center C12 mass fraction,
+      'N_cntr' is the center N14 mass fraction,
+      'O_cntr' is the center O16 mass fraction,
+      'Ne_cntr' is the center Ne20 mass fraction,
+      'X_avg' is the star average hydrogen mass fraction,
+      'Y_avg' is the star average helium mass fraction,
+      'Z_avg' is the star average metallicity,
+      'gam_cntr' is the center plasma interaction parameter,
+      'eta_cntr' is the center electron degeneracy parameter,
+      'zones' is the number of zones in the current model,
+      'iters' is the number of newton iterations for the current step,
+      'retry' is the number of step retries required during the run,
+      'bckup' is the number of step backups required during the run,
+      'dt_limit' is an indication of what limited the timestep.
+
+ All this and more are saved in the LOGS directory during the run.
+ create pre-main-sequence model
+                                          species  mass          18    6.8000000000000005D-01
+
+                                        relax_num_steps          50
+
+
+                               finished relax_num_steps
+
+ do_star_job_controls_after
+ change to "agb.net"
+ number of species          18
+
+                        set_uniform_initial_composition
+                                             initial_h1    7.1988344270000004D-01
+                                             initial_h2    1.6557300000000002D-05
+                                            initial_he3    8.3974799999999994D-05
+                                            initial_he4    2.7991602519999997D-01
+                       unknown value for initial_zfracs           0
+ read columns_history.list
+ read columns_profile.list
+ net name agb.net
+ use_gold_tolerances T
+ do_element_diffusion T
+                            set_cumulative_energy_error    0.0000000000000000D+00
+ kappa_file_prefix gs98
+ kappa_lowT_prefix lowT_fa05_gs98
+                                        OMP_NUM_THREADS          12
+
+
+                                 WARNING: rel_run_E_err           1    4.8750704911873673D-02
+save LOGS/profile1.data for model 1
+                                 WARNING: rel_run_E_err           2    4.8750707218971533D-02
+                                 WARNING: rel_run_E_err           3    4.8750708599529929D-02
+                                 WARNING: rel_run_E_err           4    4.8750709452401494D-02
+                                 WARNING: rel_run_E_err           5    4.8750709805425924D-02
+save z_Photos/Photos_D/x00005 for model 5
+                                 WARNING: rel_run_E_err           6    4.8750709700180021D-02
+                                 WARNING: rel_run_E_err           7    4.8750709176910177D-02
+                                 WARNING: rel_run_E_err           8    4.8750708265376641D-02
+                                 WARNING: rel_run_E_err           9    4.8750706979647798D-02
+                                 WARNING: rel_run_E_err          10    4.8750705316018550D-02
+save z_Photos/Photos_D/x00010 for model 10
+                                 WARNING: rel_run_E_err          11    4.8750703254097708D-02
+                                 WARNING: rel_run_E_err          12    4.8750700758829764D-02
+                                 WARNING: rel_run_E_err          13    4.8750697785833394D-02
+                                 WARNING: rel_run_E_err          14    4.8750694258992998D-02
+                                 WARNING: rel_run_E_err          15    4.8750690144418303D-02
+save z_Photos/Photos_D/x00015 for model 15
+                                 WARNING: rel_run_E_err          16    4.8750685361055660D-02
+                                 WARNING: rel_run_E_err          17    4.8750679824394121D-02
+                                 WARNING: rel_run_E_err          18    4.8750673444700791D-02
+                                 WARNING: rel_run_E_err          19    4.8750666116891245D-02
+                                 WARNING: rel_run_E_err          20    4.8750657706323378D-02
+save z_Photos/Photos_D/x00020 for model 20
+                                 WARNING: rel_run_E_err          21    4.8750648115443496D-02
+                                 WARNING: rel_run_E_err          22    4.8750637165334364D-02
+                                 WARNING: rel_run_E_err          23    4.8750624677945401D-02
+                                 WARNING: rel_run_E_err          24    4.8750610420224653D-02
+                                 WARNING: rel_run_E_err          25    4.8750594142717159D-02
+save LOGS/profile2.data for model 25
+save z_Photos/Photos_D/x00025 for model 25
+                                 WARNING: rel_run_E_err          26    4.8750575537445461D-02
+                                 WARNING: rel_run_E_err          27    4.8750554233625454D-02
+                                 WARNING: rel_run_E_err          28    4.8750529748023352D-02
+                                 WARNING: rel_run_E_err          29    4.8750501548700302D-02
+                                 WARNING: rel_run_E_err          30    4.8750468933219430D-02
+save z_Photos/Photos_D/x00030 for model 30
+                                 WARNING: rel_run_E_err          31    4.8750431052482744D-02
+                                 WARNING: rel_run_E_err          32    4.8750386898399348D-02
+                                 WARNING: rel_run_E_err          33    4.8750335206466065D-02
+                                 WARNING: rel_run_E_err          34    4.8750274474791390D-02
+                                 WARNING: rel_run_E_err          35    4.8750202838052106D-02
+save z_Photos/Photos_D/x00035 for model 35
+                                 WARNING: rel_run_E_err          36    4.8750118096747473D-02
+                                 WARNING: rel_run_E_err          37    4.8750017459964129D-02
+                                 WARNING: rel_run_E_err          38    4.8749897565270151D-02
+                                 WARNING: rel_run_E_err          39    4.8749754290724236D-02
+                                 WARNING: rel_run_E_err          40    4.8749582597426296D-02
+save z_Photos/Photos_D/x00040 for model 40
+                                 WARNING: rel_run_E_err          41    4.8749376335350390D-02
+                                 WARNING: rel_run_E_err          42    4.8749128071042140D-02
+                                 WARNING: rel_run_E_err          43    4.8748828862030288D-02
+                                 WARNING: rel_run_E_err          44    4.8748468008138958D-02
+                                 WARNING: rel_run_E_err          45    4.8748032752665614D-02
+save z_Photos/Photos_D/x00045 for model 45
+                                 WARNING: rel_run_E_err          46    4.8747507900863192D-02
+                                 WARNING: rel_run_E_err          47    4.8746875367669480D-02
+                                 WARNING: rel_run_E_err          48    4.8746113591442958D-02
+                                 WARNING: rel_run_E_err          49    4.8745196830753505D-02
+                                 WARNING: rel_run_E_err          50    4.8744094295229870D-02
+save LOGS/profile3.data for model 50
+save z_Photos/Photos_D/x00050 for model 50
+                                 WARNING: rel_run_E_err          51    4.8742769127047746D-02
+                                 WARNING: rel_run_E_err          52    4.8741177145406059D-02
+                                 WARNING: rel_run_E_err          53    4.8739265370823182D-02
+                                 WARNING: rel_run_E_err          54    4.8736970253155217D-02
+                                 WARNING: rel_run_E_err          55    4.8734215551548582D-02
+save z_Photos/Photos_D/x00055 for model 55
+                                 WARNING: rel_run_E_err          56    4.8730909805901293D-02
+                                 WARNING: rel_run_E_err          57    4.8726943313314508D-02
+                                 WARNING: rel_run_E_err          58    4.8722184515313724D-02
+                                 WARNING: rel_run_E_err          59    4.8716475682170877D-02
+                                 WARNING: rel_run_E_err          60    4.8709627760940837D-02
+save z_Photos/Photos_D/x00060 for model 60
+                                 WARNING: rel_run_E_err          61    4.8701414231037438D-02
+                                 WARNING: rel_run_E_err          62    4.8691563782825922D-02
+                                 WARNING: rel_run_E_err          63    4.8679751604241740D-02
+                                 WARNING: rel_run_E_err          64    4.8665589026876135D-02
+                                 WARNING: rel_run_E_err          65    4.8648611246110654D-02
+save z_Photos/Photos_D/x00065 for model 65
+                                 WARNING: rel_run_E_err          66    4.8628262794179131D-02
+                                 WARNING: rel_run_E_err          67    4.8603880407136729D-02
+                                 WARNING: rel_run_E_err          68    4.8574672892450287D-02
+                                 WARNING: rel_run_E_err          69    4.8539697581773004D-02
+                                 WARNING: rel_run_E_err          70    4.8497832939699094D-02
+save z_Photos/Photos_D/x00070 for model 70
+                                 WARNING: rel_run_E_err          71    4.8447746921916626D-02
+                                 WARNING: rel_run_E_err          72    4.8387860735423463D-02
+                                 WARNING: rel_run_E_err          73    4.8316307784416181D-02
+                                 WARNING: rel_run_E_err          74    4.8230887803795877D-02
+                                 WARNING: rel_run_E_err          75    4.8129016543129767D-02
+save LOGS/profile4.data for model 75
+save z_Photos/Photos_D/x00075 for model 75
+                                 WARNING: rel_run_E_err          76    4.8007671904769081D-02
+                                 WARNING: rel_run_E_err          77    4.7863338212466078D-02
+                                 WARNING: rel_run_E_err          78    4.7691951365553417D-02
+                                 WARNING: rel_run_E_err          79    4.7488849105551449D-02
+                                 WARNING: rel_run_E_err          80    4.7248732373088874D-02
+save z_Photos/Photos_D/x00080 for model 80
+                                 WARNING: rel_run_E_err          81    4.6965646061877774D-02
+                                 WARNING: rel_run_E_err          82    4.6632989979745403D-02
+                                 WARNING: rel_run_E_err          83    4.6255329048387112D-02
+                                 WARNING: rel_run_E_err          84    4.5856060607230881D-02
+                                 WARNING: rel_run_E_err          85    4.5448530288149498D-02
+save z_Photos/Photos_D/x00085 for model 85
+                                 WARNING: rel_run_E_err          86    4.5039690119016845D-02
+                                 WARNING: rel_run_E_err          87    4.4632949884597248D-02
+                                 WARNING: rel_run_E_err          88    4.4229883997140410D-02
+                                 WARNING: rel_run_E_err          89    4.3831203516035942D-02
+                                 WARNING: rel_run_E_err          90    4.3437050267631082D-02
+save z_Photos/Photos_D/x00090 for model 90
+                                 WARNING: rel_run_E_err          91    4.3047187817355843D-02
+                                 WARNING: rel_run_E_err          92    4.2661803411270960D-02
+                                 WARNING: rel_run_E_err          93    4.2281408411804618D-02
+                                 WARNING: rel_run_E_err          94    4.1905844685020767D-02
+                                 WARNING: rel_run_E_err          95    4.1534997307293056D-02
+save z_Photos/Photos_D/x00095 for model 95
+                                 WARNING: rel_run_E_err          96    4.1168441945794804D-02
+                                 WARNING: rel_run_E_err          97    4.0805346815032853D-02
+                                 WARNING: rel_run_E_err          98    4.0445990235439329D-02
+                                 WARNING: rel_run_E_err          99    4.0091349378692721D-02
+        100   5.558430   4519.930  -8.350211  -8.350211   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -6.963095    559      0
+   1.394152  -2.702092   1.199553 -99.000000 -20.547707  -9.147677   0.000000   0.280000   0.000059   0.000117   0.280000   0.089658      3      0
+ 4.7154E+02  10.986438   1.973115   1.871293   4.154089  -7.314979   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00    varcontrol
+                               rel_E_err    4.6694989371772735D-08
+                       log_rel_run_E_err       -1.4007625822953222
+
+                                 WARNING: rel_run_E_err         100    3.9740874331003762D-02
+save LOGS/profile5.data for model 100
+save z_Photos/Photos_D/x00100 for model 100
+                                 WARNING: rel_run_E_err         101    3.9394515094513305D-02
+                                 WARNING: rel_run_E_err         102    3.9052532929457699D-02
+                                 WARNING: rel_run_E_err         103    3.8714729135685605D-02
+                                 WARNING: rel_run_E_err         104    3.8380975163159164D-02
+                                 WARNING: rel_run_E_err         105    3.8051175724952632D-02
+save z_Photos/Photos_D/x00105 for model 105
+                                 WARNING: rel_run_E_err         106    3.7725246833526072D-02
+                                 WARNING: rel_run_E_err         107    3.7403146541340186D-02
+                                 WARNING: rel_run_E_err         108    3.7084658513419591D-02
+                                 WARNING: rel_run_E_err         109    3.6769319588263870D-02
+                                 WARNING: rel_run_E_err         110    3.6457239379604357D-02
+save z_Photos/Photos_D/x00110 for model 110
+                                 WARNING: rel_run_E_err         111    3.6149058837264568D-02
+                                 WARNING: rel_run_E_err         112    3.5844643404567632D-02
+                                 WARNING: rel_run_E_err         113    3.5543819920234580D-02
+                                 WARNING: rel_run_E_err         114    3.5246474278492458D-02
+                                 WARNING: rel_run_E_err         115    3.4952530702165571D-02
+save z_Photos/Photos_D/x00115 for model 115
+                                 WARNING: rel_run_E_err         116    3.4661919243971155D-02
+                                 WARNING: rel_run_E_err         117    3.4374447329581212D-02
+                                 WARNING: rel_run_E_err         118    3.4089848847387486D-02
+                                 WARNING: rel_run_E_err         119    3.3808219812668995D-02
+                                 WARNING: rel_run_E_err         120    3.3529899648398018D-02
+save z_Photos/Photos_D/x00120 for model 120
+                                 WARNING: rel_run_E_err         121    3.3254766724915820D-02
+                                 WARNING: rel_run_E_err         122    3.2982714340017691D-02
+                                 WARNING: rel_run_E_err         123    3.2713647070248070D-02
+                                 WARNING: rel_run_E_err         124    3.2447372030570729D-02
+                                 WARNING: rel_run_E_err         125    3.2183509151012472D-02
+save LOGS/profile6.data for model 125
+save z_Photos/Photos_D/x00125 for model 125
+                                 WARNING: rel_run_E_err         126    3.1922240511417212D-02
+                                 WARNING: rel_run_E_err         127    3.1663936539705083D-02
+                                 WARNING: rel_run_E_err         128    3.1408330349122333D-02
+                                 WARNING: rel_run_E_err         129    3.1155373393129893D-02
+                                 WARNING: rel_run_E_err         130    3.0905230139237384D-02
+save z_Photos/Photos_D/x00130 for model 130
+                                 WARNING: rel_run_E_err         131    3.0657775038176769D-02
+                                 WARNING: rel_run_E_err         132    3.0412985796533096D-02
+                                 WARNING: rel_run_E_err         133    3.0170924928636201D-02
+                                 WARNING: rel_run_E_err         134    2.9931477638915009D-02
+                                 WARNING: rel_run_E_err         135    2.9694592112142842D-02
+save z_Photos/Photos_D/x00135 for model 135
+                                 WARNING: rel_run_E_err         136    2.9460131561066940D-02
+                                 WARNING: rel_run_E_err         137    2.9227978566559516D-02
+                                 WARNING: rel_run_E_err         138    2.8998216817940937D-02
+                                 WARNING: rel_run_E_err         139    2.8770923386687644D-02
+                                 WARNING: rel_run_E_err         140    2.8545947755623424D-02
+save z_Photos/Photos_D/x00140 for model 140
+                                 WARNING: rel_run_E_err         141    2.8323276918128682D-02
+                                 WARNING: rel_run_E_err         142    2.8102983727470793D-02
+                                 WARNING: rel_run_E_err         143    2.7884908758557533D-02
+                                 WARNING: rel_run_E_err         144    2.7668854885296003D-02
+                                 WARNING: rel_run_E_err         145    2.7454883031978062D-02
+save z_Photos/Photos_D/x00145 for model 145
+                                 WARNING: rel_run_E_err         146    2.7243232402066896D-02
+                                 WARNING: rel_run_E_err         147    2.7033730301155804D-02
+                                 WARNING: rel_run_E_err         148    2.6826205342954344D-02
+                                 WARNING: rel_run_E_err         149    2.6620666842215271D-02
+                                 WARNING: rel_run_E_err         150    2.6417266342200516D-02
+save LOGS/profile7.data for model 150
+save z_Photos/Photos_D/x00150 for model 150
+                                 WARNING: rel_run_E_err         151    2.6215939308238300D-02
+                                 WARNING: rel_run_E_err         152    2.6016641138929854D-02
+                                 WARNING: rel_run_E_err         153    2.5819231861086235D-02
+                                 WARNING: rel_run_E_err         154    2.5623542094808362D-02
+                                 WARNING: rel_run_E_err         155    2.5429684357882298D-02
+save z_Photos/Photos_D/x00155 for model 155
+                                 WARNING: rel_run_E_err         156    2.5237933395709195D-02
+                                 WARNING: rel_run_E_err         157    2.5048087380277438D-02
+                                 WARNING: rel_run_E_err         158    2.4859963116501894D-02
+                                 WARNING: rel_run_E_err         159    2.4673580668311518D-02
+                                 WARNING: rel_run_E_err         160    2.4489112778948691D-02
+save z_Photos/Photos_D/x00160 for model 160
+                                 WARNING: rel_run_E_err         161    2.4306495812073017D-02
+                                 WARNING: rel_run_E_err         162    2.4125628226077826D-02
+                                 WARNING: rel_run_E_err         163    2.3946357834212634D-02
+                                 WARNING: rel_run_E_err         164    2.3768712320005540D-02
+                                 WARNING: rel_run_E_err         165    2.3592766784284840D-02
+save z_Photos/Photos_D/x00165 for model 165
+                                 WARNING: rel_run_E_err         166    2.3418302830909888D-02
+                                 WARNING: rel_run_E_err         167    2.3245356434109903D-02
+                                 WARNING: rel_run_E_err         168    2.3074169258045955D-02
+                                 WARNING: rel_run_E_err         169    2.2904663754773034D-02
+                                 WARNING: rel_run_E_err         170    2.2736801965477154D-02
+save z_Photos/Photos_D/x00170 for model 170
+                                 WARNING: rel_run_E_err         171    2.2570543731129343D-02
+                                 WARNING: rel_run_E_err         172    2.2405859698913028D-02
+                                 WARNING: rel_run_E_err         173    2.2242726386184821D-02
+                                 WARNING: rel_run_E_err         174    2.2081087430304638D-02
+                                 WARNING: rel_run_E_err         175    2.1920819177879299D-02
+save LOGS/profile8.data for model 175
+save z_Photos/Photos_D/x00175 for model 175
+                                 WARNING: rel_run_E_err         176    2.1761788492090900D-02
+                                 WARNING: rel_run_E_err         177    2.1604076590645647D-02
+                                 WARNING: rel_run_E_err         178    2.1447932670258206D-02
+                                 WARNING: rel_run_E_err         179    2.1293285446075155D-02
+                                 WARNING: rel_run_E_err         180    2.1140094786101685D-02
+save z_Photos/Photos_D/x00180 for model 180
+                                 WARNING: rel_run_E_err         181    2.0988332488923383D-02
+                                 WARNING: rel_run_E_err         182    2.0837987994400755D-02
+                                 WARNING: rel_run_E_err         183    2.0689040249515647D-02
+                                 WARNING: rel_run_E_err         184    2.0541426487675953D-02
+                                 WARNING: rel_run_E_err         185    2.0395069688346423D-02
+save z_Photos/Photos_D/x00185 for model 185
+                                 WARNING: rel_run_E_err         186    2.0249908508914925D-02
+                                 WARNING: rel_run_E_err         187    2.0105911727886911D-02
+save z_Photos/Photos_D/x00190 for model 190
+save z_Photos/Photos_D/x00195 for model 195
+        200   5.792808   4678.820  -3.969912  -3.969912   0.679998   0.679998   0.719883   0.000006   0.280000   0.719883  -6.165341    590      0
+   2.071953  -2.003847   0.948945 -99.000000 -16.511223  -9.839612   0.000000   0.280000   0.000059   0.000117   0.280000   0.089322      3      0
+ 6.5018E+03  11.919208   1.531917   2.372507   4.350921  -7.133133   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00    varcontrol
+                               rel_E_err    7.4229708680869447D-09
+                       log_rel_run_E_err       -1.7364636944447722
+
+save LOGS/profile9.data for model 200
+save z_Photos/Photos_D/x00200 for model 200
+save z_Photos/Photos_D/x00205 for model 205
+save z_Photos/Photos_D/x00210 for model 210
+save z_Photos/Photos_D/x00215 for model 215
+save z_Photos/Photos_D/x00220 for model 220
+save LOGS/profile10.data for model 225
+save z_Photos/Photos_D/x00225 for model 225
+save z_Photos/Photos_D/x00230 for model 230
+save z_Photos/Photos_D/x00235 for model 235
+save z_Photos/Photos_D/x00240 for model 240
+save z_Photos/Photos_D/x00245 for model 245
+save LOGS/profile11.data for model 250
+save z_Photos/Photos_D/x00250 for model 250
+save z_Photos/Photos_D/x00255 for model 255
+save z_Photos/Photos_D/x00260 for model 260
+save z_Photos/Photos_D/x00265 for model 265
+save z_Photos/Photos_D/x00270 for model 270
+save LOGS/profile12.data for model 275
+save z_Photos/Photos_D/x00275 for model 275
+save z_Photos/Photos_D/x00280 for model 280
+save z_Photos/Photos_D/x00285 for model 285
+save z_Photos/Photos_D/x00290 for model 290
+save z_Photos/Photos_D/x00295 for model 295
+        300   6.022782   4799.683  -0.269353  -0.269353   0.679996   0.679996   0.719883   0.000006   0.280000   0.719883  -5.374330    683      0
+   2.747432  -1.314745   0.707704 -99.000000 -13.091498 -10.519207   0.000000   0.280000   0.000059   0.000116   0.280000   0.089266      3      0
+ 3.4707E+04  12.838418   1.093740   2.854988   4.571315  -6.923711   0.000000   0.000021   0.000000  1.164E-04  1.164E-04  0.000E+00    varcontrol
+                               rel_E_err    2.4664580270935548D-09
+                       log_rel_run_E_err       -2.0176562632076207
+
+save LOGS/profile13.data for model 300
+save z_Photos/Photos_D/x00300 for model 300
+save z_Photos/Photos_D/x00305 for model 305
+save z_Photos/Photos_D/x00310 for model 310
+save z_Photos/Photos_D/x00315 for model 315
+save z_Photos/Photos_D/x00320 for model 320
+save LOGS/profile14.data for model 325
+save z_Photos/Photos_D/x00325 for model 325
+save z_Photos/Photos_D/x00330 for model 330
+save z_Photos/Photos_D/x00335 for model 335
+save z_Photos/Photos_D/x00340 for model 340
+save z_Photos/Photos_D/x00345 for model 345
+save LOGS/profile15.data for model 350
+save z_Photos/Photos_D/x00350 for model 350
+save z_Photos/Photos_D/x00355 for model 355
+save z_Photos/Photos_D/x00360 for model 360
+save z_Photos/Photos_D/x00365 for model 365
+save z_Photos/Photos_D/x00370 for model 370
+save LOGS/profile16.data for model 375
+save z_Photos/Photos_D/x00375 for model 375
+save z_Photos/Photos_D/x00380 for model 380
+save z_Photos/Photos_D/x00385 for model 385
+save z_Photos/Photos_D/x00390 for model 390
+save z_Photos/Photos_D/x00395 for model 395
+        400   6.249011   4867.128  -8.765556  -8.765556   0.679994   0.679994   0.719875   0.000006   0.280019   0.719875  -4.587822    641      0
+   3.394579  -0.636009   0.474331 -99.000000 -10.174775 -11.194991   0.000000   0.280025   0.000059   0.000100   0.280025   0.089271      3      0
+ 2.2275E+05  13.743601   0.651236   3.321732   4.825817  -6.674980   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00    varcontrol
+                               rel_E_err    1.5288051995774668D-09
+                       log_rel_run_E_err       -2.2713996102560321
+
+save LOGS/profile17.data for model 400
+save z_Photos/Photos_D/x00400 for model 400
+save z_Photos/Photos_D/x00405 for model 405
+save z_Photos/Photos_D/x00410 for model 410
+save z_Photos/Photos_D/x00415 for model 415
+save z_Photos/Photos_D/x00420 for model 420
+save LOGS/profile18.data for model 425
+save z_Photos/Photos_D/x00425 for model 425
+save z_Photos/Photos_D/x00430 for model 430
+save z_Photos/Photos_D/x00435 for model 435
+save z_Photos/Photos_D/x00440 for model 440
+save z_Photos/Photos_D/x00445 for model 445
+save LOGS/profile19.data for model 450
+save z_Photos/Photos_D/x00450 for model 450
+save z_Photos/Photos_D/x00455 for model 455
+save z_Photos/Photos_D/x00460 for model 460
+save z_Photos/Photos_D/x00465 for model 465
+save z_Photos/Photos_D/x00470 for model 470
+save LOGS/profile20.data for model 475
+save z_Photos/Photos_D/x00475 for model 475
+save z_Photos/Photos_D/x00480 for model 480
+save z_Photos/Photos_D/x00485 for model 485
+save z_Photos/Photos_D/x00490 for model 490
+save z_Photos/Photos_D/x00495 for model 495
+        500   6.469938   4856.786  -6.255542  -6.255542   0.679992   0.679992   0.719875   0.000006   0.280025   0.719875  -3.829031    666      0
+   4.059799   0.028500   0.248361 -99.000000  -7.679005 -11.876522   0.000000   0.280025   0.000059   0.000100   0.280025   0.089390      3      0
+ 8.1379E+05  14.629464   0.195599   3.773672   5.131314  -6.367699   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00    varcontrol
+                               rel_E_err    1.2609895212273749D-09
+                       log_rel_run_E_err       -2.5082390319147714
+
+save LOGS/profile21.data for model 500
+save z_Photos/Photos_D/x00500 for model 500
+save z_Photos/Photos_D/x00505 for model 505
+save z_Photos/Photos_D/x00510 for model 510
+save z_Photos/Photos_D/x00515 for model 515
+save z_Photos/Photos_D/x00520 for model 520
+save LOGS/profile22.data for model 525
+save z_Photos/Photos_D/x00525 for model 525
+save z_Photos/Photos_D/x00530 for model 530
+save z_Photos/Photos_D/x00535 for model 535
+save z_Photos/Photos_D/x00540 for model 540
+save z_Photos/Photos_D/x00545 for model 545
+save LOGS/profile23.data for model 550
+save z_Photos/Photos_D/x00550 for model 550
+save z_Photos/Photos_D/x00555 for model 555
+save z_Photos/Photos_D/x00560 for model 560
+save z_Photos/Photos_D/x00565 for model 565
+save z_Photos/Photos_D/x00570 for model 570
+save LOGS/profile24.data for model 575
+save z_Photos/Photos_D/x00575 for model 575
+save z_Photos/Photos_D/x00580 for model 580
+save z_Photos/Photos_D/x00585 for model 585
+save z_Photos/Photos_D/x00590 for model 590
+save z_Photos/Photos_D/x00595 for model 595
+        600   6.659583   4786.819  -4.103370  -4.103370   0.679991   0.679991   0.719874   0.000006   0.280024   0.719875  -2.826859    682      0
+   4.756028   0.765761   0.035764 -78.864707  -5.544217 -12.540465   0.000000   0.280026   0.000059   0.000100   0.280025   0.101718      3      0
+ 3.6456E+06  15.556951  -0.254802   4.198865   5.461907  -6.028327   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00    varcontrol
+                               rel_E_err    1.1963630031155873D-09
+                       log_rel_run_E_err       -2.7374444932962021
+
+save LOGS/profile25.data for model 600
+save z_Photos/Photos_D/x00600 for model 600
+save z_Photos/Photos_D/x00605 for model 605
+save z_Photos/Photos_D/x00610 for model 610
+save z_Photos/Photos_D/x00615 for model 615
+save z_Photos/Photos_D/x00620 for model 620
+save LOGS/profile26.data for model 625
+save z_Photos/Photos_D/x00625 for model 625
+save z_Photos/Photos_D/x00630 for model 630
+save z_Photos/Photos_D/x00635 for model 635
+save z_Photos/Photos_D/x00640 for model 640
+save z_Photos/Photos_D/x00645 for model 645
+save LOGS/profile27.data for model 650
+save z_Photos/Photos_D/x00650 for model 650
+save z_Photos/Photos_D/x00655 for model 655
+save z_Photos/Photos_D/x00660 for model 660
+save z_Photos/Photos_D/x00665 for model 665
+save z_Photos/Photos_D/x00670 for model 670
+save LOGS/profile28.data for model 675
+save z_Photos/Photos_D/x00675 for model 675
+save z_Photos/Photos_D/x00680 for model 680
+save z_Photos/Photos_D/x00685 for model 685
+save z_Photos/Photos_D/x00690 for model 690
+save z_Photos/Photos_D/x00695 for model 695
+        700   6.929450   5413.932  -1.634320  -1.634320   0.679988   0.679988   0.719833   0.000006   0.280006   0.719872  -1.278270    707      0
+   5.217589   1.769178  -0.097537 -58.886397  -3.033592 -12.733912   0.000000   0.280067   0.000059   0.000100   0.280028   0.118036      3      0
+ 1.6329E+07  16.836140  -0.307540   4.465464   5.198367  -6.348279   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00    varcontrol
+                               rel_E_err    2.5641775263981687D-09
+                       log_rel_run_E_err       -3.0279987345373343
+
+save LOGS/profile29.data for model 700
+save z_Photos/Photos_D/x00700 for model 700
+save z_Photos/Photos_D/x00705 for model 705
+save z_Photos/Photos_D/x00710 for model 710
+save z_Photos/Photos_D/x00715 for model 715
+save z_Photos/Photos_D/x00720 for model 720
+save LOGS/profile30.data for model 725
+save z_Photos/Photos_D/x00725 for model 725
+save z_Photos/Photos_D/x00730 for model 730
+save z_Photos/Photos_D/x00735 for model 735
+save z_Photos/Photos_D/x00740 for model 740
+save z_Photos/Photos_D/x00745 for model 745
+save LOGS/profile31.data for model 750
+save z_Photos/Photos_D/x00750 for model 750
+save z_Photos/Photos_D/x00755 for model 755
+save z_Photos/Photos_D/x00760 for model 760
+        765   7.083780   5736.634  -0.434149  -0.434149   0.679986   0.679986   0.719535   0.000006   0.279847   0.719806  -1.244654    760      0
+   5.692405   2.017964  -0.211741 -49.815222  -2.062017 -12.964436   0.000000   0.280365   0.000059   0.000100   0.280094   0.100159      3      0
+ 3.0620E+07  17.240834  -0.435371   4.693871   5.157082  -6.413775   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00    varcontrol
+                               rel_E_err    5.4004968017799421D-09
+                       log_rel_run_E_err       -3.1530471911879689
+
+save LOGS/profile32.data for model 765
+save z_Photos/Photos_D/x00765 for model 765
+save z_Photos/Photos_D/x00770 for model 770
+save LOGS/profile33.data for model 775
+save z_Photos/Photos_D/x00775 for model 775
+save z_Photos/Photos_D/x00780 for model 780
+save z_Photos/Photos_D/x00785 for model 785
+save z_Photos/Photos_D/x00790 for model 790
+save z_Photos/Photos_D/x00795 for model 795
+        800   7.084921   5714.108  -0.414813  -0.414813   0.679821   0.679821   0.648191   0.000032   0.260529   0.711281  -1.198415    747      0
+   8.375184   2.056192  -0.198006 -49.441370  -2.092418 -12.947293   0.000000   0.351704   0.000059   0.000093   0.288619   0.107100      5      0
+ 1.5567E+09  17.256524  -0.414735   4.666295   5.141977  -6.438117   0.000000   0.000000   0.000000  1.046E-04  1.003E-04  0.000E+00      XHe_cntr
+                               rel_E_err    2.7379531509974914D-06
+                       log_rel_run_E_err       -3.1588102165594920
+
+save LOGS/profile34.data for model 800
+save z_Photos/Photos_D/x00800 for model 800
+save z_Photos/Photos_D/x00805 for model 805
+save z_Photos/Photos_D/x00810 for model 810
+save z_Photos/Photos_D/x00815 for model 815
+save z_Photos/Photos_D/x00820 for model 820
+save LOGS/profile35.data for model 825
+save z_Photos/Photos_D/x00825 for model 825
+        830   7.145716   5863.035  -0.268247  -0.268247   0.679030   0.679030   0.332596   0.000033   0.187068   0.674899  -1.010279    752      0
+   8.244733   2.312344  -0.147061 -45.077611  -1.922564 -12.749475   0.000000   0.667295   0.000061   0.000065   0.325000   0.144701      5      0
+ 7.1097E+09  17.450058  -0.268149   4.563900   4.964989  -6.654447   0.000000   0.000000   0.000000  1.086E-04  1.007E-04  0.000E+00      XHe_cntr
+                               rel_E_err    3.2495408417830411D-06
+                       log_rel_run_E_err       -3.2512774222526377
+
+save LOGS/profile36.data for model 830
+save z_Photos/Photos_D/x00830 for model 830
+save z_Photos/Photos_D/x00835 for model 835
+save z_Photos/Photos_D/x00840 for model 840
+save z_Photos/Photos_D/x00845 for model 845
+save LOGS/profile37.data for model 850
+save z_Photos/Photos_D/x00850 for model 850
+save z_Photos/Photos_D/x00855 for model 855
+save z_Photos/Photos_D/x00860 for model 860
+save z_Photos/Photos_D/x00865 for model 865
+save z_Photos/Photos_D/x00870 for model 870
+save LOGS/profile38.data for model 875
+save z_Photos/Photos_D/x00875 for model 875
+save z_Photos/Photos_D/x00880 for model 880
+
+stop because log_center_density >= log_center_density_limit
+    0.3008639538E+01    0.3000000000E+01
+
+        883   7.297554   6124.588   0.094470   0.094470   0.676872   0.676872   0.032054   0.000080   0.120101   0.594448  -0.041072    787      0
+   7.856582   3.008640  -0.003567 -35.706791  -1.399620 -12.243820   0.000000   0.967841   0.000008   0.000043   0.405451   0.270404      5      0
+ 1.4207E+10  18.148183   0.094657   4.275529   4.606950  -7.057262   0.000000   0.000000   0.000000  1.052E-04  1.013E-04  0.000E+00    varcontrol
+                               rel_E_err    4.2765558756793060D-06
+                       log_rel_run_E_err       -3.5370487775753179
+
+save LOGS/profile39.data for model 883
+save z_Photos/Photos_D/x00883 for model 883
+ saved to z_Mods/mod_D.mod
+termination code: log_center_density_limit
+
+        runtime (minutes), retries, backups, steps        3.10         0         0       883
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tcntr    Teff     lg_LH       lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf     X_avg     eta_cntr  zones retry
+   lg_dt_yr    lg_Dcntr    lg_R     lg_L3a      lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf     Y_avg     gam_cntr  iters bckup
+     age_yr    lg_Pcntr    lg_L     lg_gsurf    lg_Psurf    lg_Dsurf   C_core     C_cntr     Ne_cntr    Z_cntr     Z_avg     v_div_cs     dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+        883   7.297554   6124.588   0.094470   0.094470   0.676872   0.676872   0.032054   0.000080   0.120101   0.594448  -0.041072    787      0
+   7.856582   3.008640  -0.003567 -35.706791  -1.399620 -12.243820   0.000000   0.967841   0.000008   0.000043   0.405451   0.270404      5      0
+ 1.4207E+10  18.148183   0.094657   4.275529   4.606950  -7.057262   0.000000   0.000000   0.000000  1.052E-04  1.013E-04  0.000E+00    varcontrol
+                               rel_E_err    4.2765558756793060D-06
+                       log_rel_run_E_err       -3.5370487775753179
+
+DATE: 2021-08-05
+TIME: 12:43:33
+Okay
+
+Finished z_Inlists/inlist_D12 .
+
+***
+
+Elapsed: 0 hrs 3 min 15 sec.
+Finished all inlists.

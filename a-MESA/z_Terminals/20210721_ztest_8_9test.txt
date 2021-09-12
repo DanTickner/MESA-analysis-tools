@@ -1,0 +1,247 @@
+Okay
+run inlist_ztest_9test
+DATE: 2021-07-22
+TIME: 00:42:57
+ version_number 12778
+
+
+ The terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'lg_Tcntr' is log10 center temperature (K),
+      'lg_Dcntr' is log10 center density (g/cm^3),
+      'lg_Pcntr' is log10 center pressure (ergs/cm^3),
+      'Teff' is the surface temperature (K),
+      'lg_R' is log10 surface radius (Rsun),
+      'lg_L' is log10 surface luminosity (Lsun),
+      'lg_LH' is log10 total PP and CNO hydrogen burning power (Lsun),
+      'lg_L3a' is log10 total triple-alpha helium burning power (Lsun),
+      'lg_gsurf' is log10 surface gravity,
+      'lg_LNuc' is log10 nuclear power excluding photodisintegration (Lsun),
+      'lg_LNeu' is log10 total neutrino power (Lsun),
+      'lg_Psurf' is log10 surface pressure (gas + radiation),
+      'Mass' is the total stellar baryonic mass (Msun),
+      'lg_Mdot' is log10 magnitude of rate of change of mass (Msun/year),
+      'lg_Dsurf' is log10 surface density (g/cm^3),
+      'H_env' is the amount of mass where H is the most abundant iso,
+      'He_core' is the largest mass where He is most abundant iso.
+      'C_core' is the largest mass where C is most abundant iso.
+      'H_cntr' is the center H1 mass fraction,
+      'He_cntr' is the center He4 mass fraction,
+      'C_cntr' is the center C12 mass fraction,
+      'N_cntr' is the center N14 mass fraction,
+      'O_cntr' is the center O16 mass fraction,
+      'Ne_cntr' is the center Ne20 mass fraction,
+      'X_avg' is the star average hydrogen mass fraction,
+      'Y_avg' is the star average helium mass fraction,
+      'Z_avg' is the star average metallicity,
+      'gam_cntr' is the center plasma interaction parameter,
+      'eta_cntr' is the center electron degeneracy parameter,
+      'zones' is the number of zones in the current model,
+      'iters' is the number of newton iterations for the current step,
+      'retry' is the number of step retries required during the run,
+      'bckup' is the number of step backups required during the run,
+      'dt_limit' is an indication of what limited the timestep.
+
+ All this and more are saved in the LOGS directory during the run.
+ create pre-main-sequence model
+                                          species  mass          18    1.0000000000000000D+00
+
+                                        relax_num_steps          50
+
+
+                               finished relax_num_steps
+
+ do_star_job_controls_after
+ change to "agb.net"
+ number of species          18
+ new_rotation_flag T
+                               new_omega_div_omega_crit           0    5.0000000000000002D-05    1.9778553059004787D-10
+
+                        set_uniform_initial_composition
+                                             initial_h1    6.9999999999999996D-01
+                                             initial_h2    2.4999999999999999D-37
+                                            initial_he3    2.9799999999999999D-05
+                                            initial_he4    2.7997000000000000D-01
+                       unknown value for initial_zfracs           0
+ read columns_history.list
+ read columns_profile.list
+ net name agb.net
+ use_gold_tolerances T
+ do_element_diffusion T
+ rotation_flag T
+                            set_cumulative_energy_error    0.0000000000000000D+00
+ kappa_file_prefix gs98
+ kappa_lowT_prefix lowT_fa05_gs98
+                                        OMP_NUM_THREADS          12
+
+
+save LOGS/profile1.data for model 1
+save Photos_ztest_9test/x00005 for model 5
+save Photos_ztest_9test/x00010 for model 10
+save Photos_ztest_9test/x00015 for model 15
+save Photos_ztest_9test/x00020 for model 20
+save LOGS/profile2.data for model 25
+save Photos_ztest_9test/x00025 for model 25
+save Photos_ztest_9test/x00030 for model 30
+save Photos_ztest_9test/x00035 for model 35
+save Photos_ztest_9test/x00040 for model 40
+save Photos_ztest_9test/x00045 for model 45
+save LOGS/profile3.data for model 50
+save Photos_ztest_9test/x00050 for model 50
+save Photos_ztest_9test/x00055 for model 55
+save Photos_ztest_9test/x00060 for model 60
+save Photos_ztest_9test/x00065 for model 65
+save Photos_ztest_9test/x00070 for model 70
+save LOGS/profile4.data for model 75
+save Photos_ztest_9test/x00075 for model 75
+save Photos_ztest_9test/x00080 for model 80
+save Photos_ztest_9test/x00085 for model 85
+save Photos_ztest_9test/x00090 for model 90
+save Photos_ztest_9test/x00095 for model 95
+        100   5.652034   3918.323 -18.432212 -18.432212   0.999998   0.999998   0.700000   0.000000   0.280000   0.700000  -7.467802    584      0
+   2.370693  -2.776656   1.273717 -99.000000 -19.076219  -9.320206   0.000000   0.280000   0.000000   0.020000   0.280000   0.069284      4      0
+ 2.5607E+03  10.999093   1.873318   1.890454   3.582397  -7.816331   0.000000   0.000000   0.000000  2.000E-02  2.000E-02  0.000E+00      lgT_cntr
+                               rel_E_err    5.2660638113904472D-08
+                       log_rel_run_E_err       -5.8620701218263846
+
+save LOGS/profile5.data for model 100
+save Photos_ztest_9test/x00100 for model 100
+save Photos_ztest_9test/x00105 for model 105
+save Photos_ztest_9test/x00110 for model 110
+save Photos_ztest_9test/x00115 for model 115
+save Photos_ztest_9test/x00120 for model 120
+save LOGS/profile6.data for model 125
+save Photos_ztest_9test/x00125 for model 125
+save Photos_ztest_9test/x00130 for model 130
+save Photos_ztest_9test/x00135 for model 135
+save Photos_ztest_9test/x00140 for model 140
+save Photos_ztest_9test/x00145 for model 145
+save LOGS/profile7.data for model 150
+save Photos_ztest_9test/x00150 for model 150
+save Photos_ztest_9test/x00155 for model 155
+save Photos_ztest_9test/x00160 for model 160
+save Photos_ztest_9test/x00165 for model 165
+save Photos_ztest_9test/x00170 for model 170
+save LOGS/profile8.data for model 175
+save Photos_ztest_9test/x00175 for model 175
+save Photos_ztest_9test/x00180 for model 180
+save Photos_ztest_9test/x00185 for model 185
+save Photos_ztest_9test/x00190 for model 190
+save Photos_ztest_9test/x00195 for model 195
+        200   6.519711   4405.948   0.274831   0.274831   0.999963   0.999963   0.699875   0.000000   0.280378   0.699875  -4.469008    759      0
+   6.496800  -0.174472   0.372694 -99.000000  -7.374621 -11.847613   0.000000   0.281002   0.000000   0.019006   0.281002   0.069230      5      0
+ 1.9379E+07  14.469994   0.275027   3.692486   4.536947  -6.916074   0.000000   0.000000   0.000000  1.912E-02  1.912E-02  0.000E+00  max increase
+                               rel_E_err    2.4332849705879615D-07
+                       log_rel_run_E_err       -5.7309874347120147
+
+save LOGS/profile9.data for model 200
+save Photos_ztest_9test/x00200 for model 200
+save Photos_ztest_9test/x00205 for model 205
+save Photos_ztest_9test/x00210 for model 210
+ retry     213
+save Photos_ztest_9test/x00215 for model 215
+ retry     218
+ retry     218
+save Photos_ztest_9test/x00220 for model 220
+ retry     225
+ retry     225
+save LOGS/profile10.data for model 225
+save Photos_ztest_9test/x00225 for model 225
+ retry     226
+ retry     226
+ retry     227
+ retry     229
+save Photos_ztest_9test/x00230 for model 230
+save Photos_ztest_9test/x00235 for model 235
+save Photos_ztest_9test/x00240 for model 240
+save Photos_ztest_9test/x00245 for model 245
+save LOGS/profile11.data for model 250
+save Photos_ztest_9test/x00250 for model 250
+save Photos_ztest_9test/x00255 for model 255
+save Photos_ztest_9test/x00260 for model 260
+save Photos_ztest_9test/x00265 for model 265
+save Photos_ztest_9test/x00270 for model 270
+        275   7.139883   5792.858  -0.138620  -0.138620   0.999413   0.999413   0.695564   0.000000   0.302717   0.696979  -1.692697    768      9
+   6.536200   1.925166  -0.073280 -46.893231  -1.775271 -12.701520   0.000000   0.304436   0.000000   0.000000   0.303021   0.083035      5      0
+ 4.1460E+08  17.194196  -0.141506   4.584194   5.075553  -6.490758   0.000000   0.000000   0.000000  3.840E-12  1.656E-13  0.000E+00  max increase
+                               rel_E_err    4.0426000015571080D-08
+                       log_rel_run_E_err       -5.0966331764670798
+
+save LOGS/profile12.data for model 275
+save Photos_ztest_9test/x00275 for model 275
+save Photos_ztest_9test/x00280 for model 280
+save Photos_ztest_9test/x00285 for model 285
+save Photos_ztest_9test/x00290 for model 290
+save Photos_ztest_9test/x00295 for model 295
+        300   7.150646   5801.842  -0.097780  -0.097780   0.999104   0.999104   0.582230   0.000000   0.293578   0.685832  -1.636759    766      9
+   8.117173   1.996272  -0.052728 -45.875267  -1.762109 -12.650332   0.000000   0.417770   0.000000   0.000000   0.314168   0.091600      5      0
+ 1.8865E+09  17.236685  -0.097710   4.542956   5.038816  -6.532128   0.000000   0.000000   0.000000  6.153E-12  2.309E-13  0.000E+00      XHe_cntr
+                               rel_E_err    1.7168134254664766D-06
+                       log_rel_run_E_err       -4.5835307896204283
+
+save LOGS/profile13.data for model 300
+save Photos_ztest_9test/x00300 for model 300
+save Photos_ztest_9test/x00305 for model 305
+save Photos_ztest_9test/x00310 for model 310
+save Photos_ztest_9test/x00315 for model 315
+save Photos_ztest_9test/x00320 for model 320
+        325   7.199741   5844.382   0.006180   0.006180   0.998269   0.998269   0.330752   0.000000   0.274306   0.658348  -1.490343    766      9
+   8.086426   2.203315  -0.007097 -42.526324  -1.612236 -12.501540   0.000000   0.669248   0.000000   0.000000   0.341652   0.117716      5      0
+ 5.0154E+09  17.390475   0.006243   4.451331   4.945776  -6.636534   0.000000   0.000000   0.000000  1.857E-11  7.778E-13  0.000E+00      XHe_cntr
+                               rel_E_err    2.2364813139558330D-06
+                       log_rel_run_E_err       -4.1306701866953093
+
+save LOGS/profile14.data for model 325
+save Photos_ztest_9test/x00325 for model 325
+save Photos_ztest_9test/x00330 for model 330
+save Photos_ztest_9test/x00335 for model 335
+save Photos_ztest_9test/x00340 for model 340
+save Photos_ztest_9test/x00345 for model 345
+save LOGS/profile15.data for model 350
+save Photos_ztest_9test/x00350 for model 350
+save Photos_ztest_9test/x00355 for model 355
+save Photos_ztest_9test/x00360 for model 360
+save Photos_ztest_9test/x00365 for model 365
+save Photos_ztest_9test/x00370 for model 370
+
+stop because log_center_density >= log_center_density_limit
+    0.4007206896E+01    0.4000000000E+01
+
+        371   7.569465   5527.581   0.622173   0.622173   0.992710   0.941833   0.003121   0.000000   0.272583   0.531737   1.959956    910      9
+   7.590838   4.007207   0.349292 -19.954472  -0.412414 -11.539054   0.050877   0.996879   0.000000   0.000000   0.468263   0.332142      5      0
+ 1.2014E+10  19.485417   0.622206   3.736129   4.650666  -6.909093   0.000000   0.000000   0.000000  6.872E-14  7.309E-12  0.000E+00      lgT_cntr
+                               rel_E_err    2.3850243064724546D-06
+                       log_rel_run_E_err       -3.5402081239408507
+
+save LOGS/profile16.data for model 371
+save Photos_ztest_9test/x00371 for model 371
+ saved to mod_ztest_9test.mod
+termination code: log_center_density_limit
+
+        runtime (minutes), retries, backups, steps        1.96         9         0       371
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tcntr    Teff     lg_LH       lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf     X_avg     eta_cntr  zones retry
+   lg_dt_yr    lg_Dcntr    lg_R     lg_L3a      lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf     Y_avg     gam_cntr  iters bckup
+     age_yr    lg_Pcntr    lg_L     lg_gsurf    lg_Psurf    lg_Dsurf   C_core     C_cntr     Ne_cntr    Z_cntr     Z_avg     v_div_cs     dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+        371   7.569465   5527.581   0.622173   0.622173   0.992710   0.941833   0.003121   0.000000   0.272583   0.531737   1.959956    910      9
+   7.590838   4.007207   0.349292 -19.954472  -0.412414 -11.539054   0.050877   0.996879   0.000000   0.000000   0.468263   0.332142      5      0
+ 1.2014E+10  19.485417   0.622206   3.736129   4.650666  -6.909093   0.000000   0.000000   0.000000  6.872E-14  7.309E-12  0.000E+00      lgT_cntr
+                               rel_E_err    2.3850243064724546D-06
+                       log_rel_run_E_err       -3.5402081239408507
+
+DATE: 2021-07-22
+TIME: 00:45:03
+Okay
+
+Finished inlist_ztest_9test .
+
+***
+
+Elapsed: 0 hrs 2 min 6 sec.
+Finished all inlists for 0p8M with and without rotation and atomic diffusion.

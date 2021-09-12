@@ -1,0 +1,1161 @@
+Okay
+run z_Inlists/inlist_0p69D
+DATE: 2021-08-17
+TIME: 23:20:03
+ version_number 12778
+
+
+ The terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'lg_Tcntr' is log10 center temperature (K),
+      'lg_Dcntr' is log10 center density (g/cm^3),
+      'lg_Pcntr' is log10 center pressure (ergs/cm^3),
+      'Teff' is the surface temperature (K),
+      'lg_R' is log10 surface radius (Rsun),
+      'lg_L' is log10 surface luminosity (Lsun),
+      'lg_LH' is log10 total PP and CNO hydrogen burning power (Lsun),
+      'lg_L3a' is log10 total triple-alpha helium burning power (Lsun),
+      'lg_gsurf' is log10 surface gravity,
+      'lg_LNuc' is log10 nuclear power excluding photodisintegration (Lsun),
+      'lg_LNeu' is log10 total neutrino power (Lsun),
+      'lg_Psurf' is log10 surface pressure (gas + radiation),
+      'Mass' is the total stellar baryonic mass (Msun),
+      'lg_Mdot' is log10 magnitude of rate of change of mass (Msun/year),
+      'lg_Dsurf' is log10 surface density (g/cm^3),
+      'H_env' is the amount of mass where H is the most abundant iso,
+      'He_core' is the largest mass where He is most abundant iso.
+      'C_core' is the largest mass where C is most abundant iso.
+      'H_cntr' is the center H1 mass fraction,
+      'He_cntr' is the center He4 mass fraction,
+      'C_cntr' is the center C12 mass fraction,
+      'N_cntr' is the center N14 mass fraction,
+      'O_cntr' is the center O16 mass fraction,
+      'Ne_cntr' is the center Ne20 mass fraction,
+      'X_avg' is the star average hydrogen mass fraction,
+      'Y_avg' is the star average helium mass fraction,
+      'Z_avg' is the star average metallicity,
+      'gam_cntr' is the center plasma interaction parameter,
+      'eta_cntr' is the center electron degeneracy parameter,
+      'zones' is the number of zones in the current model,
+      'iters' is the number of newton iterations for the current step,
+      'retry' is the number of step retries required during the run,
+      'bckup' is the number of step backups required during the run,
+      'dt_limit' is an indication of what limited the timestep.
+
+ All this and more are saved in the LOGS directory during the run.
+ create pre-main-sequence model
+                                          species  mass          18    6.8999999999999995D-01
+
+                                        relax_num_steps          50
+
+ retry       1
+ first model is slow to converge: num tries          70
+
+                               finished relax_num_steps
+
+ do_star_job_controls_after
+ change to "agb.net"
+ number of species          18
+
+                        set_uniform_initial_composition
+                                             initial_h1    7.1988344270000004D-01
+                                             initial_h2    1.6557300000000002D-05
+                                            initial_he3    8.3974799999999994D-05
+                                            initial_he4    2.7991602519999997D-01
+                       unknown value for initial_zfracs           0
+ read columns_history.list
+ read columns_profile.list
+ net name agb.net
+ use_gold_tolerances T
+ do_element_diffusion T
+                            set_cumulative_energy_error    0.0000000000000000D+00
+ kappa_file_prefix gs98
+ kappa_lowT_prefix lowT_fa05_gs98
+                                        OMP_NUM_THREADS          12
+
+
+                                 WARNING: rel_run_E_err           1    4.8733067050350430D-02
+save LOGS/profile1.data for model 1
+                                 WARNING: rel_run_E_err           2    4.8733069933358235D-02
+save LOGS/profile2.data for model 2
+                                 WARNING: rel_run_E_err           3    4.8733071359161738D-02
+save LOGS/profile3.data for model 3
+                                 WARNING: rel_run_E_err           4    4.8733071690144868D-02
+save LOGS/profile4.data for model 4
+                                 WARNING: rel_run_E_err           5    4.8733071203110864D-02
+save LOGS/profile5.data for model 5
+save z_Photos/Photos_0p69D/x00005 for model 5
+                                 WARNING: rel_run_E_err           6    4.8733070076907185D-02
+save LOGS/profile6.data for model 6
+                                 WARNING: rel_run_E_err           7    4.8733068411092768D-02
+save LOGS/profile7.data for model 7
+                                 WARNING: rel_run_E_err           8    4.8733066245331733D-02
+save LOGS/profile8.data for model 8
+                                 WARNING: rel_run_E_err           9    4.8733063576663203D-02
+save LOGS/profile9.data for model 9
+                                 WARNING: rel_run_E_err          10    4.8733060361404984D-02
+save LOGS/profile10.data for model 10
+save z_Photos/Photos_0p69D/x00010 for model 10
+                                 WARNING: rel_run_E_err          11    4.8733056573487969D-02
+save LOGS/profile11.data for model 11
+                                 WARNING: rel_run_E_err          12    4.8733052137070201D-02
+save LOGS/profile12.data for model 12
+                                 WARNING: rel_run_E_err          13    4.8733046978352401D-02
+save LOGS/profile13.data for model 13
+                                 WARNING: rel_run_E_err          14    4.8733041026800816D-02
+save LOGS/profile14.data for model 14
+                                 WARNING: rel_run_E_err          15    4.8733034184677941D-02
+save LOGS/profile15.data for model 15
+save z_Photos/Photos_0p69D/x00015 for model 15
+                                 WARNING: rel_run_E_err          16    4.8733026327076212D-02
+save LOGS/profile16.data for model 16
+                                 WARNING: rel_run_E_err          17    4.8733017366934236D-02
+save LOGS/profile17.data for model 17
+                                 WARNING: rel_run_E_err          18    4.8733007132631560D-02
+save LOGS/profile18.data for model 18
+                                 WARNING: rel_run_E_err          19    4.8732995485786697D-02
+save LOGS/profile19.data for model 19
+                                 WARNING: rel_run_E_err          20    4.8732982217968998D-02
+save LOGS/profile20.data for model 20
+save z_Photos/Photos_0p69D/x00020 for model 20
+                                 WARNING: rel_run_E_err          21    4.8732967073477122D-02
+save LOGS/profile21.data for model 21
+                                 WARNING: rel_run_E_err          22    4.8732949795375111D-02
+save LOGS/profile22.data for model 22
+                                 WARNING: rel_run_E_err          23    4.8732930084173134D-02
+save LOGS/profile23.data for model 23
+                                 WARNING: rel_run_E_err          24    4.8732907493684932D-02
+save LOGS/profile24.data for model 24
+                                 WARNING: rel_run_E_err          25    4.8732881526672434D-02
+save LOGS/profile25.data for model 25
+save z_Photos/Photos_0p69D/x00025 for model 25
+                                 WARNING: rel_run_E_err          26    4.8732851632550624D-02
+save LOGS/profile26.data for model 26
+                                 WARNING: rel_run_E_err          27    4.8732817043363838D-02
+save LOGS/profile27.data for model 27
+                                 WARNING: rel_run_E_err          28    4.8732776858230666D-02
+save LOGS/profile28.data for model 28
+                                 WARNING: rel_run_E_err          29    4.8732729979026876D-02
+save LOGS/profile29.data for model 29
+                                 WARNING: rel_run_E_err          30    4.8732675069403139D-02
+save LOGS/profile30.data for model 30
+save z_Photos/Photos_0p69D/x00030 for model 30
+                                 WARNING: rel_run_E_err          31    4.8732610520666922D-02
+save LOGS/profile31.data for model 31
+                                 WARNING: rel_run_E_err          32    4.8732534346766061D-02
+save LOGS/profile32.data for model 32
+                                 WARNING: rel_run_E_err          33    4.8732444149952765D-02
+save LOGS/profile33.data for model 33
+                                 WARNING: rel_run_E_err          34    4.8732336981081537D-02
+save LOGS/profile34.data for model 34
+                                 WARNING: rel_run_E_err          35    4.8732209234973130D-02
+save LOGS/profile35.data for model 35
+save z_Photos/Photos_0p69D/x00035 for model 35
+                                 WARNING: rel_run_E_err          36    4.8732056495484240D-02
+save LOGS/profile36.data for model 36
+                                 WARNING: rel_run_E_err          37    4.8731873364329437D-02
+save LOGS/profile37.data for model 37
+                                 WARNING: rel_run_E_err          38    4.8731653278653773D-02
+save LOGS/profile38.data for model 38
+                                 WARNING: rel_run_E_err          39    4.8731388305972220D-02
+save LOGS/profile39.data for model 39
+                                 WARNING: rel_run_E_err          40    4.8731068917023591D-02
+save LOGS/profile40.data for model 40
+save z_Photos/Photos_0p69D/x00040 for model 40
+                                 WARNING: rel_run_E_err          41    4.8730683720204490D-02
+save LOGS/profile41.data for model 41
+                                 WARNING: rel_run_E_err          42    4.8730219141115826D-02
+save LOGS/profile42.data for model 42
+                                 WARNING: rel_run_E_err          43    4.8729659012214203D-02
+save LOGS/profile43.data for model 43
+                                 WARNING: rel_run_E_err          44    4.8728984085961491D-02
+save LOGS/profile44.data for model 44
+                                 WARNING: rel_run_E_err          45    4.8728171409350311D-02
+save LOGS/profile45.data for model 45
+save z_Photos/Photos_0p69D/x00045 for model 45
+                                 WARNING: rel_run_E_err          46    4.8727193560929062D-02
+save LOGS/profile46.data for model 46
+                                 WARNING: rel_run_E_err          47    4.8726017742001936D-02
+save LOGS/profile47.data for model 47
+                                 WARNING: rel_run_E_err          48    4.8724604669484368D-02
+save LOGS/profile48.data for model 48
+                                 WARNING: rel_run_E_err          49    4.8722907259895594D-02
+save LOGS/profile49.data for model 49
+                                 WARNING: rel_run_E_err          50    4.8720869044324489D-02
+save LOGS/profile50.data for model 50
+save z_Photos/Photos_0p69D/x00050 for model 50
+                                 WARNING: rel_run_E_err          51    4.8718422283797372D-02
+save LOGS/profile51.data for model 51
+                                 WARNING: rel_run_E_err          52    4.8715485714899025D-02
+save LOGS/profile52.data for model 52
+                                 WARNING: rel_run_E_err          53    4.8711961856371409D-02
+save LOGS/profile53.data for model 53
+                                 WARNING: rel_run_E_err          54    4.8707733790297962D-02
+save LOGS/profile54.data for model 54
+                                 WARNING: rel_run_E_err          55    4.8702661316172964D-02
+save LOGS/profile55.data for model 55
+save z_Photos/Photos_0p69D/x00055 for model 55
+                                 WARNING: rel_run_E_err          56    4.8696576357752472D-02
+save LOGS/profile56.data for model 56
+                                 WARNING: rel_run_E_err          57    4.8689277481984802D-02
+save LOGS/profile57.data for model 57
+                                 WARNING: rel_run_E_err          58    4.8680523363570004D-02
+save LOGS/profile58.data for model 58
+                                 WARNING: rel_run_E_err          59    4.8670025001618093D-02
+save LOGS/profile59.data for model 59
+                                 WARNING: rel_run_E_err          60    4.8657436460849843D-02
+save LOGS/profile60.data for model 60
+save z_Photos/Photos_0p69D/x00060 for model 60
+                                 WARNING: rel_run_E_err          61    4.8642343876329569D-02
+save LOGS/profile61.data for model 61
+                                 WARNING: rel_run_E_err          62    4.8624252423933645D-02
+save LOGS/profile62.data for model 62
+                                 WARNING: rel_run_E_err          63    4.8602570920940731D-02
+save LOGS/profile63.data for model 63
+                                 WARNING: rel_run_E_err          64    4.8576593686841689D-02
+save LOGS/profile64.data for model 64
+                                 WARNING: rel_run_E_err          65    4.8545479260287315D-02
+save LOGS/profile65.data for model 65
+save z_Photos/Photos_0p69D/x00065 for model 65
+                                 WARNING: rel_run_E_err          66    4.8508225548884669D-02
+save LOGS/profile66.data for model 66
+                                 WARNING: rel_run_E_err          67    4.8463640988775820D-02
+save LOGS/profile67.data for model 67
+                                 WARNING: rel_run_E_err          68    4.8410311320284116D-02
+save LOGS/profile68.data for model 68
+                                 WARNING: rel_run_E_err          69    4.8346561669739344D-02
+save LOGS/profile69.data for model 69
+                                 WARNING: rel_run_E_err          70    4.8270413783529809D-02
+save LOGS/profile70.data for model 70
+save z_Photos/Photos_0p69D/x00070 for model 70
+                                 WARNING: rel_run_E_err          71    4.8179538527565249D-02
+save LOGS/profile71.data for model 71
+                                 WARNING: rel_run_E_err          72    4.8071204180590708D-02
+save LOGS/profile72.data for model 72
+                                 WARNING: rel_run_E_err          73    4.7942221666104810D-02
+save LOGS/profile73.data for model 73
+                                 WARNING: rel_run_E_err          74    4.7788888743054661D-02
+save LOGS/profile74.data for model 74
+                                 WARNING: rel_run_E_err          75    4.7606936399475254D-02
+save LOGS/profile75.data for model 75
+save z_Photos/Photos_0p69D/x00075 for model 75
+                                 WARNING: rel_run_E_err          76    4.7391482204286905D-02
+save LOGS/profile76.data for model 76
+                                 WARNING: rel_run_E_err          77    4.7136997400860532D-02
+save LOGS/profile77.data for model 77
+                                 WARNING: rel_run_E_err          78    4.6837296776973861D-02
+save LOGS/profile78.data for model 78
+                                 WARNING: rel_run_E_err          79    4.6485562786968387D-02
+save LOGS/profile79.data for model 79
+                                 WARNING: rel_run_E_err          80    4.6074417627811566D-02
+save LOGS/profile80.data for model 80
+save z_Photos/Photos_0p69D/x00080 for model 80
+                                 WARNING: rel_run_E_err          81    4.5596059160047629D-02
+save LOGS/profile81.data for model 81
+                                 WARNING: rel_run_E_err          82    4.5042476593453548D-02
+save LOGS/profile82.data for model 82
+                                 WARNING: rel_run_E_err          83    4.4405724880104490D-02
+save LOGS/profile83.data for model 83
+                                 WARNING: rel_run_E_err          84    4.3678460100039875D-02
+save LOGS/profile84.data for model 84
+                                 WARNING: rel_run_E_err          85    4.2854304843360107D-02
+save LOGS/profile85.data for model 85
+save z_Photos/Photos_0p69D/x00085 for model 85
+                                 WARNING: rel_run_E_err          86    4.1927955713211652D-02
+save LOGS/profile86.data for model 86
+                                 WARNING: rel_run_E_err          87    4.0897182937234565D-02
+save LOGS/profile87.data for model 87
+                                 WARNING: rel_run_E_err          88    3.9762103681987793D-02
+save LOGS/profile88.data for model 88
+                                 WARNING: rel_run_E_err          89    3.8524786886019027D-02
+save LOGS/profile89.data for model 89
+                                 WARNING: rel_run_E_err          90    3.7192843247341546D-02
+save LOGS/profile90.data for model 90
+save z_Photos/Photos_0p69D/x00090 for model 90
+                                 WARNING: rel_run_E_err          91    3.5776235301056641D-02
+save LOGS/profile91.data for model 91
+                                 WARNING: rel_run_E_err          92    3.4306613306174037D-02
+save LOGS/profile92.data for model 92
+                                 WARNING: rel_run_E_err          93    3.3128706086811829D-02
+save LOGS/profile93.data for model 93
+                                 WARNING: rel_run_E_err          94    3.1877272350848584D-02
+save LOGS/profile94.data for model 94
+                                 WARNING: rel_run_E_err          95    3.0596832034617927D-02
+save LOGS/profile95.data for model 95
+save z_Photos/Photos_0p69D/x00095 for model 95
+                                 WARNING: rel_run_E_err          96    2.9575347433476194D-02
+save LOGS/profile96.data for model 96
+                                 WARNING: rel_run_E_err          97    2.8488094018144505D-02
+save LOGS/profile97.data for model 97
+                                 WARNING: rel_run_E_err          98    2.7376907008316232D-02
+save LOGS/profile98.data for model 98
+                                 WARNING: rel_run_E_err          99    2.6490366116591856D-02
+save LOGS/profile99.data for model 99
+        100   5.684141   4609.160  -5.923258  -5.923258   0.689999   0.689999   0.719883   0.000006   0.280000   0.719883  -6.565371    574      0
+   2.343698  -2.340792   1.070626 -99.000000 -18.312780  -9.486504   0.000000   0.280000   0.000059   0.000117   0.280000   0.088575      3      0
+ 2.5669E+03  11.473597   1.749221   2.135486   4.252170  -7.225394   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00      lgT_cntr
+                               rel_E_err    6.5361654566225076D-08
+                       log_rel_run_E_err       -1.5899852895902502
+
+                                 WARNING: rel_run_E_err         100    2.5704828486127616D-02
+save LOGS/profile100.data for model 100
+save z_Photos/Photos_0p69D/x00100 for model 100
+                                 WARNING: rel_run_E_err         101    2.4858680454355603D-02
+save LOGS/profile101.data for model 101
+                                 WARNING: rel_run_E_err         102    2.3958630998348527D-02
+save LOGS/profile102.data for model 102
+                                 WARNING: rel_run_E_err         103    2.3222114490117390D-02
+save LOGS/profile103.data for model 103
+                                 WARNING: rel_run_E_err         104    2.2432405544972479D-02
+save LOGS/profile104.data for model 104
+                                 WARNING: rel_run_E_err         105    2.1616241620388943D-02
+save LOGS/profile105.data for model 105
+save z_Photos/Photos_0p69D/x00105 for model 105
+                                 WARNING: rel_run_E_err         106    2.0959177918439820D-02
+save LOGS/profile106.data for model 106
+                                 WARNING: rel_run_E_err         107    2.0255477333377091D-02
+save LOGS/profile107.data for model 107
+save LOGS/profile108.data for model 108
+save LOGS/profile109.data for model 109
+save LOGS/profile110.data for model 110
+save z_Photos/Photos_0p69D/x00110 for model 110
+save LOGS/profile111.data for model 111
+save LOGS/profile112.data for model 112
+save LOGS/profile113.data for model 113
+save LOGS/profile114.data for model 114
+save LOGS/profile115.data for model 115
+save z_Photos/Photos_0p69D/x00115 for model 115
+save LOGS/profile116.data for model 116
+save LOGS/profile117.data for model 117
+save LOGS/profile118.data for model 118
+save LOGS/profile119.data for model 119
+save LOGS/profile120.data for model 120
+save z_Photos/Photos_0p69D/x00120 for model 120
+save LOGS/profile121.data for model 121
+save LOGS/profile122.data for model 122
+save LOGS/profile123.data for model 123
+save LOGS/profile124.data for model 124
+save LOGS/profile125.data for model 125
+save z_Photos/Photos_0p69D/x00125 for model 125
+save LOGS/profile126.data for model 126
+save LOGS/profile127.data for model 127
+save LOGS/profile128.data for model 128
+save LOGS/profile129.data for model 129
+save LOGS/profile130.data for model 130
+save z_Photos/Photos_0p69D/x00130 for model 130
+save LOGS/profile131.data for model 131
+save LOGS/profile132.data for model 132
+save LOGS/profile133.data for model 133
+save LOGS/profile134.data for model 134
+save LOGS/profile135.data for model 135
+save z_Photos/Photos_0p69D/x00135 for model 135
+save LOGS/profile136.data for model 136
+save LOGS/profile137.data for model 137
+save LOGS/profile138.data for model 138
+save LOGS/profile139.data for model 139
+save LOGS/profile140.data for model 140
+save z_Photos/Photos_0p69D/x00140 for model 140
+save LOGS/profile141.data for model 141
+save LOGS/profile142.data for model 142
+save LOGS/profile143.data for model 143
+save LOGS/profile144.data for model 144
+save LOGS/profile145.data for model 145
+save z_Photos/Photos_0p69D/x00145 for model 145
+save LOGS/profile146.data for model 146
+save LOGS/profile147.data for model 147
+save LOGS/profile148.data for model 148
+save LOGS/profile149.data for model 149
+save LOGS/profile150.data for model 150
+save z_Photos/Photos_0p69D/x00150 for model 150
+save LOGS/profile151.data for model 151
+save LOGS/profile152.data for model 152
+save LOGS/profile153.data for model 153
+save LOGS/profile154.data for model 154
+save LOGS/profile155.data for model 155
+save z_Photos/Photos_0p69D/x00155 for model 155
+save LOGS/profile156.data for model 156
+save LOGS/profile157.data for model 157
+save LOGS/profile158.data for model 158
+save LOGS/profile159.data for model 159
+save LOGS/profile160.data for model 160
+save z_Photos/Photos_0p69D/x00160 for model 160
+save LOGS/profile161.data for model 161
+save LOGS/profile162.data for model 162
+save LOGS/profile163.data for model 163
+save LOGS/profile164.data for model 164
+save LOGS/profile165.data for model 165
+save z_Photos/Photos_0p69D/x00165 for model 165
+save LOGS/profile166.data for model 166
+save LOGS/profile167.data for model 167
+save LOGS/profile168.data for model 168
+save LOGS/profile169.data for model 169
+save LOGS/profile170.data for model 170
+save z_Photos/Photos_0p69D/x00170 for model 170
+save LOGS/profile171.data for model 171
+save LOGS/profile172.data for model 172
+save LOGS/profile173.data for model 173
+save LOGS/profile174.data for model 174
+save LOGS/profile175.data for model 175
+save z_Photos/Photos_0p69D/x00175 for model 175
+save LOGS/profile176.data for model 176
+save LOGS/profile177.data for model 177
+save LOGS/profile178.data for model 178
+save LOGS/profile179.data for model 179
+save LOGS/profile180.data for model 180
+save z_Photos/Photos_0p69D/x00180 for model 180
+save LOGS/profile181.data for model 181
+save LOGS/profile182.data for model 182
+save LOGS/profile183.data for model 183
+save LOGS/profile184.data for model 184
+save LOGS/profile185.data for model 185
+save z_Photos/Photos_0p69D/x00185 for model 185
+save LOGS/profile186.data for model 186
+save LOGS/profile187.data for model 187
+save LOGS/profile188.data for model 188
+save LOGS/profile189.data for model 189
+save LOGS/profile190.data for model 190
+save z_Photos/Photos_0p69D/x00190 for model 190
+save LOGS/profile191.data for model 191
+save LOGS/profile192.data for model 192
+save LOGS/profile193.data for model 193
+save LOGS/profile194.data for model 194
+save LOGS/profile195.data for model 195
+save z_Photos/Photos_0p69D/x00195 for model 195
+save LOGS/profile196.data for model 196
+save LOGS/profile197.data for model 197
+save LOGS/profile198.data for model 198
+save LOGS/profile199.data for model 199
+        200   6.750066   4856.603  -3.232974  -3.232974   0.689989   0.689989   0.719871   0.000006   0.280023   0.719875  -2.321962    693      0
+   5.659220   1.130036  -0.030883 -71.685135  -4.633611 -12.712404   0.000000   0.280029   0.000059   0.000100   0.280025   0.109230      5      0
+ 6.9726E+06  16.012793  -0.362954   4.338498   5.498834  -5.997922   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00      lgT_cntr
+                               rel_E_err    7.3039372562775798D-09
+                       log_rel_run_E_err       -2.8421898275263784
+
+save LOGS/profile200.data for model 200
+save z_Photos/Photos_0p69D/x00200 for model 200
+save LOGS/profile201.data for model 201
+save LOGS/profile202.data for model 202
+save LOGS/profile203.data for model 203
+save LOGS/profile204.data for model 204
+save LOGS/profile205.data for model 205
+save z_Photos/Photos_0p69D/x00205 for model 205
+save LOGS/profile206.data for model 206
+save LOGS/profile207.data for model 207
+save LOGS/profile208.data for model 208
+save LOGS/profile209.data for model 209
+save LOGS/profile210.data for model 210
+save z_Photos/Photos_0p69D/x00210 for model 210
+save LOGS/profile211.data for model 211
+save LOGS/profile212.data for model 212
+save LOGS/profile213.data for model 213
+save LOGS/profile214.data for model 214
+save LOGS/profile215.data for model 215
+save z_Photos/Photos_0p69D/x00215 for model 215
+save LOGS/profile216.data for model 216
+save LOGS/profile217.data for model 217
+save LOGS/profile218.data for model 218
+save LOGS/profile219.data for model 219
+save LOGS/profile220.data for model 220
+save z_Photos/Photos_0p69D/x00220 for model 220
+save LOGS/profile221.data for model 221
+save LOGS/profile222.data for model 222
+save LOGS/profile223.data for model 223
+save LOGS/profile224.data for model 224
+save LOGS/profile225.data for model 225
+save z_Photos/Photos_0p69D/x00225 for model 225
+save LOGS/profile226.data for model 226
+save LOGS/profile227.data for model 227
+save LOGS/profile228.data for model 228
+save LOGS/profile229.data for model 229
+save LOGS/profile230.data for model 230
+save z_Photos/Photos_0p69D/x00230 for model 230
+save LOGS/profile231.data for model 231
+save LOGS/profile232.data for model 232
+save LOGS/profile233.data for model 233
+save LOGS/profile234.data for model 234
+save LOGS/profile235.data for model 235
+save z_Photos/Photos_0p69D/x00235 for model 235
+        236   7.086549   5754.086  -0.425397  -0.425397   0.689984   0.689984   0.719292   0.000006   0.279970   0.719757  -1.257649    772      0
+   6.461478   2.017028  -0.209574 -49.665734  -2.043695 -12.961702   0.000000   0.280608   0.000059   0.000100   0.280143   0.099463      5      0
+ 3.6790E+07  17.242523  -0.425760   4.695876   5.148712  -6.423373   0.000000   0.000021   0.000000  1.001E-04  1.000E-04  0.000E+00  max increase
+                               rel_E_err    3.1174197153984222D-08
+                       log_rel_run_E_err       -3.1688676331330963
+
+save LOGS/profile236.data for model 236
+save LOGS/profile237.data for model 237
+save LOGS/profile238.data for model 238
+save LOGS/profile239.data for model 239
+save LOGS/profile240.data for model 240
+save z_Photos/Photos_0p69D/x00240 for model 240
+save LOGS/profile241.data for model 241
+save LOGS/profile242.data for model 242
+save LOGS/profile243.data for model 243
+save LOGS/profile244.data for model 244
+save LOGS/profile245.data for model 245
+save z_Photos/Photos_0p69D/x00245 for model 245
+save LOGS/profile246.data for model 246
+save LOGS/profile247.data for model 247
+save LOGS/profile248.data for model 248
+save LOGS/profile249.data for model 249
+save LOGS/profile250.data for model 250
+save z_Photos/Photos_0p69D/x00250 for model 250
+save LOGS/profile251.data for model 251
+save LOGS/profile252.data for model 252
+save LOGS/profile253.data for model 253
+save LOGS/profile254.data for model 254
+save LOGS/profile255.data for model 255
+save z_Photos/Photos_0p69D/x00255 for model 255
+save LOGS/profile256.data for model 256
+save LOGS/profile257.data for model 257
+save LOGS/profile258.data for model 258
+save LOGS/profile259.data for model 259
+save LOGS/profile260.data for model 260
+save z_Photos/Photos_0p69D/x00260 for model 260
+save LOGS/profile261.data for model 261
+save LOGS/profile262.data for model 262
+save LOGS/profile263.data for model 263
+save LOGS/profile264.data for model 264
+save LOGS/profile265.data for model 265
+save z_Photos/Photos_0p69D/x00265 for model 265
+save LOGS/profile266.data for model 266
+save LOGS/profile267.data for model 267
+save LOGS/profile268.data for model 268
+save LOGS/profile269.data for model 269
+save LOGS/profile270.data for model 270
+save z_Photos/Photos_0p69D/x00270 for model 270
+save LOGS/profile271.data for model 271
+save LOGS/profile272.data for model 272
+save LOGS/profile273.data for model 273
+save LOGS/profile274.data for model 274
+save LOGS/profile275.data for model 275
+save z_Photos/Photos_0p69D/x00275 for model 275
+save LOGS/profile276.data for model 276
+save LOGS/profile277.data for model 277
+save LOGS/profile278.data for model 278
+save LOGS/profile279.data for model 279
+save LOGS/profile280.data for model 280
+save z_Photos/Photos_0p69D/x00280 for model 280
+save LOGS/profile281.data for model 281
+save LOGS/profile282.data for model 282
+save LOGS/profile283.data for model 283
+save LOGS/profile284.data for model 284
+save LOGS/profile285.data for model 285
+save z_Photos/Photos_0p69D/x00285 for model 285
+save LOGS/profile286.data for model 286
+save LOGS/profile287.data for model 287
+save LOGS/profile288.data for model 288
+        289   7.150696   5978.101  -0.239768  -0.239768   0.689017   0.689017   0.330057   0.000033   0.263443   0.674564  -1.023973    754      0
+   8.231584   2.315312  -0.149703 -44.811075  -1.891390 -12.729773   0.000000   0.669835   0.000061   0.000094   0.325336   0.143748      5      0
+ 6.8060E+09  17.456804  -0.239671   4.575526   4.941311  -6.654562   0.000000   0.000000   0.000000  1.084E-04  1.007E-04  0.000E+00      XHe_cntr
+                               rel_E_err    3.0695867861380341D-06
+                       log_rel_run_E_err       -3.0170722018020721
+
+save LOGS/profile289.data for model 289
+save LOGS/profile290.data for model 290
+save z_Photos/Photos_0p69D/x00290 for model 290
+save LOGS/profile291.data for model 291
+save LOGS/profile292.data for model 292
+save LOGS/profile293.data for model 293
+save LOGS/profile294.data for model 294
+save LOGS/profile295.data for model 295
+save z_Photos/Photos_0p69D/x00295 for model 295
+save LOGS/profile296.data for model 296
+save LOGS/profile297.data for model 297
+save LOGS/profile298.data for model 298
+save LOGS/profile299.data for model 299
+        300   7.185988   6066.998  -0.162095  -0.162095   0.688563   0.688563   0.204949   0.000033   0.258234   0.655331  -0.890281    760      0
+   8.398866   2.462751  -0.123685 -42.549067  -1.778008 -12.631870   0.000000   0.794942   0.000059   0.000092   0.344568   0.171678      5      0
+ 8.9614E+09  17.579831  -0.161993   4.523204   4.857410  -6.747166   0.000000   0.000000   0.000000  1.097E-04  1.009E-04  0.000E+00      XHe_cntr
+                               rel_E_err    5.5900290856407578D-06
+                       log_rel_run_E_err       -3.0058190336622661
+
+save LOGS/profile300.data for model 300
+save z_Photos/Photos_0p69D/x00300 for model 300
+save LOGS/profile301.data for model 301
+save LOGS/profile302.data for model 302
+save LOGS/profile303.data for model 303
+save LOGS/profile304.data for model 304
+save LOGS/profile305.data for model 305
+save z_Photos/Photos_0p69D/x00305 for model 305
+save LOGS/profile306.data for model 306
+save LOGS/profile307.data for model 307
+save LOGS/profile308.data for model 308
+save LOGS/profile309.data for model 309
+save LOGS/profile310.data for model 310
+save z_Photos/Photos_0p69D/x00310 for model 310
+save LOGS/profile311.data for model 311
+save LOGS/profile312.data for model 312
+save LOGS/profile313.data for model 313
+save LOGS/profile314.data for model 314
+save LOGS/profile315.data for model 315
+save z_Photos/Photos_0p69D/x00315 for model 315
+save LOGS/profile316.data for model 316
+save LOGS/profile317.data for model 317
+save LOGS/profile318.data for model 318
+save LOGS/profile319.data for model 319
+save LOGS/profile320.data for model 320
+save z_Photos/Photos_0p69D/x00320 for model 320
+save LOGS/profile321.data for model 321
+save LOGS/profile322.data for model 322
+save LOGS/profile323.data for model 323
+save LOGS/profile324.data for model 324
+save LOGS/profile325.data for model 325
+save z_Photos/Photos_0p69D/x00325 for model 325
+save LOGS/profile326.data for model 326
+save LOGS/profile327.data for model 327
+save LOGS/profile328.data for model 328
+save LOGS/profile329.data for model 329
+save LOGS/profile330.data for model 330
+save z_Photos/Photos_0p69D/x00330 for model 330
+save LOGS/profile331.data for model 331
+save LOGS/profile332.data for model 332
+save LOGS/profile333.data for model 333
+save LOGS/profile334.data for model 334
+save LOGS/profile335.data for model 335
+save z_Photos/Photos_0p69D/x00335 for model 335
+save LOGS/profile336.data for model 336
+save LOGS/profile337.data for model 337
+save LOGS/profile338.data for model 338
+save LOGS/profile339.data for model 339
+save LOGS/profile340.data for model 340
+save z_Photos/Photos_0p69D/x00340 for model 340
+save LOGS/profile341.data for model 341
+save LOGS/profile342.data for model 342
+save LOGS/profile343.data for model 343
+save LOGS/profile344.data for model 344
+save LOGS/profile345.data for model 345
+save z_Photos/Photos_0p69D/x00345 for model 345
+save LOGS/profile346.data for model 346
+save LOGS/profile347.data for model 347
+save LOGS/profile348.data for model 348
+save LOGS/profile349.data for model 349
+save LOGS/profile350.data for model 350
+save z_Photos/Photos_0p69D/x00350 for model 350
+save LOGS/profile351.data for model 351
+save LOGS/profile352.data for model 352
+save LOGS/profile353.data for model 353
+save LOGS/profile354.data for model 354
+save LOGS/profile355.data for model 355
+save z_Photos/Photos_0p69D/x00355 for model 355
+save LOGS/profile356.data for model 356
+save LOGS/profile357.data for model 357
+save LOGS/profile358.data for model 358
+save LOGS/profile359.data for model 359
+save LOGS/profile360.data for model 360
+save z_Photos/Photos_0p69D/x00360 for model 360
+save LOGS/profile361.data for model 361
+save LOGS/profile362.data for model 362
+save LOGS/profile363.data for model 363
+save LOGS/profile364.data for model 364
+save LOGS/profile365.data for model 365
+save z_Photos/Photos_0p69D/x00365 for model 365
+save LOGS/profile366.data for model 366
+save LOGS/profile367.data for model 367
+save LOGS/profile368.data for model 368
+save LOGS/profile369.data for model 369
+save LOGS/profile370.data for model 370
+save z_Photos/Photos_0p69D/x00370 for model 370
+save LOGS/profile371.data for model 371
+save LOGS/profile372.data for model 372
+save LOGS/profile373.data for model 373
+save LOGS/profile374.data for model 374
+save LOGS/profile375.data for model 375
+save z_Photos/Photos_0p69D/x00375 for model 375
+save LOGS/profile376.data for model 376
+save LOGS/profile377.data for model 377
+save LOGS/profile378.data for model 378
+save LOGS/profile379.data for model 379
+save LOGS/profile380.data for model 380
+save z_Photos/Photos_0p69D/x00380 for model 380
+save LOGS/profile381.data for model 381
+save LOGS/profile382.data for model 382
+save LOGS/profile383.data for model 383
+save LOGS/profile384.data for model 384
+save LOGS/profile385.data for model 385
+save z_Photos/Photos_0p69D/x00385 for model 385
+save LOGS/profile386.data for model 386
+save LOGS/profile387.data for model 387
+save LOGS/profile388.data for model 388
+save LOGS/profile389.data for model 389
+save LOGS/profile390.data for model 390
+save z_Photos/Photos_0p69D/x00390 for model 390
+save LOGS/profile391.data for model 391
+save LOGS/profile392.data for model 392
+save LOGS/profile393.data for model 393
+save LOGS/profile394.data for model 394
+save LOGS/profile395.data for model 395
+save z_Photos/Photos_0p69D/x00395 for model 395
+save LOGS/profile396.data for model 396
+save LOGS/profile397.data for model 397
+save LOGS/profile398.data for model 398
+save LOGS/profile399.data for model 399
+        400   7.378662   6258.171   0.356170   0.356170   0.685408   0.645694   0.000001   0.000084   0.255013   0.550125   1.225006    891      0
+   6.975455   3.537057   0.108538 -30.258629  -1.010246 -11.869237   0.039714   0.999894   0.000005   0.000092   0.449775   0.362034      5      0
+ 1.5350E+10  18.786164   0.356349   4.056762   4.439745  -7.180889   0.000000   0.000001   0.000000  1.049E-04  1.004E-04  0.000E+00  max increase
+                               rel_E_err    6.4192433482831237D-07
+                       log_rel_run_E_err       -2.9546290304780043
+
+save LOGS/profile400.data for model 400
+save z_Photos/Photos_0p69D/x00400 for model 400
+save LOGS/profile401.data for model 401
+save LOGS/profile402.data for model 402
+save LOGS/profile403.data for model 403
+save LOGS/profile404.data for model 404
+save LOGS/profile405.data for model 405
+save z_Photos/Photos_0p69D/x00405 for model 405
+save LOGS/profile406.data for model 406
+save LOGS/profile407.data for model 407
+save LOGS/profile408.data for model 408
+save LOGS/profile409.data for model 409
+save LOGS/profile410.data for model 410
+save z_Photos/Photos_0p69D/x00410 for model 410
+save LOGS/profile411.data for model 411
+save LOGS/profile412.data for model 412
+save LOGS/profile413.data for model 413
+save LOGS/profile414.data for model 414
+save LOGS/profile415.data for model 415
+save z_Photos/Photos_0p69D/x00415 for model 415
+save LOGS/profile416.data for model 416
+save LOGS/profile417.data for model 417
+save LOGS/profile418.data for model 418
+save LOGS/profile419.data for model 419
+save LOGS/profile420.data for model 420
+save z_Photos/Photos_0p69D/x00420 for model 420
+save LOGS/profile421.data for model 421
+save LOGS/profile422.data for model 422
+save LOGS/profile423.data for model 423
+save LOGS/profile424.data for model 424
+save LOGS/profile425.data for model 425
+save z_Photos/Photos_0p69D/x00425 for model 425
+save LOGS/profile426.data for model 426
+save LOGS/profile427.data for model 427
+save LOGS/profile428.data for model 428
+        429   7.483574   5451.823   0.629250   0.629250   0.683764   0.546986   0.000000   0.000085   0.258653   0.517363   5.421573   1057      0
+   6.994548   4.437027   0.364731 -23.225128  -0.526746 -11.350259   0.136778   0.999895   0.000005   0.000093   0.482537   0.567321      7      0
+ 1.6087E+10  20.009182   0.629111   3.543334   4.552464  -7.007040   0.000000   0.000001   0.000000  1.053E-04  9.973E-05  0.000E+00          dH/H
+                               rel_E_err    1.4306181899612786D-06
+                       log_rel_run_E_err       -2.9027253849483778
+
+save LOGS/profile429.data for model 429
+save LOGS/profile430.data for model 430
+save z_Photos/Photos_0p69D/x00430 for model 430
+save LOGS/profile431.data for model 431
+save LOGS/profile432.data for model 432
+save LOGS/profile433.data for model 433
+save LOGS/profile434.data for model 434
+save LOGS/profile435.data for model 435
+save z_Photos/Photos_0p69D/x00435 for model 435
+save LOGS/profile436.data for model 436
+save LOGS/profile437.data for model 437
+save LOGS/profile438.data for model 438
+save LOGS/profile439.data for model 439
+save LOGS/profile440.data for model 440
+save z_Photos/Photos_0p69D/x00440 for model 440
+save LOGS/profile441.data for model 441
+save LOGS/profile442.data for model 442
+save LOGS/profile443.data for model 443
+save LOGS/profile444.data for model 444
+save LOGS/profile445.data for model 445
+save z_Photos/Photos_0p69D/x00445 for model 445
+save LOGS/profile446.data for model 446
+save LOGS/profile447.data for model 447
+save LOGS/profile448.data for model 448
+save LOGS/profile449.data for model 449
+save LOGS/profile450.data for model 450
+save z_Photos/Photos_0p69D/x00450 for model 450
+save LOGS/profile451.data for model 451
+save LOGS/profile452.data for model 452
+save LOGS/profile453.data for model 453
+save LOGS/profile454.data for model 454
+save LOGS/profile455.data for model 455
+save z_Photos/Photos_0p69D/x00455 for model 455
+save LOGS/profile456.data for model 456
+save LOGS/profile457.data for model 457
+save LOGS/profile458.data for model 458
+save LOGS/profile459.data for model 459
+save LOGS/profile460.data for model 460
+save z_Photos/Photos_0p69D/x00460 for model 460
+save LOGS/profile461.data for model 461
+save LOGS/profile462.data for model 462
+save LOGS/profile463.data for model 463
+save LOGS/profile464.data for model 464
+save LOGS/profile465.data for model 465
+save z_Photos/Photos_0p69D/x00465 for model 465
+save LOGS/profile466.data for model 466
+save LOGS/profile467.data for model 467
+save LOGS/profile468.data for model 468
+save LOGS/profile469.data for model 469
+save LOGS/profile470.data for model 470
+save z_Photos/Photos_0p69D/x00470 for model 470
+save LOGS/profile471.data for model 471
+save LOGS/profile472.data for model 472
+save LOGS/profile473.data for model 473
+save LOGS/profile474.data for model 474
+save LOGS/profile475.data for model 475
+save z_Photos/Photos_0p69D/x00475 for model 475
+save LOGS/profile476.data for model 476
+save LOGS/profile477.data for model 477
+save LOGS/profile478.data for model 478
+save LOGS/profile479.data for model 479
+save LOGS/profile480.data for model 480
+save z_Photos/Photos_0p69D/x00480 for model 480
+save LOGS/profile481.data for model 481
+save LOGS/profile482.data for model 482
+save LOGS/profile483.data for model 483
+save LOGS/profile484.data for model 484
+save LOGS/profile485.data for model 485
+save z_Photos/Photos_0p69D/x00485 for model 485
+save LOGS/profile486.data for model 486
+save LOGS/profile487.data for model 487
+save LOGS/profile488.data for model 488
+save LOGS/profile489.data for model 489
+save LOGS/profile490.data for model 490
+save z_Photos/Photos_0p69D/x00490 for model 490
+save LOGS/profile491.data for model 491
+save LOGS/profile492.data for model 492
+save LOGS/profile493.data for model 493
+save LOGS/profile494.data for model 494
+save LOGS/profile495.data for model 495
+save z_Photos/Photos_0p69D/x00495 for model 495
+save LOGS/profile496.data for model 496
+save LOGS/profile497.data for model 497
+save LOGS/profile498.data for model 498
+save LOGS/profile499.data for model 499
+        500   7.539470   5054.484   1.030682   1.030682   0.680775   0.478074   0.000000   0.000085   0.266382   0.486902  11.665478   1207      0
+   6.312268   5.017632   0.632257 -18.295447  -0.039026 -10.669426   0.202701   0.999895   0.000005   0.000096   0.512998   0.778876      6      0
+ 1.6387E+10  20.891693   1.032704   3.006379   4.465973  -7.057365   0.000000   0.000001   0.000000  1.054E-04  9.929E-05  0.000E+00          dH/H
+                               rel_E_err    5.4413462971427805D-07
+                       log_rel_run_E_err       -3.0095874906666369
+
+save LOGS/profile500.data for model 500
+save z_Photos/Photos_0p69D/x00500 for model 500
+save LOGS/profile501.data for model 501
+save LOGS/profile502.data for model 502
+save LOGS/profile503.data for model 503
+save LOGS/profile504.data for model 504
+save LOGS/profile505.data for model 505
+save z_Photos/Photos_0p69D/x00505 for model 505
+save LOGS/profile506.data for model 506
+save LOGS/profile507.data for model 507
+save LOGS/profile508.data for model 508
+save LOGS/profile509.data for model 509
+save LOGS/profile510.data for model 510
+save z_Photos/Photos_0p69D/x00510 for model 510
+save LOGS/profile511.data for model 511
+save LOGS/profile512.data for model 512
+save LOGS/profile513.data for model 513
+save LOGS/profile514.data for model 514
+save LOGS/profile515.data for model 515
+save z_Photos/Photos_0p69D/x00515 for model 515
+save LOGS/profile516.data for model 516
+save LOGS/profile517.data for model 517
+save LOGS/profile518.data for model 518
+save LOGS/profile519.data for model 519
+save LOGS/profile520.data for model 520
+save z_Photos/Photos_0p69D/x00520 for model 520
+save LOGS/profile521.data for model 521
+save LOGS/profile522.data for model 522
+save LOGS/profile523.data for model 523
+save LOGS/profile524.data for model 524
+save LOGS/profile525.data for model 525
+save z_Photos/Photos_0p69D/x00525 for model 525
+save LOGS/profile526.data for model 526
+save LOGS/profile527.data for model 527
+save LOGS/profile528.data for model 528
+save LOGS/profile529.data for model 529
+save LOGS/profile530.data for model 530
+save z_Photos/Photos_0p69D/x00530 for model 530
+save LOGS/profile531.data for model 531
+save LOGS/profile532.data for model 532
+save LOGS/profile533.data for model 533
+save LOGS/profile534.data for model 534
+save LOGS/profile535.data for model 535
+save z_Photos/Photos_0p69D/x00535 for model 535
+save LOGS/profile536.data for model 536
+save LOGS/profile537.data for model 537
+save LOGS/profile538.data for model 538
+save LOGS/profile539.data for model 539
+save LOGS/profile540.data for model 540
+save z_Photos/Photos_0p69D/x00540 for model 540
+save LOGS/profile541.data for model 541
+save LOGS/profile542.data for model 542
+save LOGS/profile543.data for model 543
+save LOGS/profile544.data for model 544
+save LOGS/profile545.data for model 545
+save z_Photos/Photos_0p69D/x00545 for model 545
+save LOGS/profile546.data for model 546
+save LOGS/profile547.data for model 547
+save LOGS/profile548.data for model 548
+save LOGS/profile549.data for model 549
+save LOGS/profile550.data for model 550
+save z_Photos/Photos_0p69D/x00550 for model 550
+save LOGS/profile551.data for model 551
+save LOGS/profile552.data for model 552
+save LOGS/profile553.data for model 553
+save LOGS/profile554.data for model 554
+save LOGS/profile555.data for model 555
+save z_Photos/Photos_0p69D/x00555 for model 555
+save LOGS/profile556.data for model 556
+save LOGS/profile557.data for model 557
+save LOGS/profile558.data for model 558
+save LOGS/profile559.data for model 559
+save LOGS/profile560.data for model 560
+save z_Photos/Photos_0p69D/x00560 for model 560
+save LOGS/profile561.data for model 561
+save LOGS/profile562.data for model 562
+save LOGS/profile563.data for model 563
+save LOGS/profile564.data for model 564
+save LOGS/profile565.data for model 565
+save z_Photos/Photos_0p69D/x00565 for model 565
+save LOGS/profile566.data for model 566
+save LOGS/profile567.data for model 567
+save LOGS/profile568.data for model 568
+save LOGS/profile569.data for model 569
+save LOGS/profile570.data for model 570
+save z_Photos/Photos_0p69D/x00570 for model 570
+save LOGS/profile571.data for model 571
+save LOGS/profile572.data for model 572
+save LOGS/profile573.data for model 573
+save LOGS/profile574.data for model 574
+save LOGS/profile575.data for model 575
+save z_Photos/Photos_0p69D/x00575 for model 575
+save LOGS/profile576.data for model 576
+save LOGS/profile577.data for model 577
+save LOGS/profile578.data for model 578
+save LOGS/profile579.data for model 579
+save LOGS/profile580.data for model 580
+save z_Photos/Photos_0p69D/x00580 for model 580
+save LOGS/profile581.data for model 581
+save LOGS/profile582.data for model 582
+save LOGS/profile583.data for model 583
+save LOGS/profile584.data for model 584
+save LOGS/profile585.data for model 585
+save z_Photos/Photos_0p69D/x00585 for model 585
+save LOGS/profile586.data for model 586
+save LOGS/profile587.data for model 587
+save LOGS/profile588.data for model 588
+save LOGS/profile589.data for model 589
+save LOGS/profile590.data for model 590
+save z_Photos/Photos_0p69D/x00590 for model 590
+save LOGS/profile591.data for model 591
+save LOGS/profile592.data for model 592
+save LOGS/profile593.data for model 593
+save LOGS/profile594.data for model 594
+save LOGS/profile595.data for model 595
+save z_Photos/Photos_0p69D/x00595 for model 595
+save LOGS/profile596.data for model 596
+save LOGS/profile597.data for model 597
+save LOGS/profile598.data for model 598
+save LOGS/profile599.data for model 599
+        600   7.575329   4931.165   1.353573   1.353573   0.676219   0.437696   0.000000   0.000085   0.271106   0.457864  14.492001   1276      0
+   5.831581   5.218718   0.815270 -15.783151   0.247885 -10.157925   0.238523   0.999895   0.000005   0.000096   0.542037   0.836831      6      0
+ 1.6504E+10  21.208484   1.355820   2.637437   4.315194  -7.195511   0.000000   0.000001   0.000000  1.055E-04  9.897E-05  0.000E+00          dH/H
+                               rel_E_err    3.0522531411525189D-07
+                       log_rel_run_E_err       -3.1202414400603962
+
+save LOGS/profile600.data for model 600
+save z_Photos/Photos_0p69D/x00600 for model 600
+save LOGS/profile601.data for model 601
+save LOGS/profile602.data for model 602
+save LOGS/profile603.data for model 603
+save LOGS/profile604.data for model 604
+save LOGS/profile605.data for model 605
+save z_Photos/Photos_0p69D/x00605 for model 605
+save LOGS/profile606.data for model 606
+save LOGS/profile607.data for model 607
+save LOGS/profile608.data for model 608
+save LOGS/profile609.data for model 609
+save LOGS/profile610.data for model 610
+save z_Photos/Photos_0p69D/x00610 for model 610
+save LOGS/profile611.data for model 611
+save LOGS/profile612.data for model 612
+save LOGS/profile613.data for model 613
+save LOGS/profile614.data for model 614
+save LOGS/profile615.data for model 615
+save z_Photos/Photos_0p69D/x00615 for model 615
+save LOGS/profile616.data for model 616
+save LOGS/profile617.data for model 617
+save LOGS/profile618.data for model 618
+save LOGS/profile619.data for model 619
+save LOGS/profile620.data for model 620
+save z_Photos/Photos_0p69D/x00620 for model 620
+save LOGS/profile621.data for model 621
+save LOGS/profile622.data for model 622
+save LOGS/profile623.data for model 623
+save LOGS/profile624.data for model 624
+save LOGS/profile625.data for model 625
+save z_Photos/Photos_0p69D/x00625 for model 625
+save LOGS/profile626.data for model 626
+save LOGS/profile627.data for model 627
+save LOGS/profile628.data for model 628
+save LOGS/profile629.data for model 629
+save LOGS/profile630.data for model 630
+save z_Photos/Photos_0p69D/x00630 for model 630
+save LOGS/profile631.data for model 631
+save LOGS/profile632.data for model 632
+save LOGS/profile633.data for model 633
+save LOGS/profile634.data for model 634
+save LOGS/profile635.data for model 635
+save z_Photos/Photos_0p69D/x00635 for model 635
+save LOGS/profile636.data for model 636
+save LOGS/profile637.data for model 637
+save LOGS/profile638.data for model 638
+save LOGS/profile639.data for model 639
+save LOGS/profile640.data for model 640
+save z_Photos/Photos_0p69D/x00640 for model 640
+save LOGS/profile641.data for model 641
+save LOGS/profile642.data for model 642
+save LOGS/profile643.data for model 643
+save LOGS/profile644.data for model 644
+save LOGS/profile645.data for model 645
+save z_Photos/Photos_0p69D/x00645 for model 645
+save LOGS/profile646.data for model 646
+save LOGS/profile647.data for model 647
+save LOGS/profile648.data for model 648
+save LOGS/profile649.data for model 649
+save LOGS/profile650.data for model 650
+save z_Photos/Photos_0p69D/x00650 for model 650
+save LOGS/profile651.data for model 651
+save LOGS/profile652.data for model 652
+save LOGS/profile653.data for model 653
+save LOGS/profile654.data for model 654
+save LOGS/profile655.data for model 655
+save z_Photos/Photos_0p69D/x00655 for model 655
+save LOGS/profile656.data for model 656
+save LOGS/profile657.data for model 657
+save LOGS/profile658.data for model 658
+save LOGS/profile659.data for model 659
+save LOGS/profile660.data for model 660
+save z_Photos/Photos_0p69D/x00660 for model 660
+save LOGS/profile661.data for model 661
+save LOGS/profile662.data for model 662
+save LOGS/profile663.data for model 663
+save LOGS/profile664.data for model 664
+save LOGS/profile665.data for model 665
+save z_Photos/Photos_0p69D/x00665 for model 665
+save LOGS/profile666.data for model 666
+save LOGS/profile667.data for model 667
+save LOGS/profile668.data for model 668
+save LOGS/profile669.data for model 669
+save LOGS/profile670.data for model 670
+save z_Photos/Photos_0p69D/x00670 for model 670
+save LOGS/profile671.data for model 671
+save LOGS/profile672.data for model 672
+save LOGS/profile673.data for model 673
+save LOGS/profile674.data for model 674
+save LOGS/profile675.data for model 675
+save z_Photos/Photos_0p69D/x00675 for model 675
+save LOGS/profile676.data for model 676
+save LOGS/profile677.data for model 677
+save LOGS/profile678.data for model 678
+save LOGS/profile679.data for model 679
+save LOGS/profile680.data for model 680
+save z_Photos/Photos_0p69D/x00680 for model 680
+save LOGS/profile681.data for model 681
+save LOGS/profile682.data for model 682
+save LOGS/profile683.data for model 683
+save LOGS/profile684.data for model 684
+save LOGS/profile685.data for model 685
+save z_Photos/Photos_0p69D/x00685 for model 685
+save LOGS/profile686.data for model 686
+save LOGS/profile687.data for model 687
+save LOGS/profile688.data for model 688
+save LOGS/profile689.data for model 689
+save LOGS/profile690.data for model 690
+save z_Photos/Photos_0p69D/x00690 for model 690
+save LOGS/profile691.data for model 691
+save LOGS/profile692.data for model 692
+save LOGS/profile693.data for model 693
+save LOGS/profile694.data for model 694
+save LOGS/profile695.data for model 695
+save z_Photos/Photos_0p69D/x00695 for model 695
+save LOGS/profile696.data for model 696
+save LOGS/profile697.data for model 697
+save LOGS/profile698.data for model 698
+save LOGS/profile699.data for model 699
+        700   7.605209   4844.722   1.573612   1.573612   0.671363   0.409791   0.000000   0.000085   0.271961   0.435481  15.813461   1345      0
+   5.507601   5.324779   0.940746 -14.009302   0.443412  -9.808016   0.261572   0.999895   0.000005   0.000096   0.564420   0.847444      6      0
+ 1.6551E+10  21.377057   1.576050   2.383355   4.214947  -7.287742   0.000000   0.000001   0.000000  1.055E-04  9.877E-05  0.000E+00          dH/H
+                               rel_E_err    1.1853501335205536D-07
+                       log_rel_run_E_err       -3.1827922581898704
+
+save LOGS/profile700.data for model 700
+save z_Photos/Photos_0p69D/x00700 for model 700
+save LOGS/profile701.data for model 701
+save LOGS/profile702.data for model 702
+save LOGS/profile703.data for model 703
+save LOGS/profile704.data for model 704
+save LOGS/profile705.data for model 705
+save z_Photos/Photos_0p69D/x00705 for model 705
+save LOGS/profile706.data for model 706
+save LOGS/profile707.data for model 707
+save LOGS/profile708.data for model 708
+save LOGS/profile709.data for model 709
+save LOGS/profile710.data for model 710
+save z_Photos/Photos_0p69D/x00710 for model 710
+save LOGS/profile711.data for model 711
+save LOGS/profile712.data for model 712
+save LOGS/profile713.data for model 713
+save LOGS/profile714.data for model 714
+save LOGS/profile715.data for model 715
+save z_Photos/Photos_0p69D/x00715 for model 715
+save LOGS/profile716.data for model 716
+save LOGS/profile717.data for model 717
+save LOGS/profile718.data for model 718
+save LOGS/profile719.data for model 719
+save LOGS/profile720.data for model 720
+save z_Photos/Photos_0p69D/x00720 for model 720
+save LOGS/profile721.data for model 721
+save LOGS/profile722.data for model 722
+save LOGS/profile723.data for model 723
+save LOGS/profile724.data for model 724
+save LOGS/profile725.data for model 725
+save z_Photos/Photos_0p69D/x00725 for model 725
+save LOGS/profile726.data for model 726
+save LOGS/profile727.data for model 727
+save LOGS/profile728.data for model 728
+save LOGS/profile729.data for model 729
+save LOGS/profile730.data for model 730
+save z_Photos/Photos_0p69D/x00730 for model 730
+
+stop because log_center_density >= log_center_density_limit
+    0.5350021687E+01    0.5350000000E+01
+
+        731   7.613325   4821.944   1.630326   1.630326   0.669793   0.402266   0.000000   0.000085   0.272237   0.429296  16.104926   1338      0
+   5.425510   5.350022   0.973221 -13.552049   0.495121  -9.717555   0.267526   0.999895   0.000005   0.000096   0.570605   0.848027      6      0
+ 1.6560E+10  21.417249   1.632813   2.317388   4.189606  -7.310923   0.000000   0.000001   0.000000  1.055E-04  9.873E-05  0.000E+00          dH/H
+                               rel_E_err    1.0784977689973593D-07
+                       log_rel_run_E_err       -3.2004318986773552
+
+save LOGS/profile731.data for model 731
+save z_Photos/Photos_0p69D/x00731 for model 731
+ saved to z_Mods/mod_0p69D.mod
+termination code: log_center_density_limit
+
+        runtime (minutes), retries, backups, steps        3.94         0         0       731
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tcntr    Teff     lg_LH       lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf     X_avg     eta_cntr  zones retry
+   lg_dt_yr    lg_Dcntr    lg_R     lg_L3a      lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf     Y_avg     gam_cntr  iters bckup
+     age_yr    lg_Pcntr    lg_L     lg_gsurf    lg_Psurf    lg_Dsurf   C_core     C_cntr     Ne_cntr    Z_cntr     Z_avg     v_div_cs     dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+        731   7.613325   4821.944   1.630326   1.630326   0.669793   0.402266   0.000000   0.000085   0.272237   0.429296  16.104926   1338      0
+   5.425510   5.350022   0.973221 -13.552049   0.495121  -9.717555   0.267526   0.999895   0.000005   0.000096   0.570605   0.848027      6      0
+ 1.6560E+10  21.417249   1.632813   2.317388   4.189606  -7.310923   0.000000   0.000001   0.000000  1.055E-04  9.873E-05  0.000E+00          dH/H
+                               rel_E_err    1.0784977689973593D-07
+                       log_rel_run_E_err       -3.2004318986773552
+
+DATE: 2021-08-17
+TIME: 23:24:16
+Okay
+
+Finished z_Inlists/inlist_0p69D .
+
+***
+
+Elapsed: 0 hrs 4 min 14 sec.
+Finished all inlists.

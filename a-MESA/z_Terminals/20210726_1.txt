@@ -1,0 +1,538 @@
+Okay
+run inlist_ztest_10originalzfracs
+DATE: 2021-07-26
+TIME: 20:43:56
+ version_number 12778
+
+
+ The terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'lg_Tcntr' is log10 center temperature (K),
+      'lg_Dcntr' is log10 center density (g/cm^3),
+      'lg_Pcntr' is log10 center pressure (ergs/cm^3),
+      'Teff' is the surface temperature (K),
+      'lg_R' is log10 surface radius (Rsun),
+      'lg_L' is log10 surface luminosity (Lsun),
+      'lg_LH' is log10 total PP and CNO hydrogen burning power (Lsun),
+      'lg_L3a' is log10 total triple-alpha helium burning power (Lsun),
+      'lg_gsurf' is log10 surface gravity,
+      'lg_LNuc' is log10 nuclear power excluding photodisintegration (Lsun),
+      'lg_LNeu' is log10 total neutrino power (Lsun),
+      'lg_Psurf' is log10 surface pressure (gas + radiation),
+      'Mass' is the total stellar baryonic mass (Msun),
+      'lg_Mdot' is log10 magnitude of rate of change of mass (Msun/year),
+      'lg_Dsurf' is log10 surface density (g/cm^3),
+      'H_env' is the amount of mass where H is the most abundant iso,
+      'He_core' is the largest mass where He is most abundant iso.
+      'C_core' is the largest mass where C is most abundant iso.
+      'H_cntr' is the center H1 mass fraction,
+      'He_cntr' is the center He4 mass fraction,
+      'C_cntr' is the center C12 mass fraction,
+      'N_cntr' is the center N14 mass fraction,
+      'O_cntr' is the center O16 mass fraction,
+      'Ne_cntr' is the center Ne20 mass fraction,
+      'X_avg' is the star average hydrogen mass fraction,
+      'Y_avg' is the star average helium mass fraction,
+      'Z_avg' is the star average metallicity,
+      'gam_cntr' is the center plasma interaction parameter,
+      'eta_cntr' is the center electron degeneracy parameter,
+      'zones' is the number of zones in the current model,
+      'iters' is the number of newton iterations for the current step,
+      'retry' is the number of step retries required during the run,
+      'bckup' is the number of step backups required during the run,
+      'dt_limit' is an indication of what limited the timestep.
+
+ All this and more are saved in the LOGS directory during the run.
+ create pre-main-sequence model
+                                          species  mass          18    1.0000000000000000D+00
+
+                                        relax_num_steps          50
+
+
+                               finished relax_num_steps
+
+ do_star_job_controls_after
+ change to "agb.net"
+ number of species          18
+ new_rotation_flag T
+                               new_omega_div_omega_crit           0    5.0000000000000002D-05    1.9778553085963369D-10
+
+                        set_uniform_initial_composition
+                                             initial_h1    6.9999999999999996D-01
+                                             initial_h2    2.4999999999999999D-37
+                                            initial_he3    2.9799999999999999D-05
+                                            initial_he4    2.7997000000000000D-01
+                       unknown value for initial_zfracs           0
+ read columns_history.list
+ read columns_profile.list
+ net name agb.net
+ use_gold_tolerances T
+ do_element_diffusion T
+ rotation_flag T
+                            set_cumulative_energy_error    0.0000000000000000D+00
+ kappa_file_prefix gs98
+ kappa_lowT_prefix lowT_fa05_gs98
+                                        OMP_NUM_THREADS          12
+
+
+save LOGS/profile1.data for model 1
+save ztest_Photos_10originalzfracs/x00005 for model 5
+save ztest_Photos_10originalzfracs/x00010 for model 10
+save ztest_Photos_10originalzfracs/x00015 for model 15
+save ztest_Photos_10originalzfracs/x00020 for model 20
+save LOGS/profile2.data for model 25
+save ztest_Photos_10originalzfracs/x00025 for model 25
+save ztest_Photos_10originalzfracs/x00030 for model 30
+save ztest_Photos_10originalzfracs/x00035 for model 35
+save ztest_Photos_10originalzfracs/x00040 for model 40
+save ztest_Photos_10originalzfracs/x00045 for model 45
+save LOGS/profile3.data for model 50
+save ztest_Photos_10originalzfracs/x00050 for model 50
+save ztest_Photos_10originalzfracs/x00055 for model 55
+save ztest_Photos_10originalzfracs/x00060 for model 60
+save ztest_Photos_10originalzfracs/x00065 for model 65
+save ztest_Photos_10originalzfracs/x00070 for model 70
+save LOGS/profile4.data for model 75
+save ztest_Photos_10originalzfracs/x00075 for model 75
+save ztest_Photos_10originalzfracs/x00080 for model 80
+save ztest_Photos_10originalzfracs/x00085 for model 85
+save ztest_Photos_10originalzfracs/x00090 for model 90
+save ztest_Photos_10originalzfracs/x00095 for model 95
+        100   5.652057   3918.345 -18.431792 -18.431792   0.999998   0.999998   0.700000   0.001262   0.280000   0.700000  -7.467723    588      0
+   2.370790  -2.776586   1.273692 -99.000000 -19.075799  -9.320259   0.000000   0.280000   0.011736   0.020000   0.280000   0.070990      4      0
+ 2.5613E+03  10.999187   1.873277   1.890504   3.582417  -7.816313   0.000000   0.004274   0.000000  2.000E-02  2.000E-02  0.000E+00      lgT_cntr
+                               rel_E_err    5.2655036161009233D-08
+                       log_rel_run_E_err       -5.8620655217501625
+
+save LOGS/profile5.data for model 100
+save ztest_Photos_10originalzfracs/x00100 for model 100
+save ztest_Photos_10originalzfracs/x00105 for model 105
+save ztest_Photos_10originalzfracs/x00110 for model 110
+save ztest_Photos_10originalzfracs/x00115 for model 115
+save ztest_Photos_10originalzfracs/x00120 for model 120
+save LOGS/profile6.data for model 125
+save ztest_Photos_10originalzfracs/x00125 for model 125
+save ztest_Photos_10originalzfracs/x00130 for model 130
+save ztest_Photos_10originalzfracs/x00135 for model 135
+save ztest_Photos_10originalzfracs/x00140 for model 140
+save ztest_Photos_10originalzfracs/x00145 for model 145
+save LOGS/profile7.data for model 150
+save ztest_Photos_10originalzfracs/x00150 for model 150
+save ztest_Photos_10originalzfracs/x00155 for model 155
+save ztest_Photos_10originalzfracs/x00160 for model 160
+save ztest_Photos_10originalzfracs/x00165 for model 165
+save ztest_Photos_10originalzfracs/x00170 for model 170
+save LOGS/profile8.data for model 175
+save ztest_Photos_10originalzfracs/x00175 for model 175
+save ztest_Photos_10originalzfracs/x00180 for model 180
+save ztest_Photos_10originalzfracs/x00185 for model 185
+save ztest_Photos_10originalzfracs/x00190 for model 190
+save ztest_Photos_10originalzfracs/x00195 for model 195
+        200   6.715945   4216.489  -3.681971  -3.681971   0.999986   0.999986   0.699998   0.001262   0.280000   0.700000  -3.470449    733      0
+   5.675652   0.562705   0.150582 -75.059274  -5.238942 -12.554791   0.000000   0.280002   0.011736   0.020000   0.280000   0.079507      5      0
+ 5.5285E+06  15.403524  -0.245550   4.136719   4.831310  -6.593335   0.000000   0.004274   0.000000  2.000E-02  2.000E-02  0.000E+00      lgT_cntr
+                               rel_E_err    2.3899887757036341D-08
+                       log_rel_run_E_err       -6.4454077698287602
+
+save LOGS/profile9.data for model 200
+save ztest_Photos_10originalzfracs/x00200 for model 200
+save ztest_Photos_10originalzfracs/x00205 for model 205
+save ztest_Photos_10originalzfracs/x00210 for model 210
+save ztest_Photos_10originalzfracs/x00215 for model 215
+save ztest_Photos_10originalzfracs/x00220 for model 220
+save LOGS/profile10.data for model 225
+save ztest_Photos_10originalzfracs/x00225 for model 225
+save ztest_Photos_10originalzfracs/x00230 for model 230
+save ztest_Photos_10originalzfracs/x00235 for model 235
+save ztest_Photos_10originalzfracs/x00240 for model 240
+        244   7.137040   5572.578  -0.144988  -0.144988   0.999978   0.999978   0.699263   0.001752   0.279895   0.699892  -1.757265    800      0
+   6.342026   1.895195  -0.041749 -47.202845  -1.653649 -12.651651   0.000000   0.280622   0.011737   0.019994   0.280100   0.083892      5      0
+ 4.1410E+07  17.161444  -0.145791   4.521378   4.842375  -6.706235   0.000000   0.003337   0.000000  2.012E-02  2.001E-02  0.000E+00  max increase
+                               rel_E_err    2.9772633384178166D-08
+                       log_rel_run_E_err       -6.2804319347170017
+
+save LOGS/profile11.data for model 244
+save ztest_Photos_10originalzfracs/x00245 for model 245
+save LOGS/profile12.data for model 250
+save ztest_Photos_10originalzfracs/x00250 for model 250
+save ztest_Photos_10originalzfracs/x00255 for model 255
+save ztest_Photos_10originalzfracs/x00260 for model 260
+save ztest_Photos_10originalzfracs/x00265 for model 265
+save ztest_Photos_10originalzfracs/x00270 for model 270
+save LOGS/profile13.data for model 275
+save ztest_Photos_10originalzfracs/x00275 for model 275
+save ztest_Photos_10originalzfracs/x00280 for model 280
+save ztest_Photos_10originalzfracs/x00285 for model 285
+save ztest_Photos_10originalzfracs/x00290 for model 290
+save ztest_Photos_10originalzfracs/x00295 for model 295
+        297   7.199148   5656.060  -0.002883  -0.002883   0.998777   0.998777   0.325563   0.006520   0.250090   0.661640  -1.511347    777      0
+   8.054438   2.196722   0.016810 -42.644237  -1.610355 -12.486075   0.000000   0.653030   0.011252   0.018230   0.318177   0.122297      5      0
+ 4.6793E+09  17.379144  -0.002842   4.403739   4.773192  -6.795713   0.000000   0.000026   0.000000  2.141E-02  2.018E-02  0.000E+00       XH_cntr
+                               rel_E_err    2.2281717557488388D-06
+                       log_rel_run_E_err       -2.7111715041604172
+
+save LOGS/profile14.data for model 297
+        300   7.205901   5659.556   0.009097   0.009097   0.998665   0.998665   0.295027   0.006569   0.248052   0.658334  -1.494674    779      0
+   8.045234   2.223772   0.022260 -42.219563  -1.587163 -12.468614   0.000000   0.683524   0.011008   0.018104   0.321479   0.127057      5      0
+ 5.0146E+09  17.398680   0.009131   4.392790   4.766816  -6.803292   0.000000   0.000027   0.000000  2.145E-02  2.019E-02  0.000E+00       XH_cntr
+                               rel_E_err    2.2813027821850409D-06
+                       log_rel_run_E_err       -2.7100893650598650
+
+save LOGS/profile15.data for model 300
+save ztest_Photos_10originalzfracs/x00300 for model 300
+save ztest_Photos_10originalzfracs/x00305 for model 305
+save ztest_Photos_10originalzfracs/x00310 for model 310
+save ztest_Photos_10originalzfracs/x00315 for model 315
+save ztest_Photos_10originalzfracs/x00320 for model 320
+save LOGS/profile16.data for model 325
+save ztest_Photos_10originalzfracs/x00325 for model 325
+save ztest_Photos_10originalzfracs/x00330 for model 330
+save ztest_Photos_10originalzfracs/x00335 for model 335
+save ztest_Photos_10originalzfracs/x00340 for model 340
+save ztest_Photos_10originalzfracs/x00345 for model 345
+save LOGS/profile17.data for model 350
+save ztest_Photos_10originalzfracs/x00350 for model 350
+save ztest_Photos_10originalzfracs/x00355 for model 355
+save ztest_Photos_10originalzfracs/x00360 for model 360
+save ztest_Photos_10originalzfracs/x00365 for model 365
+save ztest_Photos_10originalzfracs/x00370 for model 370
+save LOGS/profile18.data for model 375
+save ztest_Photos_10originalzfracs/x00375 for model 375
+save ztest_Photos_10originalzfracs/x00380 for model 380
+save ztest_Photos_10originalzfracs/x00385 for model 385
+save ztest_Photos_10originalzfracs/x00390 for model 390
+save ztest_Photos_10originalzfracs/x00395 for model 395
+        400   7.279372   5592.437   0.204947   0.204947   0.996575   0.975770   0.000005   0.010919   0.228367   0.603608  -0.492314    854      0
+   7.154382   2.833967   0.130485 -36.263908  -1.155038 -12.159499   0.020805   0.978971   0.005126   0.017007   0.376167   0.277351      5      0
+ 9.4152E+09  17.922288   0.204856   4.175430   4.661197  -6.912763   0.000000   0.000061   0.000000  2.102E-02  2.023E-02  0.000E+00    lg_XH_cntr
+                               rel_E_err    4.9205192535661666D-07
+                       log_rel_run_E_err       -2.6770275825403087
+
+save LOGS/profile19.data for model 400
+save ztest_Photos_10originalzfracs/x00400 for model 400
+save ztest_Photos_10originalzfracs/x00405 for model 405
+save ztest_Photos_10originalzfracs/x00410 for model 410
+save ztest_Photos_10originalzfracs/x00415 for model 415
+save ztest_Photos_10originalzfracs/x00420 for model 420
+save LOGS/profile20.data for model 425
+save ztest_Photos_10originalzfracs/x00425 for model 425
+save ztest_Photos_10originalzfracs/x00430 for model 430
+save ztest_Photos_10originalzfracs/x00435 for model 435
+        439   7.346319   5144.964   0.312655   0.312655   0.995082   0.889458   0.000000   0.010974   0.254658   0.572178   2.929058   1025      0
+   7.479197   3.869209   0.255595 -31.243038  -0.906543 -11.931877   0.105623   0.978847   0.005153   0.018698   0.407638   0.526368      8      0
+ 1.1093E+10  19.169578   0.310201   3.924558   4.560485  -6.966089   0.000000   0.000062   0.000000  2.115E-02  2.018E-02  0.000E+00          dH/H
+                               rel_E_err    1.5052283281534759D-06
+                       log_rel_run_E_err       -2.5827529681502992
+
+save LOGS/profile21.data for model 439
+save ztest_Photos_10originalzfracs/x00440 for model 440
+
+stop because log_center_density >= log_center_density_limit
+    0.4016151092E+01    0.4000000000E+01
+
+        442   7.368328   5049.933   0.312978   0.312978   0.994993   0.881524   0.000000   0.010977   0.258189   0.570617   3.595116   1044      0
+   7.349203   4.016151   0.271752 -30.020222  -0.893954 -11.916455   0.113469   0.978840   0.005155   0.018873   0.409204   0.560102      7      0
+ 1.1168E+10  19.375070   0.310128   3.892206   4.546447  -6.970480   0.000000   0.000062   0.000000  2.116E-02  2.018E-02  0.000E+00          dH/H
+                               rel_E_err    9.3326315272975380D-07
+                       log_rel_run_E_err       -2.5613217080990935
+
+save LOGS/profile22.data for model 442
+save ztest_Photos_10originalzfracs/x00442 for model 442
+ saved to mod_ztest_10originalzfracs.mod
+termination code: log_center_density_limit
+
+        runtime (minutes), retries, backups, steps        1.92         0         0       442
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tcntr    Teff     lg_LH       lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf     X_avg     eta_cntr  zones retry
+   lg_dt_yr    lg_Dcntr    lg_R     lg_L3a      lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf     Y_avg     gam_cntr  iters bckup
+     age_yr    lg_Pcntr    lg_L     lg_gsurf    lg_Psurf    lg_Dsurf   C_core     C_cntr     Ne_cntr    Z_cntr     Z_avg     v_div_cs     dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+        442   7.368328   5049.933   0.312978   0.312978   0.994993   0.881524   0.000000   0.010977   0.258189   0.570617   3.595116   1044      0
+   7.349203   4.016151   0.271752 -30.020222  -0.893954 -11.916455   0.113469   0.978840   0.005155   0.018873   0.409204   0.560102      7      0
+ 1.1168E+10  19.375070   0.310128   3.892206   4.546447  -6.970480   0.000000   0.000062   0.000000  2.116E-02  2.018E-02  0.000E+00          dH/H
+                               rel_E_err    9.3326315272975380D-07
+                       log_rel_run_E_err       -2.5613217080990935
+
+DATE: 2021-07-26
+TIME: 20:45:59
+Okay
+
+Finished inlist_ztest_10originalzfracs .
+
+***
+
+Okay
+run inlist_ztest_11enforceALi
+DATE: 2021-07-26
+TIME: 20:45:59
+ version_number 12778
+
+
+ The terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'lg_Tcntr' is log10 center temperature (K),
+      'lg_Dcntr' is log10 center density (g/cm^3),
+      'lg_Pcntr' is log10 center pressure (ergs/cm^3),
+      'Teff' is the surface temperature (K),
+      'lg_R' is log10 surface radius (Rsun),
+      'lg_L' is log10 surface luminosity (Lsun),
+      'lg_LH' is log10 total PP and CNO hydrogen burning power (Lsun),
+      'lg_L3a' is log10 total triple-alpha helium burning power (Lsun),
+      'lg_gsurf' is log10 surface gravity,
+      'lg_LNuc' is log10 nuclear power excluding photodisintegration (Lsun),
+      'lg_LNeu' is log10 total neutrino power (Lsun),
+      'lg_Psurf' is log10 surface pressure (gas + radiation),
+      'Mass' is the total stellar baryonic mass (Msun),
+      'lg_Mdot' is log10 magnitude of rate of change of mass (Msun/year),
+      'lg_Dsurf' is log10 surface density (g/cm^3),
+      'H_env' is the amount of mass where H is the most abundant iso,
+      'He_core' is the largest mass where He is most abundant iso.
+      'C_core' is the largest mass where C is most abundant iso.
+      'H_cntr' is the center H1 mass fraction,
+      'He_cntr' is the center He4 mass fraction,
+      'C_cntr' is the center C12 mass fraction,
+      'N_cntr' is the center N14 mass fraction,
+      'O_cntr' is the center O16 mass fraction,
+      'Ne_cntr' is the center Ne20 mass fraction,
+      'X_avg' is the star average hydrogen mass fraction,
+      'Y_avg' is the star average helium mass fraction,
+      'Z_avg' is the star average metallicity,
+      'gam_cntr' is the center plasma interaction parameter,
+      'eta_cntr' is the center electron degeneracy parameter,
+      'zones' is the number of zones in the current model,
+      'iters' is the number of newton iterations for the current step,
+      'retry' is the number of step retries required during the run,
+      'bckup' is the number of step backups required during the run,
+      'dt_limit' is an indication of what limited the timestep.
+
+ All this and more are saved in the LOGS directory during the run.
+ create pre-main-sequence model
+                                          species  mass          18    1.0000000000000000D+00
+
+                                        relax_num_steps          50
+
+
+                               finished relax_num_steps
+
+ do_star_job_controls_after
+ change to "agb.net"
+ number of species          18
+ new_rotation_flag T
+                               new_omega_div_omega_crit           0    5.0000000000000002D-05    1.9778553058962009D-10
+
+                        set_uniform_initial_composition
+                                             initial_h1    6.9999999999999996D-01
+                                             initial_h2    2.4999999999999999D-37
+                                            initial_he3    2.9799999999999999D-05
+                                            initial_he4    2.7997000000000000D-01
+                       unknown value for initial_zfracs           0
+ read columns_history.list
+ read columns_profile.list
+ net name agb.net
+ use_gold_tolerances T
+ do_element_diffusion T
+ rotation_flag T
+                            set_cumulative_energy_error    0.0000000000000000D+00
+ kappa_file_prefix gs98
+ kappa_lowT_prefix lowT_fa05_gs98
+                                        OMP_NUM_THREADS          12
+
+
+save LOGS/profile1.data for model 1
+save ztest_Photos_11enforceALi/x00005 for model 5
+save ztest_Photos_11enforceALi/x00010 for model 10
+save ztest_Photos_11enforceALi/x00015 for model 15
+save ztest_Photos_11enforceALi/x00020 for model 20
+save LOGS/profile2.data for model 25
+save ztest_Photos_11enforceALi/x00025 for model 25
+save ztest_Photos_11enforceALi/x00030 for model 30
+save ztest_Photos_11enforceALi/x00035 for model 35
+save ztest_Photos_11enforceALi/x00040 for model 40
+save ztest_Photos_11enforceALi/x00045 for model 45
+save LOGS/profile3.data for model 50
+save ztest_Photos_11enforceALi/x00050 for model 50
+save ztest_Photos_11enforceALi/x00055 for model 55
+save ztest_Photos_11enforceALi/x00060 for model 60
+save ztest_Photos_11enforceALi/x00065 for model 65
+save ztest_Photos_11enforceALi/x00070 for model 70
+save LOGS/profile4.data for model 75
+save ztest_Photos_11enforceALi/x00075 for model 75
+save ztest_Photos_11enforceALi/x00080 for model 80
+save ztest_Photos_11enforceALi/x00085 for model 85
+save ztest_Photos_11enforceALi/x00090 for model 90
+save ztest_Photos_11enforceALi/x00095 for model 95
+        100   5.652034   3918.321 -18.432196 -18.432196   0.999998   0.999998   0.700000   0.001262   0.280000   0.700000  -7.467801    583      0
+   2.370696  -2.776655   1.273717 -99.000000 -19.076203  -9.320208   0.000000   0.280000   0.011736   0.020000   0.280000   0.070990      4      0
+ 2.5607E+03  10.999095   1.873316   1.890455   3.582398  -7.816329   0.000000   0.004274   0.000000  2.000E-02  2.000E-02  0.000E+00      lgT_cntr
+                               rel_E_err    5.2660676843454405D-08
+                       log_rel_run_E_err       -5.8620691021254849
+
+save LOGS/profile5.data for model 100
+save ztest_Photos_11enforceALi/x00100 for model 100
+save ztest_Photos_11enforceALi/x00105 for model 105
+save ztest_Photos_11enforceALi/x00110 for model 110
+save ztest_Photos_11enforceALi/x00115 for model 115
+save ztest_Photos_11enforceALi/x00120 for model 120
+save LOGS/profile6.data for model 125
+save ztest_Photos_11enforceALi/x00125 for model 125
+save ztest_Photos_11enforceALi/x00130 for model 130
+save ztest_Photos_11enforceALi/x00135 for model 135
+save ztest_Photos_11enforceALi/x00140 for model 140
+save ztest_Photos_11enforceALi/x00145 for model 145
+save LOGS/profile7.data for model 150
+save ztest_Photos_11enforceALi/x00150 for model 150
+save ztest_Photos_11enforceALi/x00155 for model 155
+save ztest_Photos_11enforceALi/x00160 for model 160
+save ztest_Photos_11enforceALi/x00165 for model 165
+save ztest_Photos_11enforceALi/x00170 for model 170
+save LOGS/profile8.data for model 175
+save ztest_Photos_11enforceALi/x00175 for model 175
+save ztest_Photos_11enforceALi/x00180 for model 180
+save ztest_Photos_11enforceALi/x00185 for model 185
+save ztest_Photos_11enforceALi/x00190 for model 190
+save ztest_Photos_11enforceALi/x00195 for model 195
+        200   6.715683   4216.648  -3.814834  -3.814834   0.999986   0.999986   0.699998   0.001262   0.280000   0.700000  -3.472566    730      0
+   5.674446   0.561349   0.150895 -75.080734  -5.242011 -12.553759   0.000000   0.280002   0.011736   0.020000   0.280000   0.079472      5      0
+ 5.5135E+06  15.401907  -0.244858   4.136093   4.830861  -6.593808   0.000000   0.004274   0.000000  2.000E-02  2.000E-02  0.000E+00      lgT_cntr
+                               rel_E_err    8.7385769720111682D-09
+                       log_rel_run_E_err       -6.4425210794675429
+
+save LOGS/profile9.data for model 200
+save ztest_Photos_11enforceALi/x00200 for model 200
+save ztest_Photos_11enforceALi/x00205 for model 205
+save ztest_Photos_11enforceALi/x00210 for model 210
+save ztest_Photos_11enforceALi/x00215 for model 215
+save ztest_Photos_11enforceALi/x00220 for model 220
+save LOGS/profile10.data for model 225
+save ztest_Photos_11enforceALi/x00225 for model 225
+save ztest_Photos_11enforceALi/x00230 for model 230
+save ztest_Photos_11enforceALi/x00235 for model 235
+save ztest_Photos_11enforceALi/x00240 for model 240
+        244   7.137045   5572.828  -0.144958  -0.144958   0.999978   0.999978   0.699264   0.001751   0.279896   0.699892  -1.757187    800      0
+   6.342216   1.895234  -0.041690 -47.202572  -1.653537 -12.651283   0.000000   0.280621   0.011737   0.019994   0.280099   0.083893      5      0
+ 4.1394E+07  17.161490  -0.145596   4.521260   4.842278  -6.706352   0.000000   0.003339   0.000000  2.012E-02  2.001E-02  0.000E+00  max increase
+                               rel_E_err    2.9813255102081740D-08
+                       log_rel_run_E_err       -6.3116437263931289
+
+save LOGS/profile11.data for model 244
+save ztest_Photos_11enforceALi/x00245 for model 245
+save LOGS/profile12.data for model 250
+save ztest_Photos_11enforceALi/x00250 for model 250
+save ztest_Photos_11enforceALi/x00255 for model 255
+save ztest_Photos_11enforceALi/x00260 for model 260
+save ztest_Photos_11enforceALi/x00265 for model 265
+save ztest_Photos_11enforceALi/x00270 for model 270
+save LOGS/profile13.data for model 275
+save ztest_Photos_11enforceALi/x00275 for model 275
+save ztest_Photos_11enforceALi/x00280 for model 280
+save ztest_Photos_11enforceALi/x00285 for model 285
+save ztest_Photos_11enforceALi/x00290 for model 290
+save ztest_Photos_11enforceALi/x00295 for model 295
+        297   7.199150   5656.099  -0.002900  -0.002900   0.998777   0.998777   0.325678   0.006520   0.250349   0.661644  -1.511403    773      0
+   8.054189   2.196665   0.016795 -42.645113  -1.610381 -12.486098   0.000000   0.652914   0.011252   0.018263   0.318174   0.122276      5      0
+ 4.6791E+09  17.379142  -0.002859   4.403767   4.772959  -6.795828   0.000000   0.000026   0.000000  2.141E-02  2.018E-02  0.000E+00       XH_cntr
+                               rel_E_err    2.2264699842571009D-06
+                       log_rel_run_E_err       -2.8229629557960245
+
+save LOGS/profile14.data for model 297
+        300   7.205899   5659.594   0.009073   0.009073   0.998665   0.998665   0.295143   0.006569   0.248306   0.658339  -1.494739    775      0
+   8.044996   2.223705   0.022242 -42.220709  -1.587204 -12.468652   0.000000   0.683407   0.011009   0.018137   0.321473   0.127034      5      0
+ 5.0142E+09  17.398666   0.009107   4.392826   4.766592  -6.803400   0.000000   0.000027   0.000000  2.145E-02  2.019E-02  0.000E+00       XH_cntr
+                               rel_E_err    2.2795359265119976D-06
+                       log_rel_run_E_err       -2.8214385103898953
+
+save LOGS/profile15.data for model 300
+save ztest_Photos_11enforceALi/x00300 for model 300
+save ztest_Photos_11enforceALi/x00305 for model 305
+save ztest_Photos_11enforceALi/x00310 for model 310
+save ztest_Photos_11enforceALi/x00315 for model 315
+save ztest_Photos_11enforceALi/x00320 for model 320
+save LOGS/profile16.data for model 325
+save ztest_Photos_11enforceALi/x00325 for model 325
+save ztest_Photos_11enforceALi/x00330 for model 330
+save ztest_Photos_11enforceALi/x00335 for model 335
+save ztest_Photos_11enforceALi/x00340 for model 340
+save ztest_Photos_11enforceALi/x00345 for model 345
+save LOGS/profile17.data for model 350
+save ztest_Photos_11enforceALi/x00350 for model 350
+save ztest_Photos_11enforceALi/x00355 for model 355
+save ztest_Photos_11enforceALi/x00360 for model 360
+save ztest_Photos_11enforceALi/x00365 for model 365
+save ztest_Photos_11enforceALi/x00370 for model 370
+save LOGS/profile18.data for model 375
+save ztest_Photos_11enforceALi/x00375 for model 375
+save ztest_Photos_11enforceALi/x00380 for model 380
+save ztest_Photos_11enforceALi/x00385 for model 385
+save ztest_Photos_11enforceALi/x00390 for model 390
+save ztest_Photos_11enforceALi/x00395 for model 395
+        400   7.279372   5592.361   0.204925   0.204925   0.996576   0.976088   0.000005   0.010920   0.228510   0.603611  -0.492446    847      0
+   7.154413   2.833918   0.130486 -36.264165  -1.155064 -12.159512   0.020488   0.978970   0.005125   0.017028   0.376164   0.277341      5      0
+ 9.4152E+09  17.922236   0.204836   4.175427   4.661068  -6.912821   0.000000   0.000061   0.000000  2.103E-02  2.023E-02  0.000E+00    lg_XH_cntr
+                               rel_E_err    4.9204763385745686D-07
+                       log_rel_run_E_err       -2.7812840636812992
+
+save LOGS/profile19.data for model 400
+save ztest_Photos_11enforceALi/x00400 for model 400
+save ztest_Photos_11enforceALi/x00405 for model 405
+save ztest_Photos_11enforceALi/x00410 for model 410
+save ztest_Photos_11enforceALi/x00415 for model 415
+save ztest_Photos_11enforceALi/x00420 for model 420
+save LOGS/profile20.data for model 425
+save ztest_Photos_11enforceALi/x00425 for model 425
+save ztest_Photos_11enforceALi/x00430 for model 430
+save ztest_Photos_11enforceALi/x00435 for model 435
+        439   7.346434   5144.166   0.312619   0.312619   0.995081   0.889169   0.000000   0.010975   0.254651   0.572172   2.932693   1020      0
+   7.476244   3.870048   0.255709 -31.236382  -0.906502 -11.931762   0.105913   0.978846   0.005153   0.018697   0.407644   0.526568      8      0
+ 1.1094E+10  19.170732   0.310159   3.924331   4.560422  -6.966087   0.000000   0.000062   0.000000  2.115E-02  2.018E-02  0.000E+00          dH/H
+                               rel_E_err    1.2107522175609274D-06
+                       log_rel_run_E_err       -2.6831572085538906
+
+save LOGS/profile21.data for model 439
+save ztest_Photos_11enforceALi/x00440 for model 440
+
+stop because log_center_density >= log_center_density_limit
+    0.4016513717E+01    0.4000000000E+01
+
+        442   7.368352   5049.632   0.312973   0.312973   0.994993   0.881451   0.000000   0.010978   0.258184   0.570616   3.597175   1046      0
+   7.348528   4.016514   0.271799 -30.017994  -0.893925 -11.916400   0.113542   0.978839   0.005155   0.018873   0.409205   0.560229      7      0
+ 1.1168E+10  19.375568   0.310120   3.892111   4.546415  -6.970485   0.000000   0.000062   0.000000  2.116E-02  2.018E-02  0.000E+00          dH/H
+                               rel_E_err    1.1382169930226118D-06
+                       log_rel_run_E_err       -2.6616154582111426
+
+save LOGS/profile22.data for model 442
+save ztest_Photos_11enforceALi/x00442 for model 442
+ saved to mod_ztest_11enforceALi.mod
+termination code: log_center_density_limit
+
+        runtime (minutes), retries, backups, steps        1.84         0         0       442
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tcntr    Teff     lg_LH       lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf     X_avg     eta_cntr  zones retry
+   lg_dt_yr    lg_Dcntr    lg_R     lg_L3a      lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf     Y_avg     gam_cntr  iters bckup
+     age_yr    lg_Pcntr    lg_L     lg_gsurf    lg_Psurf    lg_Dsurf   C_core     C_cntr     Ne_cntr    Z_cntr     Z_avg     v_div_cs     dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+        442   7.368352   5049.632   0.312973   0.312973   0.994993   0.881451   0.000000   0.010978   0.258184   0.570616   3.597175   1046      0
+   7.348528   4.016514   0.271799 -30.017994  -0.893925 -11.916400   0.113542   0.978839   0.005155   0.018873   0.409205   0.560229      7      0
+ 1.1168E+10  19.375568   0.310120   3.892111   4.546415  -6.970485   0.000000   0.000062   0.000000  2.116E-02  2.018E-02  0.000E+00          dH/H
+                               rel_E_err    1.1382169930226118D-06
+                       log_rel_run_E_err       -2.6616154582111426
+
+DATE: 2021-07-26
+TIME: 20:47:57
+Okay
+
+Finished inlist_ztest_11enforceALi .
+
+***
+
+Elapsed: 0 hrs 4 min 1 sec.
+Finished all inlists for 0p8M with and without rotation and atomic diffusion.

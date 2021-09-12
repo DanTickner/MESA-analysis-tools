@@ -1,0 +1,15 @@
+Okay
+run z_Inlists/inlist_Z=1d-4_M=0p60
+DATE: 2021-08-01
+TIME: 17:15:02
+ mkdir failed for /usr/local/mesa/data/eosDT_data/cache
+ error code           -1
+File: ../public/utils_lib.f, Line:  836
+DATE: 2021-08-01
+TIME: 17:15:03
+Okay
+
+******************************************************************
+Failed to create z_Mods/mod_Z=1d-4_M=0p60.mod when running z_Inlists/inlist_Z=1d-4_M=0p60
+******************************************************************
+

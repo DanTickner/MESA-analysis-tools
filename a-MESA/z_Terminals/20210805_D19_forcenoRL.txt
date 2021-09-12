@@ -1,0 +1,1819 @@
+Okay
+run z_Inlists/inlist_D19_forcenoRL
+DATE: 2021-08-05
+TIME: 19:02:34
+ version_number 12778
+
+
+ The terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'lg_Tcntr' is log10 center temperature (K),
+      'lg_Dcntr' is log10 center density (g/cm^3),
+      'lg_Pcntr' is log10 center pressure (ergs/cm^3),
+      'Teff' is the surface temperature (K),
+      'lg_R' is log10 surface radius (Rsun),
+      'lg_L' is log10 surface luminosity (Lsun),
+      'lg_LH' is log10 total PP and CNO hydrogen burning power (Lsun),
+      'lg_L3a' is log10 total triple-alpha helium burning power (Lsun),
+      'lg_gsurf' is log10 surface gravity,
+      'lg_LNuc' is log10 nuclear power excluding photodisintegration (Lsun),
+      'lg_LNeu' is log10 total neutrino power (Lsun),
+      'lg_Psurf' is log10 surface pressure (gas + radiation),
+      'Mass' is the total stellar baryonic mass (Msun),
+      'lg_Mdot' is log10 magnitude of rate of change of mass (Msun/year),
+      'lg_Dsurf' is log10 surface density (g/cm^3),
+      'H_env' is the amount of mass where H is the most abundant iso,
+      'He_core' is the largest mass where He is most abundant iso.
+      'C_core' is the largest mass where C is most abundant iso.
+      'H_cntr' is the center H1 mass fraction,
+      'He_cntr' is the center He4 mass fraction,
+      'C_cntr' is the center C12 mass fraction,
+      'N_cntr' is the center N14 mass fraction,
+      'O_cntr' is the center O16 mass fraction,
+      'Ne_cntr' is the center Ne20 mass fraction,
+      'X_avg' is the star average hydrogen mass fraction,
+      'Y_avg' is the star average helium mass fraction,
+      'Z_avg' is the star average metallicity,
+      'gam_cntr' is the center plasma interaction parameter,
+      'eta_cntr' is the center electron degeneracy parameter,
+      'zones' is the number of zones in the current model,
+      'iters' is the number of newton iterations for the current step,
+      'retry' is the number of step retries required during the run,
+      'bckup' is the number of step backups required during the run,
+      'dt_limit' is an indication of what limited the timestep.
+
+ All this and more are saved in the LOGS directory during the run.
+ create pre-main-sequence model
+                                          species  mass          18    6.8000000000000005D-01
+
+                                        relax_num_steps          50
+
+
+                               finished relax_num_steps
+
+ do_star_job_controls_after
+ change to "agb.net"
+ number of species          18
+
+                        set_uniform_initial_composition
+                                             initial_h1    7.1988344270000004D-01
+                                             initial_h2    1.6557300000000002D-05
+                                            initial_he3    8.3974799999999994D-05
+                                            initial_he4    2.7991602519999997D-01
+                       unknown value for initial_zfracs           0
+ read columns_history.list
+ read columns_profile.list
+ net name agb.net
+ use_gold_tolerances T
+ do_element_diffusion T
+                            set_cumulative_energy_error    0.0000000000000000D+00
+ kappa_file_prefix gs98
+ kappa_lowT_prefix lowT_fa05_gs98
+                                        OMP_NUM_THREADS          12
+
+
+                                 WARNING: rel_run_E_err           1    4.8750704050214311D-02
+save LOGS/profile1.data for model 1
+                                 WARNING: rel_run_E_err           2    4.8750706922298173D-02
+                                 WARNING: rel_run_E_err           3    4.8750708361266541D-02
+                                 WARNING: rel_run_E_err           4    4.8750708722947622D-02
+                                 WARNING: rel_run_E_err           5    4.8750708277462106D-02
+save z_Photos/Photos_D/x00005 for model 5
+                                 WARNING: rel_run_E_err           6    4.8750707201793669D-02
+                                 WARNING: rel_run_E_err           7    4.8750705594897539D-02
+                                 WARNING: rel_run_E_err           8    4.8750703496573247D-02
+                                 WARNING: rel_run_E_err           9    4.8750700904499844D-02
+                                 WARNING: rel_run_E_err          10    4.8750697788475787D-02
+save z_Photos/Photos_D/x00010 for model 10
+                                 WARNING: rel_run_E_err          11    4.8750694072226375D-02
+                                 WARNING: rel_run_E_err          12    4.8750689744820087D-02
+                                 WARNING: rel_run_E_err          13    4.8750684724720286D-02
+                                 WARNING: rel_run_E_err          14    4.8750678923332985D-02
+                                 WARNING: rel_run_E_err          15    4.8750672235512806D-02
+save z_Photos/Photos_D/x00015 for model 15
+                                 WARNING: rel_run_E_err          16    4.8750664577079925D-02
+                                 WARNING: rel_run_E_err          17    4.8750655818054003D-02
+                                 WARNING: rel_run_E_err          18    4.8750645821911430D-02
+                                 WARNING: rel_run_E_err          19    4.8750634384220337D-02
+                                 WARNING: rel_run_E_err          20    4.8750621388354884D-02
+save z_Photos/Photos_D/x00020 for model 20
+                                 WARNING: rel_run_E_err          21    4.8750606584490819D-02
+                                 WARNING: rel_run_E_err          22    4.8750589675119797D-02
+                                 WARNING: rel_run_E_err          23    4.8750570334997231D-02
+                                 WARNING: rel_run_E_err          24    4.8750548176726805D-02
+                                 WARNING: rel_run_E_err          25    4.8750522718104532D-02
+save LOGS/profile2.data for model 25
+save z_Photos/Photos_D/x00025 for model 25
+                                 WARNING: rel_run_E_err          26    4.8750493350581639D-02
+                                 WARNING: rel_run_E_err          27    4.8750459377016608D-02
+                                 WARNING: rel_run_E_err          28    4.8750419888821714D-02
+                                 WARNING: rel_run_E_err          29    4.8750373798911055D-02
+                                 WARNING: rel_run_E_err          30    4.8750319807640767D-02
+save z_Photos/Photos_D/x00030 for model 30
+                                 WARNING: rel_run_E_err          31    4.8750256301088937D-02
+                                 WARNING: rel_run_E_err          32    4.8750181345842580D-02
+                                 WARNING: rel_run_E_err          33    4.8750092554035840D-02
+                                 WARNING: rel_run_E_err          34    4.8749987044498906D-02
+                                 WARNING: rel_run_E_err          35    4.8749861239534127D-02
+save z_Photos/Photos_D/x00035 for model 35
+                                 WARNING: rel_run_E_err          36    4.8749710782565778D-02
+                                 WARNING: rel_run_E_err          37    4.8749530348804228D-02
+                                 WARNING: rel_run_E_err          38    4.8749313464352580D-02
+                                 WARNING: rel_run_E_err          39    4.8749052307386478D-02
+                                 WARNING: rel_run_E_err          40    4.8748737483625494D-02
+save z_Photos/Photos_D/x00040 for model 40
+                                 WARNING: rel_run_E_err          41    4.8748357765256406D-02
+                                 WARNING: rel_run_E_err          42    4.8747899774878367D-02
+                                 WARNING: rel_run_E_err          43    4.8747347580163802D-02
+                                 WARNING: rel_run_E_err          44    4.8746682213806819D-02
+                                 WARNING: rel_run_E_err          45    4.8745881055932298D-02
+save z_Photos/Photos_D/x00045 for model 45
+                                 WARNING: rel_run_E_err          46    4.8744917081136131D-02
+                                 WARNING: rel_run_E_err          47    4.8743757962617963D-02
+                                 WARNING: rel_run_E_err          48    4.8742364980296583D-02
+                                 WARNING: rel_run_E_err          49    4.8740691723366640D-02
+                                 WARNING: rel_run_E_err          50    4.8738682527947316D-02
+save LOGS/profile3.data for model 50
+save z_Photos/Photos_D/x00050 for model 50
+                                 WARNING: rel_run_E_err          51    4.8736270619011687D-02
+                                 WARNING: rel_run_E_err          52    4.8733375888242773D-02
+                                 WARNING: rel_run_E_err          53    4.8729902238728848D-02
+                                 WARNING: rel_run_E_err          54    4.8725734411545492D-02
+                                 WARNING: rel_run_E_err          55    4.8720734193692827D-02
+save z_Photos/Photos_D/x00055 for model 55
+                                 WARNING: rel_run_E_err          56    4.8714735889404386D-02
+                                 WARNING: rel_run_E_err          57    4.8707540914860979D-02
+                                 WARNING: rel_run_E_err          58    4.8698911353128885D-02
+                                 WARNING: rel_run_E_err          59    4.8688562277219564D-02
+                                 WARNING: rel_run_E_err          60    4.8676152616770288D-02
+save z_Photos/Photos_D/x00060 for model 60
+                                 WARNING: rel_run_E_err          61    4.8661274310141438D-02
+                                 WARNING: rel_run_E_err          62    4.8643439447098917D-02
+                                 WARNING: rel_run_E_err          63    4.8622065070346158D-02
+                                 WARNING: rel_run_E_err          64    4.8596455267014622D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      65
+                                 WARNING: rel_run_E_err          65    4.8581107600559670D-02
+save z_Photos/Photos_D/x00065 for model 65
+                                 WARNING: rel_run_E_err          66    4.8565774888038649D-02
+                                 WARNING: rel_run_E_err          67    4.8547395969295443D-02
+                                 WARNING: rel_run_E_err          68    4.8525370492268995D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      69
+                                 WARNING: rel_run_E_err          69    4.8512168704084931D-02
+                                 WARNING: rel_run_E_err          70    4.8498978000167330D-02
+save z_Photos/Photos_D/x00070 for model 70
+                                 WARNING: rel_run_E_err          71    4.8483164233189338D-02
+                                 WARNING: rel_run_E_err          72    4.8464209387093143D-02
+                                 WARNING: rel_run_E_err          73    4.8441494717808828D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      74
+                                 WARNING: rel_run_E_err          74    4.8427880299560862D-02
+                                 WARNING: rel_run_E_err          75    4.8414277692497530D-02
+save LOGS/profile4.data for model 75
+save z_Photos/Photos_D/x00075 for model 75
+                                 WARNING: rel_run_E_err          76    4.8397970630026786D-02
+                                 WARNING: rel_run_E_err          77    4.8378425248568530D-02
+                                 WARNING: rel_run_E_err          78    4.8355003973896235D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      79
+                                 WARNING: rel_run_E_err          79    4.8340966531379634D-02
+                                 WARNING: rel_run_E_err          80    4.8326941671031375D-02
+save z_Photos/Photos_D/x00080 for model 80
+                                 WARNING: rel_run_E_err          81    4.8310128952527467D-02
+                                 WARNING: rel_run_E_err          82    4.8289978288539516D-02
+                                 WARNING: rel_run_E_err          83    4.8265832834948064D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      84
+                                 WARNING: rel_run_E_err          84    4.8251361880396477D-02
+                                 WARNING: rel_run_E_err          85    4.8236904325152659D-02
+save z_Photos/Photos_D/x00085 for model 85
+                                 WARNING: rel_run_E_err          86    4.8219573483804741D-02
+                                 WARNING: rel_run_E_err          87    4.8198802667923549D-02
+                                 WARNING: rel_run_E_err          88    4.8173915321259544D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      89
+                                 WARNING: rel_run_E_err          89    4.8159000285407184D-02
+                                 WARNING: rel_run_E_err          90    4.8144099514944375D-02
+save z_Photos/Photos_D/x00090 for model 90
+                                 WARNING: rel_run_E_err          91    4.8126237992239980D-02
+                                 WARNING: rel_run_E_err          92    4.8104832048713242D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      93
+                                 WARNING: rel_run_E_err          93    4.8092001357421657D-02
+                                 WARNING: rel_run_E_err          94    4.8079181241404867D-02
+                                 WARNING: rel_run_E_err          95    4.8063811488929929D-02
+save z_Photos/Photos_D/x00095 for model 95
+                                 WARNING: rel_run_E_err          96    4.8045388467673464D-02
+                                 WARNING: rel_run_E_err          97    4.8023310563042196D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry      98
+                                 WARNING: rel_run_E_err          98    4.8010077541697768D-02
+                                 WARNING: rel_run_E_err          99    4.7996855790881816D-02
+        100   5.509303   4483.682  -9.356554  -9.356554   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -7.127903    551      8
+  -0.202747  -2.847332   1.252696 -99.000000 -21.473713  -9.009004   0.000000   0.280000   0.000059   0.000117   0.280000   0.089806      2      0
+ 2.9725E+01  10.792023   2.065413   1.765007   4.115863  -7.349706   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00  max increase
+                               rel_E_err    2.5744723070222030D-09
+                       log_rel_run_E_err       -1.3189306594315839
+
+                                 WARNING: rel_run_E_err         100    4.7981005022185989D-02
+save LOGS/profile5.data for model 100
+save z_Photos/Photos_D/x00100 for model 100
+                                 WARNING: rel_run_E_err         101    4.7962006139303799D-02
+                                 WARNING: rel_run_E_err         102    4.7939239149802686D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     103
+                                 WARNING: rel_run_E_err         103    4.7925593575618305D-02
+                                 WARNING: rel_run_E_err         104    4.7911960009730234D-02
+                                 WARNING: rel_run_E_err         105    4.7895616065769503D-02
+save z_Photos/Photos_D/x00105 for model 105
+                                 WARNING: rel_run_E_err         106    4.7876026812682750D-02
+                                 WARNING: rel_run_E_err         107    4.7852553445863873D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     108
+                                 WARNING: rel_run_E_err         108    4.7838484997780900D-02
+                                 WARNING: rel_run_E_err         109    4.7824429340086516D-02
+                                 WARNING: rel_run_E_err         110    4.7807579949238087D-02
+save z_Photos/Photos_D/x00110 for model 110
+                                 WARNING: rel_run_E_err         111    4.7787385686902578D-02
+                                 WARNING: rel_run_E_err         112    4.7763188500306239D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     113
+                                 WARNING: rel_run_E_err         113    4.7748686769601215D-02
+                                 WARNING: rel_run_E_err         114    4.7734198658159928D-02
+                                 WARNING: rel_run_E_err         115    4.7716831449589853D-02
+save z_Photos/Photos_D/x00115 for model 115
+                                 WARNING: rel_run_E_err         116    4.7696017423906334D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     117
+                                 WARNING: rel_run_E_err         117    4.7683541298662563D-02
+                                 WARNING: rel_run_E_err         118    4.7671075271045520D-02
+                                 WARNING: rel_run_E_err         119    4.7656129776244352D-02
+                                 WARNING: rel_run_E_err         120    4.7638214932574627D-02
+save z_Photos/Photos_D/x00120 for model 120
+                                 WARNING: rel_run_E_err         121    4.7616745503163561D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     122
+                                 WARNING: rel_run_E_err         122    4.7603876945826094D-02
+                                 WARNING: rel_run_E_err         123    4.7591019151746405D-02
+                                 WARNING: rel_run_E_err         124    4.7575604442217131D-02
+                                 WARNING: rel_run_E_err         125    4.7557127840836377D-02
+save LOGS/profile6.data for model 125
+save z_Photos/Photos_D/x00125 for model 125
+                                 WARNING: rel_run_E_err         126    4.7534986168309375D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     127
+                                 WARNING: rel_run_E_err         127    4.7521715124742257D-02
+                                 WARNING: rel_run_E_err         128    4.7508455550586380D-02
+                                 WARNING: rel_run_E_err         129    4.7492559665258921D-02
+                                 WARNING: rel_run_E_err         130    4.7473507032110090D-02
+save z_Photos/Photos_D/x00130 for model 130
+                                 WARNING: rel_run_E_err         131    4.7450676100989145D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     132
+                                 WARNING: rel_run_E_err         132    4.7436992414069235D-02
+                                 WARNING: rel_run_E_err         133    4.7423320945611400D-02
+                                 WARNING: rel_run_E_err         134    4.7406931805527769D-02
+                                 WARNING: rel_run_E_err         135    4.7387288729024861D-02
+save z_Photos/Photos_D/x00135 for model 135
+                                 WARNING: rel_run_E_err         136    4.7363751364878304D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     137
+                                 WARNING: rel_run_E_err         137    4.7349644784676827D-02
+                                 WARNING: rel_run_E_err         138    4.7335551216926196D-02
+                                 WARNING: rel_run_E_err         139    4.7318656637220610D-02
+                                 WARNING: rel_run_E_err         140    4.7298408583216558D-02
+save z_Photos/Photos_D/x00140 for model 140
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     141
+                                 WARNING: rel_run_E_err         141    4.7286271491771434D-02
+                                 WARNING: rel_run_E_err         142    4.7274144049166793D-02
+                                 WARNING: rel_run_E_err         143    4.7259604246976554D-02
+                                 WARNING: rel_run_E_err         144    4.7242175358991605D-02
+                                 WARNING: rel_run_E_err         145    4.7221287819036208D-02
+save z_Photos/Photos_D/x00145 for model 145
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     146
+                                 WARNING: rel_run_E_err         146    4.7208767811931319D-02
+                                 WARNING: rel_run_E_err         147    4.7196258091105663D-02
+                                 WARNING: rel_run_E_err         148    4.7181260422015661D-02
+                                 WARNING: rel_run_E_err         149    4.7163283338857859D-02
+                                 WARNING: rel_run_E_err         150    4.7141739752489524D-02
+save LOGS/profile7.data for model 150
+save z_Photos/Photos_D/x00150 for model 150
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     151
+                                 WARNING: rel_run_E_err         151    4.7128826940796925D-02
+                                 WARNING: rel_run_E_err         152    4.7115925091981418D-02
+                                 WARNING: rel_run_E_err         153    4.7100457789171948D-02
+                                 WARNING: rel_run_E_err         154    4.7081918466947315D-02
+                                 WARNING: rel_run_E_err         155    4.7059702090340716D-02
+save z_Photos/Photos_D/x00155 for model 155
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     156
+                                 WARNING: rel_run_E_err         156    4.7046386477884762D-02
+                                 WARNING: rel_run_E_err         157    4.7033082545988640D-02
+                                 WARNING: rel_run_E_err         158    4.7017133719297714D-02
+                                 WARNING: rel_run_E_err         159    4.6998017969897700D-02
+                                 WARNING: rel_run_E_err         160    4.6975111892291026D-02
+save z_Photos/Photos_D/x00160 for model 160
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     161
+                                 WARNING: rel_run_E_err         161    4.6961383385382215D-02
+                                 WARNING: rel_run_E_err         162    4.6947667319959661D-02
+                                 WARNING: rel_run_E_err         163    4.6931224967789259D-02
+                                 WARNING: rel_run_E_err         164    4.6911518473434499D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     165
+                                 WARNING: rel_run_E_err         165    4.6899705801212950D-02
+save z_Photos/Photos_D/x00165 for model 165
+                                 WARNING: rel_run_E_err         166    4.6887902355426718D-02
+                                 WARNING: rel_run_E_err         167    4.6873750775830149D-02
+                                 WARNING: rel_run_E_err         168    4.6856786930798290D-02
+                                 WARNING: rel_run_E_err         169    4.6836456258976512D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     170
+                                 WARNING: rel_run_E_err         170    4.6824269823513356D-02
+save z_Photos/Photos_D/x00170 for model 170
+                                 WARNING: rel_run_E_err         171    4.6812093225443559D-02
+                                 WARNING: rel_run_E_err         172    4.6797494693936161D-02
+                                 WARNING: rel_run_E_err         173    4.6779995700097103D-02
+                                 WARNING: rel_run_E_err         174    4.6759024562989596D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     175
+                                 WARNING: rel_run_E_err         175    4.6746454637441530D-02
+save LOGS/profile8.data for model 175
+save z_Photos/Photos_D/x00175 for model 175
+                                 WARNING: rel_run_E_err         176    4.6733895197661600D-02
+                                 WARNING: rel_run_E_err         177    4.6718838138115733D-02
+                                 WARNING: rel_run_E_err         178    4.6700790177237661D-02
+                                 WARNING: rel_run_E_err         179    4.6679162097960011D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     180
+                                 WARNING: rel_run_E_err         180    4.6666198844141298D-02
+save z_Photos/Photos_D/x00180 for model 180
+                                 WARNING: rel_run_E_err         181    4.6653246764229266D-02
+                                 WARNING: rel_run_E_err         182    4.6637719472085018D-02
+                                 WARNING: rel_run_E_err         183    4.6619108575808095D-02
+                                 WARNING: rel_run_E_err         184    4.6596806902880129D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     185
+                                 WARNING: rel_run_E_err         185    4.6583440380816604D-02
+save z_Photos/Photos_D/x00185 for model 185
+                                 WARNING: rel_run_E_err         186    4.6570085762228021D-02
+                                 WARNING: rel_run_E_err         187    4.6554076415795440D-02
+                                 WARNING: rel_run_E_err         188    4.6534888479334444D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     189
+                                 WARNING: rel_run_E_err         189    4.6523386455154359D-02
+                                 WARNING: rel_run_E_err         190    4.6511893259390875D-02
+save z_Photos/Photos_D/x00190 for model 190
+                                 WARNING: rel_run_E_err         191    4.6498113439196728D-02
+                                 WARNING: rel_run_E_err         192    4.6481594928698841D-02
+                                 WARNING: rel_run_E_err         193    4.6461797542671164D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     194
+                                 WARNING: rel_run_E_err         194    4.6449930561327006D-02
+                                 WARNING: rel_run_E_err         195    4.6438072994189256D-02
+save z_Photos/Photos_D/x00195 for model 195
+                                 WARNING: rel_run_E_err         196    4.6423856725041041D-02
+                                 WARNING: rel_run_E_err         197    4.6406815620225542D-02
+                                 WARNING: rel_run_E_err         198    4.6386392764073095D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     199
+                                 WARNING: rel_run_E_err         199    4.6374151257134510D-02
+        200   5.518005   4489.971  -9.175958  -9.175958   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -7.098617    550     29
+  -0.269058  -2.821647   1.243270 -99.000000 -21.307605  -9.034892   0.000000   0.280000   0.000059   0.000117   0.280000   0.089777      2      0
+ 9.7313E+01  10.826418   2.048997   1.783858   4.122722  -7.343456   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00          hold
+                               rel_E_err    1.9201707292666131D-09
+                       log_rel_run_E_err       -1.3338385887710518
+
+                                 WARNING: rel_run_E_err         200    4.6361919786307833D-02
+save LOGS/profile9.data for model 200
+save z_Photos/Photos_D/x00200 for model 200
+                                 WARNING: rel_run_E_err         201    4.6347255678655989D-02
+                                 WARNING: rel_run_E_err         202    4.6329678382411178D-02
+                                 WARNING: rel_run_E_err         203    4.6308613840677602D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     204
+                                 WARNING: rel_run_E_err         204    4.6295988125348332D-02
+                                 WARNING: rel_run_E_err         205    4.6283373105984828D-02
+save z_Photos/Photos_D/x00205 for model 205
+                                 WARNING: rel_run_E_err         206    4.6268249637744015D-02
+                                 WARNING: rel_run_E_err         207    4.6250122397941240D-02
+                                 WARNING: rel_run_E_err         208    4.6228399774210595D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     209
+                                 WARNING: rel_run_E_err         209    4.6215380061378070D-02
+                                 WARNING: rel_run_E_err         210    4.6202371744631272D-02
+save z_Photos/Photos_D/x00210 for model 210
+                                 WARNING: rel_run_E_err         211    4.6186777271414042D-02
+                                 WARNING: rel_run_E_err         212    4.6168086192973586D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     213
+                                 WARNING: rel_run_E_err         213    4.6156881824757197D-02
+                                 WARNING: rel_run_E_err         214    4.6145685909472038D-02
+                                 WARNING: rel_run_E_err         215    4.6132262315814340D-02
+save z_Photos/Photos_D/x00215 for model 215
+                                 WARNING: rel_run_E_err         216    4.6116170544277697D-02
+                                 WARNING: rel_run_E_err         217    4.6096884192307917D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     218
+                                 WARNING: rel_run_E_err         218    4.6085323343472713D-02
+                                 WARNING: rel_run_E_err         219    4.6073771509512605D-02
+                                 WARNING: rel_run_E_err         220    4.6059921577958525D-02
+save z_Photos/Photos_D/x00220 for model 220
+                                 WARNING: rel_run_E_err         221    4.6043319298874986D-02
+                                 WARNING: rel_run_E_err         222    4.6023421914581204D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     223
+                                 WARNING: rel_run_E_err         223    4.6011495172190331D-02
+                                 WARNING: rel_run_E_err         224    4.5999578041476023D-02
+                                 WARNING: rel_run_E_err         225    4.5985290565493185D-02
+save LOGS/profile10.data for model 225
+save z_Photos/Photos_D/x00225 for model 225
+                                 WARNING: rel_run_E_err         226    4.5968164399057168D-02
+                                 WARNING: rel_run_E_err         227    4.5947640023867323D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     228
+                                 WARNING: rel_run_E_err         228    4.5935337857453323D-02
+                                 WARNING: rel_run_E_err         229    4.5923045936127997D-02
+                                 WARNING: rel_run_E_err         230    4.5908309572899944D-02
+save z_Photos/Photos_D/x00230 for model 230
+                                 WARNING: rel_run_E_err         231    4.5890645979347763D-02
+                                 WARNING: rel_run_E_err         232    4.5869478467984962D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     233
+                                 WARNING: rel_run_E_err         233    4.5856791237355907D-02
+                                 WARNING: rel_run_E_err         234    4.5844114923992860D-02
+                                 WARNING: rel_run_E_err         235    4.5828918204379579D-02
+save z_Photos/Photos_D/x00235 for model 235
+                                 WARNING: rel_run_E_err         236    4.5810703495922575D-02
+                                 WARNING: rel_run_E_err         237    4.5788876531024994D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     238
+                                 WARNING: rel_run_E_err         238    4.5775793911345161D-02
+                                 WARNING: rel_run_E_err         239    4.5762722925405626D-02
+                                 WARNING: rel_run_E_err         240    4.5747053575889117D-02
+save z_Photos/Photos_D/x00240 for model 240
+                                 WARNING: rel_run_E_err         241    4.5728273114584335D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     242
+                                 WARNING: rel_run_E_err         242    4.5717015328701260D-02
+                                 WARNING: rel_run_E_err         243    4.5705766172413884D-02
+                                 WARNING: rel_run_E_err         244    4.5692278930761297D-02
+                                 WARNING: rel_run_E_err         245    4.5676111128123580D-02
+save z_Photos/Photos_D/x00245 for model 245
+                                 WARNING: rel_run_E_err         246    4.5656734036364985D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     247
+                                 WARNING: rel_run_E_err         247    4.5645118968599331D-02
+                                 WARNING: rel_run_E_err         248    4.5633513103166878D-02
+                                 WARNING: rel_run_E_err         249    4.5619598589745805D-02
+                                 WARNING: rel_run_E_err         250    4.5602919180144350D-02
+save LOGS/profile11.data for model 250
+save z_Photos/Photos_D/x00250 for model 250
+                                 WARNING: rel_run_E_err         251    4.5582929766826166D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     252
+                                 WARNING: rel_run_E_err         252    4.5570948045469580D-02
+                                 WARNING: rel_run_E_err         253    4.5558976134504429D-02
+                                 WARNING: rel_run_E_err         254    4.5544623193647195D-02
+                                 WARNING: rel_run_E_err         255    4.5527418859177667D-02
+save z_Photos/Photos_D/x00255 for model 255
+                                 WARNING: rel_run_E_err         256    4.5506801241839888D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     257
+                                 WARNING: rel_run_E_err         257    4.5494443382795881D-02
+                                 WARNING: rel_run_E_err         258    4.5482095979592622D-02
+                                 WARNING: rel_run_E_err         259    4.5467293325808344D-02
+                                 WARNING: rel_run_E_err         260    4.5449550596628620D-02
+save z_Photos/Photos_D/x00260 for model 260
+                                 WARNING: rel_run_E_err         261    4.5428288715295466D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     262
+                                 WARNING: rel_run_E_err         262    4.5415545130252345D-02
+                                 WARNING: rel_run_E_err         263    4.5402812685560547D-02
+                                 WARNING: rel_run_E_err         264    4.5387548913221276D-02
+                                 WARNING: rel_run_E_err         265    4.5369254179051494D-02
+save z_Photos/Photos_D/x00265 for model 265
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     266
+                                 WARNING: rel_run_E_err         266    4.5358287382049209D-02
+                                 WARNING: rel_run_E_err         267    4.5347328848455583D-02
+                                 WARNING: rel_run_E_err         268    4.5334189856593057D-02
+                                 WARNING: rel_run_E_err         269    4.5318439238871758D-02
+                                 WARNING: rel_run_E_err         270    4.5299561742142655D-02
+save z_Photos/Photos_D/x00270 for model 270
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     271
+                                 WARNING: rel_run_E_err         271    4.5288245955687437D-02
+                                 WARNING: rel_run_E_err         272    4.5276938982132170D-02
+                                 WARNING: rel_run_E_err         273    4.5263382610028324D-02
+                                 WARNING: rel_run_E_err         274    4.5247132210041979D-02
+                                 WARNING: rel_run_E_err         275    4.5227656516787916D-02
+save LOGS/profile12.data for model 275
+save z_Photos/Photos_D/x00275 for model 275
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     276
+                                 WARNING: rel_run_E_err         276    4.5215982521847865D-02
+                                 WARNING: rel_run_E_err         277    4.5204317923407920D-02
+                                 WARNING: rel_run_E_err         278    4.5190333195383577D-02
+                                 WARNING: rel_run_E_err         279    4.5173569908704372D-02
+                                 WARNING: rel_run_E_err         280    4.5153480388819917D-02
+save z_Photos/Photos_D/x00280 for model 280
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     281
+                                 WARNING: rel_run_E_err         281    4.5141438850973582D-02
+                                 WARNING: rel_run_E_err         282    4.5129407329077116D-02
+                                 WARNING: rel_run_E_err         283    4.5114983135727531D-02
+                                 WARNING: rel_run_E_err         284    4.5097693701058129D-02
+                                 WARNING: rel_run_E_err         285    4.5076974541072894D-02
+save z_Photos/Photos_D/x00285 for model 285
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     286
+                                 WARNING: rel_run_E_err         286    4.5064556018283679D-02
+                                 WARNING: rel_run_E_err         287    4.5052148168811465D-02
+                                 WARNING: rel_run_E_err         288    4.5037273276456971D-02
+                                 WARNING: rel_run_E_err         289    4.5019444287124247D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     290
+                                 WARNING: rel_run_E_err         290    4.5008756514926418D-02
+save z_Photos/Photos_D/x00290 for model 290
+                                 WARNING: rel_run_E_err         291    4.4998076660578985D-02
+                                 WARNING: rel_run_E_err         292    4.4985271614323467D-02
+                                 WARNING: rel_run_E_err         293    4.4969921056478693D-02
+                                 WARNING: rel_run_E_err         294    4.4951522662614887D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     295
+                                 WARNING: rel_run_E_err         295    4.4940493889018475D-02
+save z_Photos/Photos_D/x00295 for model 295
+                                 WARNING: rel_run_E_err         296    4.4929473560895834D-02
+                                 WARNING: rel_run_E_err         297    4.4916260663964661D-02
+                                 WARNING: rel_run_E_err         298    4.4900421716839098D-02
+                                 WARNING: rel_run_E_err         299    4.4881438736765235D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     300
+        300   5.526400   4496.021  -9.002690  -9.002690   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -7.071163    552     50
+  -0.256188  -2.796851   1.234182 -99.000000 -21.148201  -9.059821   0.000000   0.280000   0.000059   0.000117   0.280000   0.089750      2      0
+ 1.6643E+02  10.859617   2.033161   1.802033   4.129367  -7.337396   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00         retry
+                               rel_E_err    1.7284415840928010D-09
+                       log_rel_run_E_err       -1.3480433507706915
+
+                                 WARNING: rel_run_E_err         300    4.4870059892511818D-02
+save LOGS/profile13.data for model 300
+save z_Photos/Photos_D/x00300 for model 300
+                                 WARNING: rel_run_E_err         301    4.4858690054204356D-02
+                                 WARNING: rel_run_E_err         302    4.4845058507681342D-02
+                                 WARNING: rel_run_E_err         303    4.4828718276344791D-02
+                                 WARNING: rel_run_E_err         304    4.4809135327794736D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     305
+                                 WARNING: rel_run_E_err         305    4.4797397225728758D-02
+save z_Photos/Photos_D/x00305 for model 305
+                                 WARNING: rel_run_E_err         306    4.4785668724625069D-02
+                                 WARNING: rel_run_E_err         307    4.4771607592328698D-02
+                                 WARNING: rel_run_E_err         308    4.4754753020906812D-02
+                                 WARNING: rel_run_E_err         309    4.4734554533673018D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     310
+                                 WARNING: rel_run_E_err         310    4.4722447876056538D-02
+save z_Photos/Photos_D/x00310 for model 310
+                                 WARNING: rel_run_E_err         311    4.4710351451005541D-02
+                                 WARNING: rel_run_E_err         312    4.4695849669007505D-02
+                                 WARNING: rel_run_E_err         313    4.4678467551897375D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     314
+                                 WARNING: rel_run_E_err         314    4.4668047504694462D-02
+                                 WARNING: rel_run_E_err         315    4.4657635049062561D-02
+save z_Photos/Photos_D/x00315 for model 315
+                                 WARNING: rel_run_E_err         316    4.4645150437930013D-02
+                                 WARNING: rel_run_E_err         317    4.4630183765284770D-02
+                                 WARNING: rel_run_E_err         318    4.4612245118734066D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     319
+                                 WARNING: rel_run_E_err         319    4.4601491769930598D-02
+                                 WARNING: rel_run_E_err         320    4.4590746519606199D-02
+save z_Photos/Photos_D/x00320 for model 320
+                                 WARNING: rel_run_E_err         321    4.4577863244674630D-02
+                                 WARNING: rel_run_E_err         322    4.4562419166638521D-02
+                                 WARNING: rel_run_E_err         323    4.4543909056752762D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     324
+                                 WARNING: rel_run_E_err         324    4.4532813484361826D-02
+                                 WARNING: rel_run_E_err         325    4.4521726549049456D-02
+save LOGS/profile14.data for model 325
+save z_Photos/Photos_D/x00325 for model 325
+                                 WARNING: rel_run_E_err         326    4.4508433985119576D-02
+                                 WARNING: rel_run_E_err         327    4.4492499087802499D-02
+                                 WARNING: rel_run_E_err         328    4.4473401517309614D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     329
+                                 WARNING: rel_run_E_err         329    4.4461954168402727D-02
+                                 WARNING: rel_run_E_err         330    4.4450516033254263D-02
+save z_Photos/Photos_D/x00330 for model 330
+                                 WARNING: rel_run_E_err         331    4.4436802814340301D-02
+                                 WARNING: rel_run_E_err         332    4.4420364983757891D-02
+                                 WARNING: rel_run_E_err         333    4.4400665501614471D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     334
+                                 WARNING: rel_run_E_err         334    4.4388857744044580D-02
+                                 WARNING: rel_run_E_err         335    4.4377059807840735D-02
+save z_Photos/Photos_D/x00335 for model 335
+                                 WARNING: rel_run_E_err         336    4.4362915654525881D-02
+                                 WARNING: rel_run_E_err         337    4.4345961890512160D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     338
+                                 WARNING: rel_run_E_err         338    4.4335798483083812D-02
+                                 WARNING: rel_run_E_err         339    4.4325642363101658D-02
+                                 WARNING: rel_run_E_err         340    4.4313464941818460D-02
+save z_Photos/Photos_D/x00340 for model 340
+                                 WARNING: rel_run_E_err         341    4.4298866303718536D-02
+                                 WARNING: rel_run_E_err         342    4.4281368446631379D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     343
+                                 WARNING: rel_run_E_err         343    4.4270879175884972D-02
+                                 WARNING: rel_run_E_err         344    4.4260397680417229D-02
+                                 WARNING: rel_run_E_err         345    4.4247830472382454D-02
+save z_Photos/Photos_D/x00345 for model 345
+                                 WARNING: rel_run_E_err         346    4.4232765043889517D-02
+                                 WARNING: rel_run_E_err         347    4.4214708407929904D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     348
+                                 WARNING: rel_run_E_err         348    4.4203884499450882D-02
+                                 WARNING: rel_run_E_err         349    4.4193068884551809D-02
+                                 WARNING: rel_run_E_err         350    4.4180101438586611D-02
+save LOGS/profile15.data for model 350
+save z_Photos/Photos_D/x00350 for model 350
+                                 WARNING: rel_run_E_err         351    4.4164556738046853D-02
+                                 WARNING: rel_run_E_err         352    4.4145926430601896D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     353
+                                 WARNING: rel_run_E_err         353    4.4134758987967593D-02
+                                 WARNING: rel_run_E_err         354    4.4123600389511179D-02
+                                 WARNING: rel_run_E_err         355    4.4110222112502408D-02
+save z_Photos/Photos_D/x00355 for model 355
+                                 WARNING: rel_run_E_err         356    4.4094185490919480D-02
+                                 WARNING: rel_run_E_err         357    4.4074966423418058D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     358
+                                 WARNING: rel_run_E_err         358    4.4063446434882934D-02
+                                 WARNING: rel_run_E_err         359    4.4051935874984079D-02
+                                 WARNING: rel_run_E_err         360    4.4038136039775223D-02
+save z_Photos/Photos_D/x00360 for model 360
+                                 WARNING: rel_run_E_err         361    4.4021594690974095D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     362
+                                 WARNING: rel_run_E_err         362    4.4011678377634568D-02
+                                 WARNING: rel_run_E_err         363    4.4001769060969399D-02
+                                 WARNING: rel_run_E_err         364    4.3989887408667154D-02
+                                 WARNING: rel_run_E_err         365    4.3975643125658624D-02
+save z_Photos/Photos_D/x00365 for model 365
+                                 WARNING: rel_run_E_err         366    4.3958569678988271D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     367
+                                 WARNING: rel_run_E_err         367    4.3948331193772797D-02
+                                 WARNING: rel_run_E_err         368    4.3938100163069475D-02
+                                 WARNING: rel_run_E_err         369    4.3925833085278615D-02
+                                 WARNING: rel_run_E_err         370    4.3911127197348195D-02
+save z_Photos/Photos_D/x00370 for model 370
+                                 WARNING: rel_run_E_err         371    4.3893501125075333D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     372
+                                 WARNING: rel_run_E_err         372    4.3882935148185823D-02
+                                 WARNING: rel_run_E_err         373    4.3872377129856005D-02
+                                 WARNING: rel_run_E_err         374    4.3859718343660897D-02
+                                 WARNING: rel_run_E_err         375    4.3844543379252601D-02
+save LOGS/profile16.data for model 375
+save z_Photos/Photos_D/x00375 for model 375
+                                 WARNING: rel_run_E_err         376    4.3826355813637571D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     377
+                                 WARNING: rel_run_E_err         377    4.3815453583590680D-02
+                                 WARNING: rel_run_E_err         378    4.3804559841317613D-02
+                                 WARNING: rel_run_E_err         379    4.3791498906419861D-02
+                                 WARNING: rel_run_E_err         380    4.3775842398127485D-02
+save z_Photos/Photos_D/x00380 for model 380
+                                 WARNING: rel_run_E_err         381    4.3757078465017252D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     382
+                                 WARNING: rel_run_E_err         382    4.3745831097220460D-02
+                                 WARNING: rel_run_E_err         383    4.3734592779055219D-02
+                                 WARNING: rel_run_E_err         384    4.3721119117787435D-02
+                                 WARNING: rel_run_E_err         385    4.3704968436189096D-02
+save z_Photos/Photos_D/x00385 for model 385
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     386
+                                 WARNING: rel_run_E_err         386    4.3695286182706156D-02
+                                 WARNING: rel_run_E_err         387    4.3685610645162902D-02
+                                 WARNING: rel_run_E_err         388    4.3674009145405319D-02
+                                 WARNING: rel_run_E_err         389    4.3660100495730714D-02
+                                 WARNING: rel_run_E_err         390    4.3643429019449884D-02
+save z_Photos/Photos_D/x00390 for model 390
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     391
+                                 WARNING: rel_run_E_err         391    4.3633434836978922D-02
+                                 WARNING: rel_run_E_err         392    4.3623447821422273D-02
+                                 WARNING: rel_run_E_err         393    4.3611473161898381D-02
+                                 WARNING: rel_run_E_err         394    4.3597117602568923D-02
+                                 WARNING: rel_run_E_err         395    4.3579911101279123D-02
+save z_Photos/Photos_D/x00395 for model 395
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     396
+                                 WARNING: rel_run_E_err         396    4.3569596486134406D-02
+                                 WARNING: rel_run_E_err         397    4.3559289517369114D-02
+                                 WARNING: rel_run_E_err         398    4.3546931566496055D-02
+                                 WARNING: rel_run_E_err         399    4.3532116994973717D-02
+        400   5.534366   4502.098  -8.839145  -8.839145   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -7.044943    553     70
+  -0.021470  -2.773305   1.225564 -99.000000 -20.997715  -9.083210   0.000000   0.280000   0.000059   0.000117   0.280000   0.089726      2      0
+ 2.3575E+02  10.891136   2.018269   1.819271   4.135381  -7.331968   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00  max increase
+                               rel_E_err    2.6119690476224444D-09
+                       log_rel_run_E_err       -1.3613673893737799
+
+                                 WARNING: rel_run_E_err         400    4.3514361025225871D-02
+save LOGS/profile17.data for model 400
+save z_Photos/Photos_D/x00400 for model 400
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     401
+                                 WARNING: rel_run_E_err         401    4.3503717347751672D-02
+                                 WARNING: rel_run_E_err         402    4.3493081826175568D-02
+                                 WARNING: rel_run_E_err         403    4.3480330305060259D-02
+                                 WARNING: rel_run_E_err         404    4.3465044445337532D-02
+                                 WARNING: rel_run_E_err         405    4.3446724360028825D-02
+save z_Photos/Photos_D/x00405 for model 405
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     406
+                                 WARNING: rel_run_E_err         406    4.3435742870428617D-02
+                                 WARNING: rel_run_E_err         407    4.3424770077784801D-02
+                                 WARNING: rel_run_E_err         408    4.3411614567935131D-02
+                                 WARNING: rel_run_E_err         409    4.3395844979415309D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     410
+                                 WARNING: rel_run_E_err         410    4.3386391063150190D-02
+save z_Photos/Photos_D/x00410 for model 410
+                                 WARNING: rel_run_E_err         411    4.3376943601703251D-02
+                                 WARNING: rel_run_E_err         412    4.3365615438138112D-02
+                                 WARNING: rel_run_E_err         413    4.3352034281926535D-02
+                                 WARNING: rel_run_E_err         414    4.3335755065005914D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     415
+                                 WARNING: rel_run_E_err         415    4.3325995899089573D-02
+save z_Photos/Photos_D/x00415 for model 415
+                                 WARNING: rel_run_E_err         416    4.3316243622322753D-02
+                                 WARNING: rel_run_E_err         417    4.3304550271499730D-02
+                                 WARNING: rel_run_E_err         418    4.3290531739884182D-02
+                                 WARNING: rel_run_E_err         419    4.3273728892459527D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     420
+                                 WARNING: rel_run_E_err         420    4.3263656108937905D-02
+save z_Photos/Photos_D/x00420 for model 420
+                                 WARNING: rel_run_E_err         421    4.3253590676249697D-02
+                                 WARNING: rel_run_E_err         422    4.3241522166933000D-02
+                                 WARNING: rel_run_E_err         423    4.3227054348134099D-02
+                                 WARNING: rel_run_E_err         424    4.3209713652751731D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     425
+                                 WARNING: rel_run_E_err         425    4.3199318756399187D-02
+save LOGS/profile18.data for model 425
+save z_Photos/Photos_D/x00425 for model 425
+                                 WARNING: rel_run_E_err         426    4.3188931701607002D-02
+                                 WARNING: rel_run_E_err         427    4.3176477913700648D-02
+                                 WARNING: rel_run_E_err         428    4.3161548720070282D-02
+                                 WARNING: rel_run_E_err         429    4.3143655752892869D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     430
+                                 WARNING: rel_run_E_err         430    4.3132930126568783D-02
+save z_Photos/Photos_D/x00430 for model 430
+                                 WARNING: rel_run_E_err         431    4.3122212863111450D-02
+                                 WARNING: rel_run_E_err         432    4.3109363534445985D-02
+                                 WARNING: rel_run_E_err         433    4.3093960711279342D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     434
+                                 WARNING: rel_run_E_err         434    4.3084725663094625D-02
+                                 WARNING: rel_run_E_err         435    4.3075496822828727D-02
+save z_Photos/Photos_D/x00435 for model 435
+                                 WARNING: rel_run_E_err         436    4.3064430673290258D-02
+                                 WARNING: rel_run_E_err         437    4.3051163457046758D-02
+                                 WARNING: rel_run_E_err         438    4.3035260283157246D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     439
+                                 WARNING: rel_run_E_err         439    4.3025726425596066D-02
+                                 WARNING: rel_run_E_err         440    4.3016199197246696D-02
+save z_Photos/Photos_D/x00440 for model 440
+                                 WARNING: rel_run_E_err         441    4.3004775551762311D-02
+                                 WARNING: rel_run_E_err         442    4.2991080159471347D-02
+                                 WARNING: rel_run_E_err         443    4.2974664350798247D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     444
+                                 WARNING: rel_run_E_err         444    4.2964823452940816D-02
+                                 WARNING: rel_run_E_err         445    4.2954989629588346D-02
+save z_Photos/Photos_D/x00445 for model 445
+                                 WARNING: rel_run_E_err         446    4.2943198676341852D-02
+                                 WARNING: rel_run_E_err         447    4.2929063385616077D-02
+                                 WARNING: rel_run_E_err         448    4.2912120949718330D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     449
+                                 WARNING: rel_run_E_err         449    4.2901964650092786D-02
+                                 WARNING: rel_run_E_err         450    4.2891815898471485D-02
+save LOGS/profile19.data for model 450
+save z_Photos/Photos_D/x00450 for model 450
+                                 WARNING: rel_run_E_err         451    4.2879647675524941D-02
+                                 WARNING: rel_run_E_err         452    4.2865060586921792D-02
+                                 WARNING: rel_run_E_err         453    4.2847577322917219D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     454
+                                 WARNING: rel_run_E_err         454    4.2837097137085681D-02
+                                 WARNING: rel_run_E_err         455    4.2826625002121206D-02
+save z_Photos/Photos_D/x00455 for model 455
+                                 WARNING: rel_run_E_err         456    4.2814069403788867D-02
+                                 WARNING: rel_run_E_err         457    4.2799018448302514D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     458
+                                 WARNING: rel_run_E_err         458    4.2789995127820328D-02
+                                 WARNING: rel_run_E_err         459    4.2780977783830131D-02
+                                 WARNING: rel_run_E_err         460    4.2770165111278090D-02
+save z_Photos/Photos_D/x00460 for model 460
+                                 WARNING: rel_run_E_err         461    4.2757201610243593D-02
+                                 WARNING: rel_run_E_err         462    4.2741662237793153D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     463
+                                 WARNING: rel_run_E_err         463    4.2732346357018891D-02
+                                 WARNING: rel_run_E_err         464    4.2723036856325267D-02
+                                 WARNING: rel_run_E_err         465    4.2711874145419437D-02
+save z_Photos/Photos_D/x00465 for model 465
+                                 WARNING: rel_run_E_err         466    4.2698491387948560D-02
+                                 WARNING: rel_run_E_err         467    4.2682450042127250D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     468
+                                 WARNING: rel_run_E_err         468    4.2672833498297993D-02
+                                 WARNING: rel_run_E_err         469    4.2663223763811368D-02
+                                 WARNING: rel_run_E_err         470    4.2651701356772931D-02
+save z_Photos/Photos_D/x00470 for model 470
+                                 WARNING: rel_run_E_err         471    4.2637887803731588D-02
+                                 WARNING: rel_run_E_err         472    4.2621330709227717D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     473
+                                 WARNING: rel_run_E_err         473    4.2611405270180931D-02
+                                 WARNING: rel_run_E_err         474    4.2601487129366775D-02
+                                 WARNING: rel_run_E_err         475    4.2589595256122575D-02
+save LOGS/profile20.data for model 475
+save z_Photos/Photos_D/x00475 for model 475
+                                 WARNING: rel_run_E_err         476    4.2575339236366236D-02
+                                 WARNING: rel_run_E_err         477    4.2558252463745450D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     478
+                                 WARNING: rel_run_E_err         478    4.2548009806629684D-02
+                                 WARNING: rel_run_E_err         479    4.2537774900402781D-02
+                                 WARNING: rel_run_E_err         480    4.2525503568872226D-02
+save z_Photos/Photos_D/x00480 for model 480
+                                 WARNING: rel_run_E_err         481    4.2510793147854498D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     482
+                                 WARNING: rel_run_E_err         482    4.2501973876892016D-02
+                                 WARNING: rel_run_E_err         483    4.2493160360222777D-02
+                                 WARNING: rel_run_E_err         484    4.2482591978487756D-02
+                                 WARNING: rel_run_E_err         485    4.2469921192228997D-02
+save z_Photos/Photos_D/x00485 for model 485
+                                 WARNING: rel_run_E_err         486    4.2454732453733199D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     487
+                                 WARNING: rel_run_E_err         487    4.2445626664649641D-02
+                                 WARNING: rel_run_E_err         488    4.2436527019045947D-02
+                                 WARNING: rel_run_E_err         489    4.2425615812660550D-02
+                                 WARNING: rel_run_E_err         490    4.2412534398513356D-02
+save z_Photos/Photos_D/x00490 for model 490
+                                 WARNING: rel_run_E_err         491    4.2396854000587181D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     492
+                                 WARNING: rel_run_E_err         492    4.2387453718249271D-02
+                                 WARNING: rel_run_E_err         493    4.2378059993554727D-02
+                                 WARNING: rel_run_E_err         494    4.2366796456006044D-02
+                                 WARNING: rel_run_E_err         495    4.2353293054468222D-02
+save z_Photos/Photos_D/x00495 for model 495
+                                 WARNING: rel_run_E_err         496    4.2337107435272803D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     497
+                                 WARNING: rel_run_E_err         497    4.2327404554478601D-02
+                                 WARNING: rel_run_E_err         498    4.2317708671563578D-02
+                                 WARNING: rel_run_E_err         499    4.2306083143624391D-02
+        500   5.541841   4507.504  -8.686425  -8.686425   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -7.019562    555     91
+  -0.087781  -2.751196   1.217478 -99.000000 -20.857171  -9.105439   0.000000   0.280000   0.000059   0.000117   0.280000   0.089704      2      0
+ 3.0431E+02  10.920729   2.004183   1.835442   4.141304  -7.326567   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00  max increase
+                               rel_E_err    1.9906617002945950D-09
+                       log_rel_run_E_err       -1.3737402749931735
+
+                                 WARNING: rel_run_E_err         500    4.2292146214990167D-02
+save LOGS/profile21.data for model 500
+save z_Photos/Photos_D/x00500 for model 500
+                                 WARNING: rel_run_E_err         501    4.2275441600205847D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     502
+                                 WARNING: rel_run_E_err         502    4.2265427889963368D-02
+                                 WARNING: rel_run_E_err         503    4.2255421645669554D-02
+                                 WARNING: rel_run_E_err         504    4.2243424321231342D-02
+                                 WARNING: rel_run_E_err         505    4.2229042152042283D-02
+save z_Photos/Photos_D/x00505 for model 505
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     506
+                                 WARNING: rel_run_E_err         506    4.2220419574701171D-02
+                                 WARNING: rel_run_E_err         507    4.2211802540462855D-02
+                                 WARNING: rel_run_E_err         508    4.2201469650652031D-02
+                                 WARNING: rel_run_E_err         509    4.2189081042196167D-02
+                                 WARNING: rel_run_E_err         510    4.2174230324372952D-02
+save z_Photos/Photos_D/x00510 for model 510
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     511
+                                 WARNING: rel_run_E_err         511    4.2165327073446876D-02
+                                 WARNING: rel_run_E_err         512    4.2156429741188564D-02
+                                 WARNING: rel_run_E_err         513    4.2145761005186619D-02
+                                 WARNING: rel_run_E_err         514    4.2132970116143836D-02
+                                 WARNING: rel_run_E_err         515    4.2117637717247962D-02
+save z_Photos/Photos_D/x00515 for model 515
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     516
+                                 WARNING: rel_run_E_err         516    4.2108445942413426D-02
+                                 WARNING: rel_run_E_err         517    4.2099260485807463D-02
+                                 WARNING: rel_run_E_err         518    4.2088246544537848D-02
+                                 WARNING: rel_run_E_err         519    4.2075042190886668D-02
+                                 WARNING: rel_run_E_err         520    4.2059214757300185D-02
+save z_Photos/Photos_D/x00520 for model 520
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     521
+                                 WARNING: rel_run_E_err         521    4.2049726477135230D-02
+                                 WARNING: rel_run_E_err         522    4.2040244940142052D-02
+                                 WARNING: rel_run_E_err         523    4.2028876281010645D-02
+                                 WARNING: rel_run_E_err         524    4.2015247097325042D-02
+                                 WARNING: rel_run_E_err         525    4.1998911061553942D-02
+save LOGS/profile22.data for model 525
+save z_Photos/Photos_D/x00525 for model 525
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     526
+                                 WARNING: rel_run_E_err         526    4.1989118168154815D-02
+                                 WARNING: rel_run_E_err         527    4.1979332469601803D-02
+                                 WARNING: rel_run_E_err         528    4.1967599431582146D-02
+                                 WARNING: rel_run_E_err         529    4.1953533876808766D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     530
+                                 WARNING: rel_run_E_err         530    4.1945101023175127D-02
+save z_Photos/Photos_D/x00530 for model 530
+                                 WARNING: rel_run_E_err         531    4.1936673511849001D-02
+                                 WARNING: rel_run_E_err         532    4.1926567776434026D-02
+                                 WARNING: rel_run_E_err         533    4.1914451360728938D-02
+                                 WARNING: rel_run_E_err         534    4.1899926710357346D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     535
+                                 WARNING: rel_run_E_err         535    4.1891218838975244D-02
+save z_Photos/Photos_D/x00535 for model 535
+                                 WARNING: rel_run_E_err         536    4.1882516672402170D-02
+                                 WARNING: rel_run_E_err         537    4.1872081844327003D-02
+                                 WARNING: rel_run_E_err         538    4.1859571226774306D-02
+                                 WARNING: rel_run_E_err         539    4.1844574553057776D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     540
+                                 WARNING: rel_run_E_err         540    4.1835583935480466D-02
+save z_Photos/Photos_D/x00540 for model 540
+                                 WARNING: rel_run_E_err         541    4.1826599408386407D-02
+                                 WARNING: rel_run_E_err         542    4.1815826272868846D-02
+                                 WARNING: rel_run_E_err         543    4.1802910441000915D-02
+                                 WARNING: rel_run_E_err         544    4.1787428594188609D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     545
+                                 WARNING: rel_run_E_err         545    4.1778147370315849D-02
+save z_Photos/Photos_D/x00545 for model 545
+                                 WARNING: rel_run_E_err         546    4.1768872647135774D-02
+                                 WARNING: rel_run_E_err         547    4.1757751834830867D-02
+                                 WARNING: rel_run_E_err         548    4.1744419593509267D-02
+                                 WARNING: rel_run_E_err         549    4.1728439207897344D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     550
+                                 WARNING: rel_run_E_err         550    4.1718859389872194D-02
+save LOGS/profile23.data for model 550
+save z_Photos/Photos_D/x00550 for model 550
+                                 WARNING: rel_run_E_err         551    4.1709286508620276D-02
+                                 WARNING: rel_run_E_err         552    4.1697806956626775D-02
+                                 WARNING: rel_run_E_err         553    4.1684045073458353D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     554
+                                 WARNING: rel_run_E_err         554    4.1675794188127141D-02
+                                 WARNING: rel_run_E_err         555    4.1667548451929853D-02
+save z_Photos/Photos_D/x00555 for model 555
+                                 WARNING: rel_run_E_err         556    4.1657660583814475D-02
+                                 WARNING: rel_run_E_err         557    4.1645805230883723D-02
+                                 WARNING: rel_run_E_err         558    4.1631593312447382D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     559
+                                 WARNING: rel_run_E_err         559    4.1623072830041345D-02
+                                 WARNING: rel_run_E_err         560    4.1614557846556509D-02
+save z_Photos/Photos_D/x00560 for model 560
+                                 WARNING: rel_run_E_err         561    4.1604347357908973D-02
+                                 WARNING: rel_run_E_err         562    4.1592105544840378D-02
+                                 WARNING: rel_run_E_err         563    4.1577430857725500D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     564
+                                 WARNING: rel_run_E_err         564    4.1568633165626825D-02
+                                 WARNING: rel_run_E_err         565    4.1559841344630082D-02
+save z_Photos/Photos_D/x00565 for model 565
+                                 WARNING: rel_run_E_err         566    4.1549299157817389D-02
+                                 WARNING: rel_run_E_err         567    4.1536660035210178D-02
+                                 WARNING: rel_run_E_err         568    4.1521509622742786D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     569
+                                 WARNING: rel_run_E_err         569    4.1512426975689284D-02
+                                 WARNING: rel_run_E_err         570    4.1503350595620318D-02
+save z_Photos/Photos_D/x00570 for model 570
+                                 WARNING: rel_run_E_err         571    4.1492467476975346D-02
+                                 WARNING: rel_run_E_err         572    4.1479420010954747D-02
+                                 WARNING: rel_run_E_err         573    4.1463780699012583D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     574
+                                 WARNING: rel_run_E_err         574    4.1454405222905222D-02
+                                 WARNING: rel_run_E_err         575    4.1445036434828303D-02
+save LOGS/profile24.data for model 575
+save z_Photos/Photos_D/x00575 for model 575
+                                 WARNING: rel_run_E_err         576    4.1433802999876125D-02
+                                 WARNING: rel_run_E_err         577    4.1420335977772164D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     578
+                                 WARNING: rel_run_E_err         578    4.1412261786590202D-02
+                                 WARNING: rel_run_E_err         579    4.1404192561957751D-02
+                                 WARNING: rel_run_E_err         580    4.1394516259315416D-02
+save z_Photos/Photos_D/x00580 for model 580
+                                 WARNING: rel_run_E_err         581    4.1382914427938913D-02
+                                 WARNING: rel_run_E_err         582    4.1369006222585061D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     583
+                                 WARNING: rel_run_E_err         583    4.1360667731110502D-02
+                                 WARNING: rel_run_E_err         584    4.1352334543897501D-02
+                                 WARNING: rel_run_E_err         585    4.1342341983209546D-02
+save z_Photos/Photos_D/x00585 for model 585
+                                 WARNING: rel_run_E_err         586    4.1330361303205596D-02
+                                 WARNING: rel_run_E_err         587    4.1315999429089985D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     588
+                                 WARNING: rel_run_E_err         588    4.1307389172325244D-02
+                                 WARNING: rel_run_E_err         589    4.1298784579441201D-02
+                                 WARNING: rel_run_E_err         590    4.1288466784429198D-02
+save z_Photos/Photos_D/x00590 for model 590
+                                 WARNING: rel_run_E_err         591    4.1276096526827670D-02
+                                 WARNING: rel_run_E_err         592    4.1261268170208920D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     593
+                                 WARNING: rel_run_E_err         593    4.1252378487818993D-02
+                                 WARNING: rel_run_E_err         594    4.1243494851693145D-02
+                                 WARNING: rel_run_E_err         595    4.1232842725627480D-02
+save z_Photos/Photos_D/x00595 for model 595
+                                 WARNING: rel_run_E_err         596    4.1220072019203580D-02
+                                 WARNING: rel_run_E_err         597    4.1204764198892303D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     598
+                                 WARNING: rel_run_E_err         598    4.1195587331627335D-02
+                                 WARNING: rel_run_E_err         599    4.1186416917391125D-02
+        600   5.548932   4512.613  -8.542268  -8.542268   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -6.995103    556    112
+  -0.154093  -2.730215   1.209813 -99.000000 -20.724492  -9.126513   0.000000   0.280000   0.000059   0.000117   0.280000   0.089684      2      0
+ 3.7263E+02  10.948808   1.990821   1.850772   4.146946  -7.321418   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00  max increase
+                               rel_E_err    1.5271528074652206D-09
+                       log_rel_run_E_err       -1.3853619494406417
+
+                                 WARNING: rel_run_E_err         600    4.1175421211502965D-02
+save LOGS/profile25.data for model 600
+save z_Photos/Photos_D/x00600 for model 600
+                                 WARNING: rel_run_E_err         601    4.1162239005040575D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     602
+                                 WARNING: rel_run_E_err         602    4.1154335491180180D-02
+                                 WARNING: rel_run_E_err         603    4.1146436769706675D-02
+                                 WARNING: rel_run_E_err         604    4.1136964833893619D-02
+                                 WARNING: rel_run_E_err         605    4.1125607902063883D-02
+save z_Photos/Photos_D/x00605 for model 605
+                                 WARNING: rel_run_E_err         606    4.1111993086662586D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     607
+                                 WARNING: rel_run_E_err         607    4.1103830403135012D-02
+                                 WARNING: rel_run_E_err         608    4.1095672838333555D-02
+                                 WARNING: rel_run_E_err         609    4.1085890734970584D-02
+                                 WARNING: rel_run_E_err         610    4.1074162240963732D-02
+save z_Photos/Photos_D/x00610 for model 610
+                                 WARNING: rel_run_E_err         611    4.1060102468537529D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     612
+                                 WARNING: rel_run_E_err         612    4.1051673232092779D-02
+                                 WARNING: rel_run_E_err         613    4.1043249461772242D-02
+                                 WARNING: rel_run_E_err         614    4.1033148384922342D-02
+                                 WARNING: rel_run_E_err         615    4.1021037802507841D-02
+save z_Photos/Photos_D/x00615 for model 615
+                                 WARNING: rel_run_E_err         616    4.1006520500653364D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     617
+                                 WARNING: rel_run_E_err         617    4.0997817194799696D-02
+                                 WARNING: rel_run_E_err         618    4.0989119724659483D-02
+                                 WARNING: rel_run_E_err         619    4.0978690711333969D-02
+                                 WARNING: rel_run_E_err         620    4.0966187328545664D-02
+save z_Photos/Photos_D/x00620 for model 620
+                                 WARNING: rel_run_E_err         621    4.0951199705186861D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     622
+                                 WARNING: rel_run_E_err         622    4.0942214683180399D-02
+                                 WARNING: rel_run_E_err         623    4.0933235890055673D-02
+                                 WARNING: rel_run_E_err         624    4.0922469824548370D-02
+                                 WARNING: rel_run_E_err         625    4.0909562748431848D-02
+save LOGS/profile26.data for model 625
+save z_Photos/Photos_D/x00625 for model 625
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     626
+                                 WARNING: rel_run_E_err         626    4.0901824110492528D-02
+                                 WARNING: rel_run_E_err         627    4.0894090098740475D-02
+                                 WARNING: rel_run_E_err         628    4.0884815588530118D-02
+                                 WARNING: rel_run_E_err         629    4.0873695242594543D-02
+                                 WARNING: rel_run_E_err         630    4.0860363863089673D-02
+save z_Photos/Photos_D/x00630 for model 630
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     631
+                                 WARNING: rel_run_E_err         631    4.0852371025613635D-02
+                                 WARNING: rel_run_E_err         632    4.0844383129779116D-02
+                                 WARNING: rel_run_E_err         633    4.0834804388348599D-02
+                                 WARNING: rel_run_E_err         634    4.0823319582258072D-02
+                                 WARNING: rel_run_E_err         635    4.0809551737804949D-02
+save z_Photos/Photos_D/x00635 for model 635
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     636
+                                 WARNING: rel_run_E_err         636    4.0801297428527089D-02
+                                 WARNING: rel_run_E_err         637    4.0793048396707103D-02
+                                 WARNING: rel_run_E_err         638    4.0783156749379067D-02
+                                 WARNING: rel_run_E_err         639    4.0771297113587762D-02
+                                 WARNING: rel_run_E_err         640    4.0757080417737693D-02
+save z_Photos/Photos_D/x00640 for model 640
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     641
+                                 WARNING: rel_run_E_err         641    4.0748557231005317D-02
+                                 WARNING: rel_run_E_err         642    4.0740039679150054D-02
+                                 WARNING: rel_run_E_err         643    4.0729826294477516D-02
+                                 WARNING: rel_run_E_err         644    4.0717581273310655D-02
+                                 WARNING: rel_run_E_err         645    4.0702903119524722D-02
+save z_Photos/Photos_D/x00645 for model 645
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     646
+                                 WARNING: rel_run_E_err         646    4.0694103519068880D-02
+                                 WARNING: rel_run_E_err         647    4.0685309933634520D-02
+                                 WARNING: rel_run_E_err         648    4.0674765826433090D-02
+                                 WARNING: rel_run_E_err         649    4.0662124682196300D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     650
+                                 WARNING: rel_run_E_err         650    4.0654545410528070D-02
+save LOGS/profile27.data for model 650
+save z_Photos/Photos_D/x00650 for model 650
+                                 WARNING: rel_run_E_err         651    4.0646970606540982D-02
+                                 WARNING: rel_run_E_err         652    4.0637886929953994D-02
+                                 WARNING: rel_run_E_err         653    4.0626995274236959D-02
+                                 WARNING: rel_run_E_err         654    4.0613937877482353D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     655
+                                 WARNING: rel_run_E_err         655    4.0606109224126309D-02
+save z_Photos/Photos_D/x00655 for model 655
+                                 WARNING: rel_run_E_err         656    4.0598285343506693D-02
+                                 WARNING: rel_run_E_err         657    4.0588903190446279D-02
+                                 WARNING: rel_run_E_err         658    4.0577653960190647D-02
+                                 WARNING: rel_run_E_err         659    4.0564167109050482D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     660
+                                 WARNING: rel_run_E_err         660    4.0556081179613589D-02
+save z_Photos/Photos_D/x00660 for model 660
+                                 WARNING: rel_run_E_err         661    4.0548000351968289D-02
+                                 WARNING: rel_run_E_err         662    4.0538310310877845D-02
+                                 WARNING: rel_run_E_err         663    4.0526692259440222D-02
+                                 WARNING: rel_run_E_err         664    4.0512764972020672D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     665
+                                 WARNING: rel_run_E_err         665    4.0504415201976701D-02
+save z_Photos/Photos_D/x00665 for model 665
+                                 WARNING: rel_run_E_err         666    4.0496070879907684D-02
+                                 WARNING: rel_run_E_err         667    4.0486065117147356D-02
+                                 WARNING: rel_run_E_err         668    4.0474068877588899D-02
+                                 WARNING: rel_run_E_err         669    4.0459688738004998D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     670
+                                 WARNING: rel_run_E_err         670    4.0451067703294180D-02
+save z_Photos/Photos_D/x00670 for model 670
+                                 WARNING: rel_run_E_err         671    4.0442452484990746D-02
+                                 WARNING: rel_run_E_err         672    4.0432122148696001D-02
+                                 WARNING: rel_run_E_err         673    4.0419737142063664D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     674
+                                 WARNING: rel_run_E_err         674    4.0412311373269366D-02
+                                 WARNING: rel_run_E_err         675    4.0404889925126551D-02
+save LOGS/profile28.data for model 675
+save z_Photos/Photos_D/x00675 for model 675
+                                 WARNING: rel_run_E_err         676    4.0395990075797583D-02
+                                 WARNING: rel_run_E_err         677    4.0385318725732734D-02
+                                 WARNING: rel_run_E_err         678    4.0372525283415790D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     679
+                                 WARNING: rel_run_E_err         679    4.0364854811465199D-02
+                                 WARNING: rel_run_E_err         680    4.0357188955803022D-02
+save z_Photos/Photos_D/x00680 for model 680
+                                 WARNING: rel_run_E_err         681    4.0347996220192389D-02
+                                 WARNING: rel_run_E_err         682    4.0336973985486073D-02
+                                 WARNING: rel_run_E_err         683    4.0323760313414253D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     684
+                                 WARNING: rel_run_E_err         684    4.0315838085110682D-02
+                                 WARNING: rel_run_E_err         685    4.0307920787926305D-02
+save z_Photos/Photos_D/x00685 for model 685
+                                 WARNING: rel_run_E_err         686    4.0298426751371283D-02
+                                 WARNING: rel_run_E_err         687    4.0287043571971548D-02
+                                 WARNING: rel_run_E_err         688    4.0273397651888976D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     689
+                                 WARNING: rel_run_E_err         689    4.0265216480990067D-02
+                                 WARNING: rel_run_E_err         690    4.0257040576376496D-02
+save z_Photos/Photos_D/x00690 for model 690
+                                 WARNING: rel_run_E_err         691    4.0247236667517408D-02
+                                 WARNING: rel_run_E_err         692    4.0235482297404451D-02
+                                 WARNING: rel_run_E_err         693    4.0221391891254669D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     694
+                                 WARNING: rel_run_E_err         694    4.0212944460968007D-02
+                                 WARNING: rel_run_E_err         695    4.0204502653693609D-02
+save z_Photos/Photos_D/x00695 for model 695
+                                 WARNING: rel_run_E_err         696    4.0194380147535604D-02
+                                 WARNING: rel_run_E_err         697    4.0182244159097470D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     698
+                                 WARNING: rel_run_E_err         698    4.0174967626546522D-02
+                                 WARNING: rel_run_E_err         699    4.0167695271283249D-02
+        700   5.555615   4517.382  -8.407014  -8.407014   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -6.972434    557    133
+  -0.220404  -2.710430   1.202593 -99.000000 -20.599994  -9.146378   0.000000   0.280000   0.000059   0.000117   0.280000   0.089666      2      0
+ 4.4010E+02  10.975282   1.978215   1.865213   4.152311  -7.316511   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00  max increase
+                               rel_E_err    1.1797278013746372D-09
+                       log_rel_run_E_err       -1.3962173897805115
+
+                                 WARNING: rel_run_E_err         700    4.0158974138392485D-02
+save LOGS/profile29.data for model 700
+save z_Photos/Photos_D/x00700 for model 700
+                                 WARNING: rel_run_E_err         701    4.0148516967710726D-02
+                                 WARNING: rel_run_E_err         702    4.0135980137801279D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     703
+                                 WARNING: rel_run_E_err         703    4.0128463447183800D-02
+                                 WARNING: rel_run_E_err         704    4.0120951219927065D-02
+                                 WARNING: rel_run_E_err         705    4.0111942630695986D-02
+save z_Photos/Photos_D/x00705 for model 705
+                                 WARNING: rel_run_E_err         706    4.0101141072937191D-02
+                                 WARNING: rel_run_E_err         707    4.0088191783760045D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     708
+                                 WARNING: rel_run_E_err         708    4.0080427986867076D-02
+                                 WARNING: rel_run_E_err         709    4.0072668958259623D-02
+                                 WARNING: rel_run_E_err         710    4.0063364622677192D-02
+save z_Photos/Photos_D/x00710 for model 710
+                                 WARNING: rel_run_E_err         711    4.0052208766112429D-02
+                                 WARNING: rel_run_E_err         712    4.0038835176095071D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     713
+                                 WARNING: rel_run_E_err         713    4.0030817191996540D-02
+                                 WARNING: rel_run_E_err         714    4.0022804300747748D-02
+                                 WARNING: rel_run_E_err         715    4.0013195772177060D-02
+save z_Photos/Photos_D/x00715 for model 715
+                                 WARNING: rel_run_E_err         716    4.0001675519590760D-02
+                                 WARNING: rel_run_E_err         717    3.9987865567262366D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     718
+                                 WARNING: rel_run_E_err         718    3.9979586184420463D-02
+                                 WARNING: rel_run_E_err         719    3.9971312239904057D-02
+                                 WARNING: rel_run_E_err         720    3.9961390917994652D-02
+save z_Photos/Photos_D/x00720 for model 720
+                                 WARNING: rel_run_E_err         721    3.9949495989646422D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     722
+                                 WARNING: rel_run_E_err         722    3.9942363926500711D-02
+                                 WARNING: rel_run_E_err         723    3.9935235903748534D-02
+                                 WARNING: rel_run_E_err         724    3.9926687783645248D-02
+                                 WARNING: rel_run_E_err         725    3.9916437960626459D-02
+save LOGS/profile30.data for model 725
+save z_Photos/Photos_D/x00725 for model 725
+                                 WARNING: rel_run_E_err         726    3.9904149563270562D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     727
+                                 WARNING: rel_run_E_err         727    3.9896781754405489D-02
+                                 WARNING: rel_run_E_err         728    3.9889418263115851D-02
+                                 WARNING: rel_run_E_err         729    3.9880587958480970D-02
+                                 WARNING: rel_run_E_err         730    3.9870000056834026D-02
+save z_Photos/Photos_D/x00730 for model 730
+                                 WARNING: rel_run_E_err         731    3.9857303928970321D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     732
+                                 WARNING: rel_run_E_err         732    3.9849691837270641D-02
+                                 WARNING: rel_run_E_err         733    3.9842084357062879D-02
+                                 WARNING: rel_run_E_err         734    3.9832961665649140D-02
+                                 WARNING: rel_run_E_err         735    3.9822023474607102D-02
+save z_Photos/Photos_D/x00735 for model 735
+                                 WARNING: rel_run_E_err         736    3.9808910641485264D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     737
+                                 WARNING: rel_run_E_err         737    3.9801048908440287D-02
+                                 WARNING: rel_run_E_err         738    3.9793192101028503D-02
+                                 WARNING: rel_run_E_err         739    3.9783770645107006D-02
+                                 WARNING: rel_run_E_err         740    3.9772474552177153D-02
+save z_Photos/Photos_D/x00740 for model 740
+                                 WARNING: rel_run_E_err         741    3.9758933120865377D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     742
+                                 WARNING: rel_run_E_err         742    3.9750814634255831D-02
+                                 WARNING: rel_run_E_err         743    3.9742701407744524D-02
+                                 WARNING: rel_run_E_err         744    3.9732972704796914D-02
+                                 WARNING: rel_run_E_err         745    3.9721308570448546D-02
+save z_Photos/Photos_D/x00745 for model 745
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     746
+                                 WARNING: rel_run_E_err         746    3.9714314852250597D-02
+                                 WARNING: rel_run_E_err         747    3.9707325042345337D-02
+                                 WARNING: rel_run_E_err         748    3.9698942597650375D-02
+                                 WARNING: rel_run_E_err         749    3.9688891326189066D-02
+                                 WARNING: rel_run_E_err         750    3.9676840818575157D-02
+save LOGS/profile31.data for model 750
+save z_Photos/Photos_D/x00750 for model 750
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     751
+                                 WARNING: rel_run_E_err         751    3.9669615572621331D-02
+                                 WARNING: rel_run_E_err         752    3.9662394503264378D-02
+                                 WARNING: rel_run_E_err         753    3.9653734912941663D-02
+                                 WARNING: rel_run_E_err         754    3.9643351592554173D-02
+                                 WARNING: rel_run_E_err         755    3.9630903381648250D-02
+save z_Photos/Photos_D/x00755 for model 755
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     756
+                                 WARNING: rel_run_E_err         756    3.9623439860154624D-02
+                                 WARNING: rel_run_E_err         757    3.9615980801189304D-02
+                                 WARNING: rel_run_E_err         758    3.9607036013007468D-02
+                                 WARNING: rel_run_E_err         759    3.9596311015235718D-02
+                                 WARNING: rel_run_E_err         760    3.9583453596173490D-02
+save z_Photos/Photos_D/x00760 for model 760
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     761
+                                 WARNING: rel_run_E_err         761    3.9575744918708515D-02
+                                 WARNING: rel_run_E_err         762    3.9568041008336413D-02
+                                 WARNING: rel_run_E_err         763    3.9558802813394710D-02
+                                 WARNING: rel_run_E_err         764    3.9547726323912666D-02
+                                 WARNING: rel_run_E_err         765    3.9534447971609946D-02
+save z_Photos/Photos_D/x00765 for model 765
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     766
+                                 WARNING: rel_run_E_err         766    3.9526487126934955D-02
+                                 WARNING: rel_run_E_err         767    3.9518531373651841D-02
+                                 WARNING: rel_run_E_err         768    3.9508991409049544D-02
+                                 WARNING: rel_run_E_err         769    3.9497553430735022D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     770
+                                 WARNING: rel_run_E_err         770    3.9490695224881904D-02
+save z_Photos/Photos_D/x00770 for model 770
+                                 WARNING: rel_run_E_err         771    3.9483840802053936D-02
+                                 WARNING: rel_run_E_err         772    3.9475620651582478D-02
+                                 WARNING: rel_run_E_err         773    3.9465763888496402D-02
+                                 WARNING: rel_run_E_err         774    3.9453946439243014D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     775
+                                 WARNING: rel_run_E_err         775    3.9446860865849094D-02
+save LOGS/profile32.data for model 775
+save z_Photos/Photos_D/x00775 for model 775
+                                 WARNING: rel_run_E_err         776    3.9439779335606918D-02
+                                 WARNING: rel_run_E_err         777    3.9431287010715903D-02
+                                 WARNING: rel_run_E_err         778    3.9421104147927204D-02
+                                 WARNING: rel_run_E_err         779    3.9408896111252499D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     780
+                                 WARNING: rel_run_E_err         780    3.9401576521092961D-02
+save z_Photos/Photos_D/x00780 for model 780
+                                 WARNING: rel_run_E_err         781    3.9394261251279102D-02
+                                 WARNING: rel_run_E_err         782    3.9385488816645171D-02
+                                 WARNING: rel_run_E_err         783    3.9374970364972013D-02
+                                 WARNING: rel_run_E_err         784    3.9362360401666296D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     785
+                                 WARNING: rel_run_E_err         785    3.9354800013050646D-02
+save z_Photos/Photos_D/x00785 for model 785
+                                 WARNING: rel_run_E_err         786    3.9347244240097369D-02
+                                 WARNING: rel_run_E_err         787    3.9338183603894170D-02
+                                 WARNING: rel_run_E_err         788    3.9327319888555812D-02
+                                 WARNING: rel_run_E_err         789    3.9314296439482768D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     790
+                                 WARNING: rel_run_E_err         790    3.9306488340193069D-02
+save z_Photos/Photos_D/x00790 for model 790
+                                 WARNING: rel_run_E_err         791    3.9298685170856607D-02
+                                 WARNING: rel_run_E_err         792    3.9289328087324923D-02
+                                 WARNING: rel_run_E_err         793    3.9278109250824034D-02
+                                 WARNING: rel_run_E_err         794    3.9264660540754150D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     795
+                                 WARNING: rel_run_E_err         795    3.9256597690104263D-02
+save z_Photos/Photos_D/x00795 for model 795
+                                 WARNING: rel_run_E_err         796    3.9248540104048581D-02
+                                 WARNING: rel_run_E_err         797    3.9238878176392496D-02
+                                 WARNING: rel_run_E_err         798    3.9227294182048088D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     799
+                                 WARNING: rel_run_E_err         799    3.9220348521122238D-02
+        800   5.562039   4522.054  -8.277549  -8.277549   0.680000   0.680000   0.719883   0.000006   0.280000   0.719883  -6.951301    557    154
+  -0.286716  -2.691401   1.195655 -99.000000 -20.480817  -9.165425   0.000000   0.280000   0.000059   0.000117   0.280000   0.089649      2      0
+ 5.0791E+02  11.000741   1.966136   1.879087   4.157395  -7.311877   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00          hold
+                               rel_E_err    9.1541546331414128D-10
+                       log_rel_run_E_err       -1.4065654255443767
+
+                                 WARNING: rel_run_E_err         800    3.9213406771550212D-02
+save LOGS/profile33.data for model 800
+save z_Photos/Photos_D/x00800 for model 800
+                                 WARNING: rel_run_E_err         801    3.9205082004189748D-02
+                                 WARNING: rel_run_E_err         802    3.9195099952560916D-02
+                                 WARNING: rel_run_E_err         803    3.9183132518555375D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     804
+                                 WARNING: rel_run_E_err         804    3.9175957118943908D-02
+                                 WARNING: rel_run_E_err         805    3.9168785899156629D-02
+save z_Photos/Photos_D/x00805 for model 805
+                                 WARNING: rel_run_E_err         806    3.9160184477993992D-02
+                                 WARNING: rel_run_E_err         807    3.9149870960640168D-02
+                                 WARNING: rel_run_E_err         808    3.9137506517675925D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     809
+                                 WARNING: rel_run_E_err         809    3.9130093257160777D-02
+                                 WARNING: rel_run_E_err         810    3.9122684460360498D-02
+save z_Photos/Photos_D/x00810 for model 810
+                                 WARNING: rel_run_E_err         811    3.9113799988578585D-02
+                                 WARNING: rel_run_E_err         812    3.9103147373002710D-02
+                                 WARNING: rel_run_E_err         813    3.9090376816078923D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     814
+                                 WARNING: rel_run_E_err         814    3.9082720255788669D-02
+                                 WARNING: rel_run_E_err         815    3.9075068463498168D-02
+save z_Photos/Photos_D/x00815 for model 815
+                                 WARNING: rel_run_E_err         816    3.9065892811779974D-02
+                                 WARNING: rel_run_E_err         817    3.9054891376276948D-02
+                                 WARNING: rel_run_E_err         818    3.9041703091486468D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     819
+                                 WARNING: rel_run_E_err         819    3.9033796286800364D-02
+                                 WARNING: rel_run_E_err         820    3.9025894574102146D-02
+save z_Photos/Photos_D/x00820 for model 820
+                                 WARNING: rel_run_E_err         821    3.9016419459287056D-02
+                                 WARNING: rel_run_E_err         822    3.9005059302192092D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     823
+                                 WARNING: rel_run_E_err         823    3.8998247788448633D-02
+                                 WARNING: rel_run_E_err         824    3.8991440058003486D-02
+                                 WARNING: rel_run_E_err         825    3.8983275938945745D-02
+save LOGS/profile34.data for model 825
+save z_Photos/Photos_D/x00825 for model 825
+                                 WARNING: rel_run_E_err         826    3.8973486414218626D-02
+                                 WARNING: rel_run_E_err         827    3.8961749651948922D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     828
+                                 WARNING: rel_run_E_err         828    3.8954712489795054D-02
+                                 WARNING: rel_run_E_err         829    3.8947679370713521D-02
+                                 WARNING: rel_run_E_err         830    3.8939245139487780D-02
+save z_Photos/Photos_D/x00830 for model 830
+                                 WARNING: rel_run_E_err         831    3.8929131989268034D-02
+                                 WARNING: rel_run_E_err         832    3.8917007607798398D-02
+ loading OP mono data...
+ failed to open /m01.index
+ error while loading OP data, ierr =           -1
+ retry     833
+                                            num_retries         161
+                                     max_number_retries         160
+
+ stopping because of problems -- too many retries
+
+                                 WARNING: rel_run_E_err         833    3.8917007607798398D-02
+
+terminated evolution: element_diffusion_failed
+
+termination code: max_number_retries
+DATE: 2021-08-05
+TIME: 19:04:29
+Okay
+
+******************************************************************
+Failed to create z_Mods/mod_D.mod when running z_Inlists/inlist_D19_forcenoRL
+******************************************************************
+

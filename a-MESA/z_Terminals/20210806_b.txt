@@ -1,0 +1,1177 @@
+Okay
+run z_Inlists/inlist_Z=1d-4_M=0p68
+DATE: 2021-08-06
+TIME: 20:18:34
+ version_number 12778
+
+
+ The terminal output contains the following information
+
+      'step' is the number of steps since the start of the run,
+      'lg_dt' is log10 timestep in years,
+      'age_yr' is the simulated years since the start run,
+      'lg_Tcntr' is log10 center temperature (K),
+      'lg_Dcntr' is log10 center density (g/cm^3),
+      'lg_Pcntr' is log10 center pressure (ergs/cm^3),
+      'Teff' is the surface temperature (K),
+      'lg_R' is log10 surface radius (Rsun),
+      'lg_L' is log10 surface luminosity (Lsun),
+      'lg_LH' is log10 total PP and CNO hydrogen burning power (Lsun),
+      'lg_L3a' is log10 total triple-alpha helium burning power (Lsun),
+      'lg_gsurf' is log10 surface gravity,
+      'lg_LNuc' is log10 nuclear power excluding photodisintegration (Lsun),
+      'lg_LNeu' is log10 total neutrino power (Lsun),
+      'lg_Psurf' is log10 surface pressure (gas + radiation),
+      'Mass' is the total stellar baryonic mass (Msun),
+      'lg_Mdot' is log10 magnitude of rate of change of mass (Msun/year),
+      'lg_Dsurf' is log10 surface density (g/cm^3),
+      'H_env' is the amount of mass where H is the most abundant iso,
+      'He_core' is the largest mass where He is most abundant iso.
+      'C_core' is the largest mass where C is most abundant iso.
+      'H_cntr' is the center H1 mass fraction,
+      'He_cntr' is the center He4 mass fraction,
+      'C_cntr' is the center C12 mass fraction,
+      'N_cntr' is the center N14 mass fraction,
+      'O_cntr' is the center O16 mass fraction,
+      'Ne_cntr' is the center Ne20 mass fraction,
+      'X_avg' is the star average hydrogen mass fraction,
+      'Y_avg' is the star average helium mass fraction,
+      'Z_avg' is the star average metallicity,
+      'gam_cntr' is the center plasma interaction parameter,
+      'eta_cntr' is the center electron degeneracy parameter,
+      'zones' is the number of zones in the current model,
+      'iters' is the number of newton iterations for the current step,
+      'retry' is the number of step retries required during the run,
+      'bckup' is the number of step backups required during the run,
+      'dt_limit' is an indication of what limited the timestep.
+
+ All this and more are saved in the LOGS directory during the run.
+ create pre-main-sequence model
+                                          species  mass          18    6.8000000000000005D-01
+
+                                        relax_num_steps          50
+
+
+                               finished relax_num_steps
+
+ do_star_job_controls_after
+ change to "agb.net"
+ number of species          18
+ new_rotation_flag T
+                               new_omega_div_omega_crit           0    5.0000000000000002D-05    3.1435367567590007D-10
+
+                        set_uniform_initial_composition
+                                             initial_h1    7.1988344270000004D-01
+                                             initial_h2    1.6557300000000002D-05
+                                            initial_he3    8.3974799999999994D-05
+                                            initial_he4    2.7991602519999997D-01
+                       unknown value for initial_zfracs           0
+ read columns_history.list
+ read columns_profile.list
+ net name agb.net
+ use_gold_tolerances T
+ do_element_diffusion T
+ rotation_flag T
+                            set_cumulative_energy_error    0.0000000000000000D+00
+ kappa_file_prefix gs98
+ kappa_lowT_prefix lowT_fa05_gs98
+                                        OMP_NUM_THREADS          12
+
+
+                                 WARNING: rel_run_E_err           1    4.8750704050270148D-02
+save LOGS/profile1.data for model 1
+                                 WARNING: rel_run_E_err           2    4.8750706922320683D-02
+                                 WARNING: rel_run_E_err           3    4.8750708361282272D-02
+                                 WARNING: rel_run_E_err           4    4.8750708722983857D-02
+                                 WARNING: rel_run_E_err           5    4.8750708277496516D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00005 for model 5
+                                 WARNING: rel_run_E_err           6    4.8750707201831743D-02
+                                 WARNING: rel_run_E_err           7    4.8750705594939277D-02
+                                 WARNING: rel_run_E_err           8    4.8750703496561146D-02
+                                 WARNING: rel_run_E_err           9    4.8750700904520335D-02
+                                 WARNING: rel_run_E_err          10    4.8750697788477231D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00010 for model 10
+                                 WARNING: rel_run_E_err          11    4.8750694072245207D-02
+                                 WARNING: rel_run_E_err          12    4.8750689744810526D-02
+                                 WARNING: rel_run_E_err          13    4.8750684724722618D-02
+                                 WARNING: rel_run_E_err          14    4.8750678923409833D-02
+                                 WARNING: rel_run_E_err          15    4.8750672235586344D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00015 for model 15
+                                 WARNING: rel_run_E_err          16    4.8750664577173412D-02
+                                 WARNING: rel_run_E_err          17    4.8750655818170181D-02
+                                 WARNING: rel_run_E_err          18    4.8750645822012939D-02
+                                 WARNING: rel_run_E_err          19    4.8750634384293820D-02
+                                 WARNING: rel_run_E_err          20    4.8750621388407300D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00020 for model 20
+                                 WARNING: rel_run_E_err          21    4.8750606584544852D-02
+                                 WARNING: rel_run_E_err          22    4.8750589675184225D-02
+                                 WARNING: rel_run_E_err          23    4.8750570335046414D-02
+                                 WARNING: rel_run_E_err          24    4.8750548176777181D-02
+                                 WARNING: rel_run_E_err          25    4.8750522718135070D-02
+save LOGS/profile2.data for model 25
+save z_Photos/Photos_Z=1d-4_M=0p68/x00025 for model 25
+                                 WARNING: rel_run_E_err          26    4.8750493350592963D-02
+                                 WARNING: rel_run_E_err          27    4.8750459376996826D-02
+                                 WARNING: rel_run_E_err          28    4.8750419888799766D-02
+                                 WARNING: rel_run_E_err          29    4.8750373798861005D-02
+                                 WARNING: rel_run_E_err          30    4.8750319807579920D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00030 for model 30
+                                 WARNING: rel_run_E_err          31    4.8750256301015579D-02
+                                 WARNING: rel_run_E_err          32    4.8750181345805402D-02
+                                 WARNING: rel_run_E_err          33    4.8750092553975471D-02
+                                 WARNING: rel_run_E_err          34    4.8749987044431918D-02
+                                 WARNING: rel_run_E_err          35    4.8749861239431265D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00035 for model 35
+                                 WARNING: rel_run_E_err          36    4.8749710782460515D-02
+                                 WARNING: rel_run_E_err          37    4.8749530348697626D-02
+                                 WARNING: rel_run_E_err          38    4.8749313464247872D-02
+                                 WARNING: rel_run_E_err          39    4.8749052307293816D-02
+                                 WARNING: rel_run_E_err          40    4.8748737483557507D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00040 for model 40
+                                 WARNING: rel_run_E_err          41    4.8748357765261402D-02
+                                 WARNING: rel_run_E_err          42    4.8747899774905332D-02
+                                 WARNING: rel_run_E_err          43    4.8747347580225732D-02
+                                 WARNING: rel_run_E_err          44    4.8746682213866542D-02
+                                 WARNING: rel_run_E_err          45    4.8745881055973009D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00045 for model 45
+                                 WARNING: rel_run_E_err          46    4.8744917081213451D-02
+                                 WARNING: rel_run_E_err          47    4.8743757962735799D-02
+                                 WARNING: rel_run_E_err          48    4.8742364980395636D-02
+                                 WARNING: rel_run_E_err          49    4.8740691723443717D-02
+                                 WARNING: rel_run_E_err          50    4.8738682528016525D-02
+save LOGS/profile3.data for model 50
+save z_Photos/Photos_Z=1d-4_M=0p68/x00050 for model 50
+                                 WARNING: rel_run_E_err          51    4.8736270619025884D-02
+                                 WARNING: rel_run_E_err          52    4.8733375888246923D-02
+                                 WARNING: rel_run_E_err          53    4.8729902238763292D-02
+                                 WARNING: rel_run_E_err          54    4.8725734411585037D-02
+                                 WARNING: rel_run_E_err          55    4.8720734193716510D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00055 for model 55
+                                 WARNING: rel_run_E_err          56    4.8714735889412872D-02
+                                 WARNING: rel_run_E_err          57    4.8707540914855088D-02
+                                 WARNING: rel_run_E_err          58    4.8698911353116471D-02
+                                 WARNING: rel_run_E_err          59    4.8688562277226503D-02
+                                 WARNING: rel_run_E_err          60    4.8676152616742172D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00060 for model 60
+                                 WARNING: rel_run_E_err          61    4.8661274310127588D-02
+                                 WARNING: rel_run_E_err          62    4.8643439447171324D-02
+                                 WARNING: rel_run_E_err          63    4.8622065070524863D-02
+                                 WARNING: rel_run_E_err          64    4.8596455267255208D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          65    2.0000000000000000D-02
+log_dt 0.068   age 5.842E+00   model   65   iters    0   steps    1   retries    0   nzlo   83   nzhi  550   n  468   nz  550   diffusion_call_number    1
+                                 WARNING: rel_run_E_err          65    4.8565780150189433D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00065 for model 65
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          66    1.9000000000000000D-02
+log_dt 0.147   age 7.010E+00   model   66   iters    0   steps    1   retries    0   nzlo   83   nzhi  550   n  468   nz  550   diffusion_call_number    2
+                                 WARNING: rel_run_E_err          66    4.8529051307173041D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          67    1.7999999999999999D-02
+log_dt 0.226   age 8.413E+00   model   67   iters    0   steps    1   retries    0   nzlo   82   nzhi  549   n  468   nz  549   diffusion_call_number    3
+                                 WARNING: rel_run_E_err          67    4.8485093292863629D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          68    1.7999999999999999D-02
+log_dt 0.305   age 1.010E+01   model   68   iters    0   steps    1   retries    0   nzlo   82   nzhi  549   n  468   nz  549   diffusion_call_number    4
+                                 WARNING: rel_run_E_err          68    4.8432510767071515D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          69    1.7999999999999999D-02
+log_dt 0.384   age 1.211E+01   model   69   iters    0   steps    1   retries    0   nzlo   81   nzhi  549   n  469   nz  549   diffusion_call_number    5
+                                 WARNING: rel_run_E_err          69    4.8369650960701831D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          70    1.7000000000000001D-02
+log_dt 0.464   age 1.454E+01   model   70   iters    0   steps    1   retries    0   nzlo   81   nzhi  549   n  469   nz  549   diffusion_call_number    6
+                                 WARNING: rel_run_E_err          70    4.8294561299670573D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00070 for model 70
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          71    1.9000000000000000D-02
+log_dt 0.543   age 1.744E+01   model   71   iters    0   steps    1   retries    0   nzlo   81   nzhi  549   n  469   nz  549   diffusion_call_number    7
+                                 WARNING: rel_run_E_err          71    4.8204942279994278D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          72    1.7000000000000001D-02
+log_dt 0.622   age 2.093E+01   model   72   iters    0   steps    1   retries    0   nzlo   81   nzhi  549   n  469   nz  549   diffusion_call_number    8
+                                 WARNING: rel_run_E_err          72    4.8098096072457616D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          73    1.7999999999999999D-02
+log_dt 0.701   age 2.512E+01   model   73   iters    0   steps    1   retries    0   nzlo   81   nzhi  549   n  469   nz  549   diffusion_call_number    9
+                                 WARNING: rel_run_E_err          73    4.7970871960416307D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          74    1.7000000000000001D-02
+log_dt 0.780   age 3.014E+01   model   74   iters    0   steps    1   retries    0   nzlo   81   nzhi  549   n  469   nz  549   diffusion_call_number   10
+                                 WARNING: rel_run_E_err          74    4.7819610541130056D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          75    1.7000000000000001D-02
+log_dt 0.859   age 3.617E+01   model   75   iters    0   steps    1   retries    0   nzlo   82   nzhi  550   n  469   nz  550   diffusion_call_number   11
+                                 WARNING: rel_run_E_err          75    4.7640089827620913D-02
+save LOGS/profile4.data for model 75
+save z_Photos/Photos_Z=1d-4_M=0p68/x00075 for model 75
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          76    1.7000000000000001D-02
+log_dt 0.939   age 4.341E+01   model   76   iters    0   steps    1   retries    0   nzlo   82   nzhi  550   n  469   nz  550   diffusion_call_number   12
+                                 WARNING: rel_run_E_err          76    4.7427477908714148D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          77    1.6000000000000000D-02
+log_dt 1.018   age 5.209E+01   model   77   iters    0   steps    1   retries    0   nzlo   81   nzhi  550   n  470   nz  550   diffusion_call_number   13
+                                 WARNING: rel_run_E_err          77    4.7176298756254412D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          78    1.6000000000000000D-02
+log_dt 1.097   age 6.251E+01   model   78   iters    0   steps    1   retries    0   nzlo   81   nzhi  550   n  470   nz  550   diffusion_call_number   14
+                                 WARNING: rel_run_E_err          78    4.6880420036061840D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          79    1.7999999999999999D-02
+log_dt 1.176   age 7.501E+01   model   79   iters    0   steps    1   retries    0   nzlo   81   nzhi  550   n  470   nz  550   diffusion_call_number   15
+                                 WARNING: rel_run_E_err          79    4.6533074221117819D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          80    1.9000000000000000D-02
+log_dt 1.255   age 9.001E+01   model   80   iters    0   steps    1   retries    0   nzlo   80   nzhi  550   n  471   nz  550   diffusion_call_number   16
+                                 WARNING: rel_run_E_err          80    4.6126926517950965D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00080 for model 80
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          81    1.7000000000000001D-02
+log_dt 1.334   age 1.080E+02   model   81   iters    0   steps    1   retries    0   nzlo   80   nzhi  550   n  471   nz  550   diffusion_call_number   17
+                                 WARNING: rel_run_E_err          81    4.5654204822440703D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          82    1.7000000000000001D-02
+log_dt 1.414   age 1.296E+02   model   82   iters    0   steps    1   retries    0   nzlo   81   nzhi  552   n  472   nz  552   diffusion_call_number   18
+                                 WARNING: rel_run_E_err          82    4.5106865007333227D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          83    1.6000000000000000D-02
+log_dt 1.493   age 1.555E+02   model   83   iters    0   steps    1   retries    0   nzlo   81   nzhi  552   n  472   nz  552   diffusion_call_number   19
+                                 WARNING: rel_run_E_err          83    4.4477038168031710D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          84    1.7999999999999999D-02
+log_dt 1.572   age 1.866E+02   model   84   iters    0   steps    1   retries    0   nzlo   80   nzhi  552   n  473   nz  552   diffusion_call_number   20
+                                 WARNING: rel_run_E_err          84    4.3757285738561531D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          85    1.6000000000000000D-02
+log_dt 1.651   age 2.240E+02   model   85   iters    0   steps    1   retries    0   nzlo   81   nzhi  554   n  474   nz  554   diffusion_call_number   21
+                                 WARNING: rel_run_E_err          85    4.2940721339907673D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00085 for model 85
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          86    1.7999999999999999D-02
+log_dt 1.730   age 2.688E+02   model   86   iters    0   steps    1   retries    0   nzlo   80   nzhi  554   n  475   nz  554   diffusion_call_number   22
+                                 WARNING: rel_run_E_err          86    4.2022692295822298D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          87    1.7000000000000001D-02
+log_dt 1.810   age 3.225E+02   model   87   iters    0   steps    1   retries    0   nzlo   81   nzhi  556   n  476   nz  556   diffusion_call_number   23
+                                 WARNING: rel_run_E_err          87    4.1000434827136792D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          88    1.6000000000000000D-02
+log_dt 1.889   age 3.870E+02   model   88   iters    0   steps    1   retries    0   nzlo   83   nzhi  559   n  477   nz  559   diffusion_call_number   24
+                                 WARNING: rel_run_E_err          88    3.9873136751613233D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          89    1.6000000000000000D-02
+log_dt 1.968   age 4.644E+02   model   89   iters    0   steps    1   retries    0   nzlo   84   nzhi  561   n  478   nz  561   diffusion_call_number   25
+                                 WARNING: rel_run_E_err          89    3.8644307484179484D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          90    1.6000000000000000D-02
+log_dt 2.047   age 5.573E+02   model   90   iters    0   steps    1   retries    0   nzlo   82   nzhi  560   n  479   nz  560   diffusion_call_number   26
+                                 WARNING: rel_run_E_err          90    3.7320506406958831D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00090 for model 90
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          91    1.6000000000000000D-02
+log_dt 2.126   age 6.688E+02   model   91   iters    0   steps    1   retries    0   nzlo   82   nzhi  562   n  481   nz  562   diffusion_call_number   27
+                                 WARNING: rel_run_E_err          91    3.5909996498183230D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          92    1.7000000000000001D-02
+log_dt 2.201   age 8.025E+02   model   92   iters    0   steps    1   retries    0   nzlo   83   nzhi  564   n  482   nz  564   diffusion_call_number   28
+                                 WARNING: rel_run_E_err          92    3.4440994475189404D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          93    1.6000000000000000D-02
+log_dt 2.158   age 9.614E+02   model   93   iters    0   steps    1   retries    0   nzlo   85   nzhi  567   n  483   nz  567   diffusion_call_number   29
+                                 WARNING: rel_run_E_err          93    3.3259842947000504D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          94    1.7999999999999999D-02
+log_dt 2.237   age 1.105E+03   model   94   iters    0   steps    1   retries    0   nzlo   81   nzhi  564   n  484   nz  564   diffusion_call_number   30
+                                 WARNING: rel_run_E_err          94    3.2004587091658231D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          95    1.7000000000000001D-02
+log_dt 2.304   age 1.278E+03   model   95   iters    0   steps    1   retries    0   nzlo   81   nzhi  566   n  486   nz  566   diffusion_call_number   31
+                                 WARNING: rel_run_E_err          95    3.0720110292702631D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00095 for model 95
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          96    1.7000000000000001D-02
+log_dt 2.258   age 1.479E+03   model   96   iters    0   steps    1   retries    0   nzlo   80   nzhi  567   n  488   nz  567   diffusion_call_number   32
+                                 WARNING: rel_run_E_err          96    2.9695026647964869D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          97    1.7999999999999999D-02
+log_dt 2.337   age 1.660E+03   model   97   iters    0   steps    1   retries    0   nzlo   80   nzhi  569   n  490   nz  569   diffusion_call_number   33
+                                 WARNING: rel_run_E_err          97    2.8603448282740578D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          98    1.7000000000000001D-02
+log_dt 2.402   age 1.878E+03   model   98   iters    0   steps    1   retries    0   nzlo   80   nzhi  570   n  491   nz  570   diffusion_call_number   34
+                                 WARNING: rel_run_E_err          98    2.7488273772476948D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing          99    1.6000000000000000D-02
+log_dt 2.355   age 2.130E+03   model   99   iters    0   steps    1   retries    0   nzlo   78   nzhi  570   n  493   nz  570   diffusion_call_number   35
+                                 WARNING: rel_run_E_err          99    2.6598186406649387D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         100    1.6000000000000000D-02
+log_dt 2.434   age 2.356E+03   model  100   iters    0   steps    1   retries    0   nzlo   77   nzhi  571   n  495   nz  571   diffusion_call_number   36
+        100   5.685064   4609.065  -5.900606  -5.900606   0.679999   0.679999   0.719883   0.000006   0.280000   0.719883  -6.533936    571      0
+   2.433781  -2.325608   1.063500 -99.000000 -18.291396  -9.496194   0.000000   0.280000   0.000059   0.000117   0.280000   0.089423      3      0
+ 2.6277E+03  11.489635   1.734933   2.143398   4.257551  -7.219999   0.000000   0.000021   0.000000  1.166E-04  1.166E-04  0.000E+00  max increase
+                               rel_E_err    7.7587192983344861D-08
+                       log_rel_run_E_err       -1.5909433317492299
+
+                                 WARNING: rel_run_E_err         100    2.5648186811245199D-02
+save LOGS/profile5.data for model 100
+save z_Photos/Photos_Z=1d-4_M=0p68/x00100 for model 100
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         101    1.7999999999999999D-02
+log_dt 2.498   age 2.628E+03   model  101   iters    0   steps    1   retries    0   nzlo   79   nzhi  574   n  496   nz  574   diffusion_call_number   37
+                                 WARNING: rel_run_E_err         101    2.4677432028782292D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         102    1.6000000000000000D-02
+log_dt 2.451   age 2.943E+03   model  102   iters    0   steps    1   retries    0   nzlo   78   nzhi  574   n  497   nz  574   diffusion_call_number   38
+                                 WARNING: rel_run_E_err         102    2.3900712858659270D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         103    1.4999999999999999D-02
+log_dt 2.530   age 3.225E+03   model  103   iters    0   steps    1   retries    0   nzlo   77   nzhi  575   n  499   nz  575   diffusion_call_number   39
+                                 WARNING: rel_run_E_err         103    2.3070840482055509D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         104    1.7999999999999999D-02
+log_dt 2.595   age 3.564E+03   model  104   iters    0   steps    1   retries    0   nzlo   83   nzhi  582   n  500   nz  582   diffusion_call_number   40
+                                 WARNING: rel_run_E_err         104    2.2220270578212079D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         105    1.7999999999999999D-02
+log_dt 2.547   age 3.957E+03   model  105   iters    0   steps    1   retries    0   nzlo   78   nzhi  579   n  502   nz  579   diffusion_call_number   41
+                                 WARNING: rel_run_E_err         105    2.1538526373437790D-02
+save z_Photos/Photos_Z=1d-4_M=0p68/x00105 for model 105
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         106    1.7000000000000001D-02
+log_dt 2.540   age 4.310E+03   model  106   iters    0   steps    1   retries    0   nzlo   78   nzhi  580   n  503   nz  580   diffusion_call_number   42
+                                 WARNING: rel_run_E_err         106    2.0932261971526225D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         107    1.7000000000000001D-02
+log_dt 2.619   age 4.657E+03   model  107   iters    0   steps    1   retries    0   nzlo   75   nzhi  579   n  505   nz  579   diffusion_call_number   43
+                                 WARNING: rel_run_E_err         107    2.0277658930418021D-02
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         108    1.6000000000000000D-02
+log_dt 2.698   age 5.072E+03   model  108   iters    0   steps    1   retries    0   nzlo   76   nzhi  582   n  507   nz  582   diffusion_call_number   44
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         109    1.7999999999999999D-02
+log_dt 2.659   age 5.572E+03   model  109   iters    0   steps    1   retries    0   nzlo   75   nzhi  582   n  508   nz  582   diffusion_call_number   45
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         110    1.7999999999999999D-02
+log_dt 2.738   age 6.028E+03   model  110   iters    0   steps    1   retries    0   nzlo   79   nzhi  587   n  509   nz  587   diffusion_call_number   46
+save z_Photos/Photos_Z=1d-4_M=0p68/x00110 for model 110
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         111    1.7000000000000001D-02
+log_dt 2.806   age 6.575E+03   model  111   iters    0   steps    1   retries    0   nzlo   80   nzhi  590   n  511   nz  590   diffusion_call_number   47
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         112    1.7000000000000001D-02
+log_dt 2.760   age 7.215E+03   model  112   iters    0   steps    1   retries    0   nzlo   78   nzhi  590   n  513   nz  590   diffusion_call_number   48
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         113    1.7999999999999999D-02
+log_dt 2.839   age 7.791E+03   model  113   iters    0   steps    1   retries    0   nzlo   75   nzhi  593   n  519   nz  593   diffusion_call_number   49
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         114    1.7999999999999999D-02
+log_dt 2.906   age 8.482E+03   model  114   iters    0   steps    1   retries    0   nzlo   79   nzhi  604   n  526   nz  604   diffusion_call_number   50
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         115    1.7999999999999999D-02
+log_dt 2.860   age 9.287E+03   model  115   iters    0   steps    1   retries    0   nzlo   78   nzhi  609   n  532   nz  609   diffusion_call_number   51
+save z_Photos/Photos_Z=1d-4_M=0p68/x00115 for model 115
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         116    1.9000000000000000D-02
+log_dt 2.852   age 1.001E+04   model  116   iters    0   steps    1   retries    0   nzlo   72   nzhi  605   n  534   nz  605   diffusion_call_number   52
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         117    1.9000000000000000D-02
+log_dt 2.931   age 1.072E+04   model  117   iters    0   steps    1   retries    0   nzlo   78   nzhi  617   n  540   nz  617   diffusion_call_number   53
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         118    1.7999999999999999D-02
+log_dt 3.010   age 1.158E+04   model  118   iters    0   steps    1   retries    0   nzlo   74   nzhi  617   n  544   nz  617   diffusion_call_number   54
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         119    1.9000000000000000D-02
+log_dt 2.971   age 1.260E+04   model  119   iters    0   steps    1   retries    0   nzlo   77   nzhi  625   n  549   nz  625   diffusion_call_number   55
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         120    2.1999999999999999D-02
+log_dt 3.050   age 1.353E+04   model  120   iters    0   steps    1   retries    0   nzlo   78   nzhi  631   n  554   nz  631   diffusion_call_number   56
+save z_Photos/Photos_Z=1d-4_M=0p68/x00120 for model 120
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         121    1.7999999999999999D-02
+log_dt 3.116   age 1.466E+04   model  121   iters    0   steps    1   retries    0   nzlo   76   nzhi  634   n  559   nz  634   diffusion_call_number   57
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         122    1.7999999999999999D-02
+log_dt 3.071   age 1.596E+04   model  122   iters    0   steps    1   retries    0   nzlo   73   nzhi  635   n  563   nz  635   diffusion_call_number   58
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         123    2.0000000000000000D-02
+log_dt 3.150   age 1.714E+04   model  123   iters    0   steps    1   retries    0   nzlo   71   nzhi  639   n  569   nz  639   diffusion_call_number   59
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         124    2.0000000000000000D-02
+log_dt 3.214   age 1.855E+04   model  124   iters    0   steps    1   retries    0   nzlo   74   nzhi  648   n  575   nz  648   diffusion_call_number   60
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         125    2.0000000000000000D-02
+log_dt 3.168   age 2.019E+04   model  125   iters    0   steps    1   retries    0   nzlo   71   nzhi  650   n  580   nz  650   diffusion_call_number   61
+save LOGS/profile6.data for model 125
+save z_Photos/Photos_Z=1d-4_M=0p68/x00125 for model 125
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         126    2.0000000000000000D-02
+log_dt 3.247   age 2.166E+04   model  126   iters    0   steps    1   retries    0   nzlo   70   nzhi  653   n  584   nz  653   diffusion_call_number   62
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         127    2.1000000000000001D-02
+log_dt 3.310   age 2.343E+04   model  127   iters    0   steps    1   retries    0   nzlo   70   nzhi  659   n  590   nz  659   diffusion_call_number   63
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         128    2.0000000000000000D-02
+log_dt 3.265   age 2.547E+04   model  128   iters    0   steps    1   retries    0   nzlo   73   nzhi  669   n  597   nz  669   diffusion_call_number   64
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         129    2.1000000000000001D-02
+log_dt 3.344   age 2.731E+04   model  129   iters    0   steps    1   retries    0   nzlo   70   nzhi  667   n  598   nz  667   diffusion_call_number   65
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         130    2.1000000000000001D-02
+log_dt 3.409   age 2.952E+04   model  130   iters    0   steps    1   retries    0   nzlo   74   nzhi  679   n  606   nz  679   diffusion_call_number   66
+save z_Photos/Photos_Z=1d-4_M=0p68/x00130 for model 130
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         131    2.1999999999999999D-02
+log_dt 3.365   age 3.209E+04   model  131   iters    0   steps    1   retries    0   nzlo   73   nzhi  685   n  613   nz  685   diffusion_call_number   67
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         132    2.1999999999999999D-02
+log_dt 3.445   age 3.441E+04   model  132   iters    0   steps    1   retries    0   nzlo   72   nzhi  689   n  618   nz  689   diffusion_call_number   68
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         133    2.1000000000000001D-02
+log_dt 3.513   age 3.719E+04   model  133   iters    0   steps    1   retries    0   nzlo   70   nzhi  692   n  623   nz  692   diffusion_call_number   69
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         134    2.1000000000000001D-02
+log_dt 3.476   age 4.045E+04   model  134   iters    0   steps    1   retries    0   nzlo   74   nzhi  700   n  627   nz  700   diffusion_call_number   70
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         135    2.1999999999999999D-02
+log_dt 3.555   age 4.344E+04   model  135   iters    0   steps    1   retries    0   nzlo   73   nzhi  704   n  632   nz  704   diffusion_call_number   71
+save z_Photos/Photos_Z=1d-4_M=0p68/x00135 for model 135
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         136    2.1000000000000001D-02
+log_dt 3.634   age 4.703E+04   model  136   iters    0   steps    1   retries    0   nzlo   73   nzhi  708   n  636   nz  708   diffusion_call_number   72
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         137    2.1999999999999999D-02
+log_dt 3.709   age 5.134E+04   model  137   iters    0   steps    1   retries    0   nzlo   72   nzhi  711   n  640   nz  711   diffusion_call_number   73
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         138    2.3000000000000000D-02
+log_dt 3.786   age 5.646E+04   model  138   iters    0   steps    1   retries    0   nzlo   72   nzhi  716   n  645   nz  716   diffusion_call_number   74
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         139    2.5000000000000001D-02
+log_dt 3.865   age 6.256E+04   model  139   iters    0   steps    1   retries    0   nzlo   71   nzhi  719   n  649   nz  719   diffusion_call_number   75
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         140    2.1999999999999999D-02
+log_dt 3.944   age 6.989E+04   model  140   iters    0   steps    1   retries    0   nzlo   71   nzhi  720   n  650   nz  720   diffusion_call_number   76
+save z_Photos/Photos_Z=1d-4_M=0p68/x00140 for model 140
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         141    2.1999999999999999D-02
+log_dt 4.023   age 7.869E+04   model  141   iters    0   steps    1   retries    0   nzlo   71   nzhi  723   n  653   nz  723   diffusion_call_number   77
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         142    2.1999999999999999D-02
+log_dt 4.103   age 8.924E+04   model  142   iters    0   steps    1   retries    0   nzlo   67   nzhi  721   n  655   nz  721   diffusion_call_number   78
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         143    2.1999999999999999D-02
+log_dt 4.182   age 1.019E+05   model  143   iters    0   steps    1   retries    0   nzlo   68   nzhi  723   n  656   nz  723   diffusion_call_number   79
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         144    2.1000000000000001D-02
+log_dt 4.261   age 1.171E+05   model  144   iters    0   steps    1   retries    0   nzlo   70   nzhi  727   n  658   nz  727   diffusion_call_number   80
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         145    2.3000000000000000D-02
+log_dt 4.179   age 1.353E+05   model  145   iters    0   steps    1   retries    0   nzlo   68   nzhi  727   n  660   nz  727   diffusion_call_number   81
+save z_Photos/Photos_Z=1d-4_M=0p68/x00145 for model 145
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         146    2.1000000000000001D-02
+log_dt 4.095   age 1.505E+05   model  146   iters    0   steps    1   retries    0   nzlo   70   nzhi  728   n  659   nz  728   diffusion_call_number   82
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         147    2.4000000000000000D-02
+log_dt 4.017   age 1.629E+05   model  147   iters    0   steps    1   retries    0   nzlo   69   nzhi  722   n  654   nz  722   diffusion_call_number   83
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         148    2.1999999999999999D-02
+log_dt 3.963   age 1.733E+05   model  148   iters    0   steps    1   retries    0   nzlo   69   nzhi  715   n  647   nz  715   diffusion_call_number   84
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         149    3.6999999999999998D-02
+log_dt 3.935   age 1.825E+05   model  149   iters    0   steps    1   retries    0   nzlo   71   nzhi  707   n  637   nz  707   diffusion_call_number   85
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         150    5.0000000000000001D-03
+log_dt 4.014   age 1.911E+05   model  150   iters    0   steps    1   retries    0   nzlo   65   nzhi  186   n  122   nz  687   diffusion_call_number   86
+save LOGS/profile7.data for model 150
+save z_Photos/Photos_Z=1d-4_M=0p68/x00150 for model 150
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         151    4.0000000000000001D-03
+log_dt 4.074   age 2.014E+05   model  151   iters    0   steps    1   retries    0   nzlo   68   nzhi  182   n  115   nz  672   diffusion_call_number   87
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         152    5.0000000000000001D-03
+log_dt 4.028   age 2.133E+05   model  152   iters    0   steps    1   retries    0   nzlo   68   nzhi  178   n  111   nz  654   diffusion_call_number   88
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         153    4.0000000000000001D-03
+log_dt 4.108   age 2.239E+05   model  153   iters    0   steps    1   retries    0   nzlo   66   nzhi  174   n  109   nz  641   diffusion_call_number   89
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         154    4.0000000000000001D-03
+log_dt 4.168   age 2.367E+05   model  154   iters    0   steps    1   retries    0   nzlo   65   nzhi  174   n  110   nz  639   diffusion_call_number   90
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         155    4.0000000000000001D-03
+log_dt 4.123   age 2.515E+05   model  155   iters    0   steps    1   retries    0   nzlo   68   nzhi  176   n  109   nz  644   diffusion_call_number   91
+save z_Photos/Photos_Z=1d-4_M=0p68/x00155 for model 155
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         156    4.0000000000000001D-03
+log_dt 4.202   age 2.647E+05   model  156   iters    0   steps    1   retries    0   nzlo   66   nzhi  175   n  110   nz  644   diffusion_call_number   92
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         157    4.0000000000000001D-03
+log_dt 4.265   age 2.806E+05   model  157   iters    0   steps    1   retries    0   nzlo   65   nzhi  175   n  111   nz  644   diffusion_call_number   93
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         158    4.0000000000000001D-03
+log_dt 4.222   age 2.991E+05   model  158   iters    0   steps    1   retries    0   nzlo   65   nzhi  174   n  110   nz  645   diffusion_call_number   94
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         159    5.0000000000000001D-03
+log_dt 4.301   age 3.157E+05   model  159   iters    0   steps    1   retries    0   nzlo   65   nzhi  175   n  111   nz  646   diffusion_call_number   95
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         160    5.0000000000000001D-03
+log_dt 4.364   age 3.358E+05   model  160   iters    0   steps    1   retries    0   nzlo   67   nzhi  176   n  110   nz  649   diffusion_call_number   96
+save z_Photos/Photos_Z=1d-4_M=0p68/x00160 for model 160
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         161    4.0000000000000001D-03
+log_dt 4.321   age 3.589E+05   model  161   iters    0   steps    1   retries    0   nzlo   66   nzhi  175   n  110   nz  649   diffusion_call_number   97
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         162    5.0000000000000001D-03
+log_dt 4.400   age 3.798E+05   model  162   iters    0   steps    1   retries    0   nzlo   64   nzhi  176   n  113   nz  648   diffusion_call_number   98
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         163    5.0000000000000001D-03
+log_dt 4.462   age 4.049E+05   model  163   iters    0   steps    1   retries    0   nzlo   65   nzhi  176   n  112   nz  650   diffusion_call_number   99
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         164    4.0000000000000001D-03
+log_dt 4.420   age 4.339E+05   model  164   iters    0   steps    1   retries    0   nzlo   64   nzhi  176   n  113   nz  650   diffusion_call_number  100
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         165    4.0000000000000001D-03
+log_dt 4.499   age 4.602E+05   model  165   iters    0   steps    1   retries    0   nzlo   62   nzhi  175   n  114   nz  649   diffusion_call_number  101
+save z_Photos/Photos_Z=1d-4_M=0p68/x00165 for model 165
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         166    5.0000000000000001D-03
+log_dt 4.561   age 4.917E+05   model  166   iters    0   steps    1   retries    0   nzlo   64   nzhi  176   n  113   nz  653   diffusion_call_number  102
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         167    5.0000000000000001D-03
+log_dt 4.519   age 5.281E+05   model  167   iters    0   steps    1   retries    0   nzlo   63   nzhi  176   n  114   nz  653   diffusion_call_number  103
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         168    4.0000000000000001D-03
+log_dt 4.598   age 5.612E+05   model  168   iters    0   steps    1   retries    0   nzlo   67   nzhi  179   n  113   nz  658   diffusion_call_number  104
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         169    5.0000000000000001D-03
+log_dt 4.660   age 6.008E+05   model  169   iters    0   steps    1   retries    0   nzlo   64   nzhi  179   n  116   nz  657   diffusion_call_number  105
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         170    4.0000000000000001D-03
+log_dt 4.619   age 6.465E+05   model  170   iters    0   steps    1   retries    0   nzlo   63   nzhi  178   n  116   nz  657   diffusion_call_number  106
+save z_Photos/Photos_Z=1d-4_M=0p68/x00170 for model 170
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         171    5.0000000000000001D-03
+log_dt 4.698   age 6.881E+05   model  171   iters    0   steps    1   retries    0   nzlo   62   nzhi  178   n  117   nz  657   diffusion_call_number  107
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         172    5.0000000000000001D-03
+log_dt 4.760   age 7.379E+05   model  172   iters    0   steps    1   retries    0   nzlo   64   nzhi  178   n  115   nz  660   diffusion_call_number  108
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         173    4.0000000000000001D-03
+log_dt 4.719   age 7.954E+05   model  173   iters    0   steps    1   retries    0   nzlo   63   nzhi  177   n  115   nz  660   diffusion_call_number  109
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         174    5.0000000000000001D-03
+log_dt 4.798   age 8.478E+05   model  174   iters    0   steps    1   retries    0   nzlo  525   nzhi  660   n  136   nz  660   diffusion_call_number  110
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         175    5.0000000000000001D-03
+log_dt 4.864   age 9.106E+05   model  175   iters    0   steps    1   retries    0   nzlo  524   nzhi  660   n  137   nz  660   diffusion_call_number  111
+save LOGS/profile8.data for model 175
+save z_Photos/Photos_Z=1d-4_M=0p68/x00175 for model 175
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         176    5.0000000000000001D-03
+log_dt 4.832   age 9.836E+05   model  176   iters    0   steps    1   retries    0   nzlo  524   nzhi  662   n  139   nz  662   diffusion_call_number  112
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         177    6.0000000000000001D-03
+log_dt 4.911   age 1.052E+06   model  177   iters    0   steps    1   retries    0   nzlo  521   nzhi  662   n  142   nz  662   diffusion_call_number  113
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         178    5.0000000000000001D-03
+log_dt 4.978   age 1.133E+06   model  178   iters    0   steps    1   retries    0   nzlo  521   nzhi  665   n  145   nz  665   diffusion_call_number  114
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         179    6.0000000000000001D-03
+log_dt 4.953   age 1.228E+06   model  179   iters    0   steps    1   retries    0   nzlo  521   nzhi  668   n  148   nz  668   diffusion_call_number  115
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         180    7.0000000000000001D-03
+log_dt 5.032   age 1.318E+06   model  180   iters    0   steps    1   retries    0   nzlo  517   nzhi  667   n  151   nz  667   diffusion_call_number  116
+save z_Photos/Photos_Z=1d-4_M=0p68/x00180 for model 180
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         181    7.0000000000000001D-03
+log_dt 5.111   age 1.425E+06   model  181   iters    0   steps    1   retries    0   nzlo  512   nzhi  667   n  156   nz  667   diffusion_call_number  117
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         182    6.0000000000000001D-03
+log_dt 5.156   age 1.554E+06   model  182   iters    0   steps    1   retries    0   nzlo  510   nzhi  668   n  159   nz  668   diffusion_call_number  118
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         183    5.0000000000000001D-03
+log_dt 5.127   age 1.697E+06   model  183   iters    0   steps    1   retries    0   nzlo  508   nzhi  670   n  163   nz  670   diffusion_call_number  119
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         184    6.0000000000000001D-03
+log_dt 5.204   age 1.832E+06   model  184   iters    0   steps    1   retries    0   nzlo  504   nzhi  670   n  167   nz  670   diffusion_call_number  120
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         185    6.0000000000000001D-03
+log_dt 5.262   age 1.991E+06   model  185   iters    0   steps    1   retries    0   nzlo  501   nzhi  670   n  170   nz  670   diffusion_call_number  121
+save z_Photos/Photos_Z=1d-4_M=0p68/x00185 for model 185
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         186    7.0000000000000001D-03
+log_dt 5.241   age 2.174E+06   model  186   iters    0   steps    1   retries    0   nzlo  499   nzhi  672   n  174   nz  672   diffusion_call_number  122
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         187    7.0000000000000001D-03
+log_dt 5.319   age 2.348E+06   model  187   iters    0   steps    1   retries    0   nzlo  495   nzhi  672   n  178   nz  672   diffusion_call_number  123
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         188    7.0000000000000001D-03
+log_dt 5.376   age 2.557E+06   model  188   iters    0   steps    1   retries    0   nzlo  494   nzhi  674   n  181   nz  674   diffusion_call_number  124
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         189    7.0000000000000001D-03
+log_dt 5.354   age 2.795E+06   model  189   iters    0   steps    1   retries    0   nzlo  490   nzhi  674   n  185   nz  674   diffusion_call_number  125
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         190    7.0000000000000001D-03
+log_dt 5.432   age 3.021E+06   model  190   iters    0   steps    1   retries    0   nzlo  485   nzhi  674   n  190   nz  674   diffusion_call_number  126
+save z_Photos/Photos_Z=1d-4_M=0p68/x00190 for model 190
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         191    8.0000000000000002D-03
+log_dt 5.487   age 3.291E+06   model  191   iters    0   steps    1   retries    0   nzlo  480   nzhi  674   n  195   nz  674   diffusion_call_number  127
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         192    8.0000000000000002D-03
+log_dt 5.460   age 3.598E+06   model  192   iters    0   steps    1   retries    0   nzlo  476   nzhi  674   n  199   nz  674   diffusion_call_number  128
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         193    7.0000000000000001D-03
+log_dt 5.538   age 3.886E+06   model  193   iters    0   steps    1   retries    0   nzlo  472   nzhi  674   n  203   nz  674   diffusion_call_number  129
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         194    8.0000000000000002D-03
+log_dt 5.592   age 4.232E+06   model  194   iters    0   steps    1   retries    0   nzlo  471   nzhi  679   n  209   nz  679   diffusion_call_number  130
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         195    8.0000000000000002D-03
+log_dt 5.556   age 4.623E+06   model  195   iters    0   steps    1   retries    0   nzlo  466   nzhi  679   n  214   nz  679   diffusion_call_number  131
+save z_Photos/Photos_Z=1d-4_M=0p68/x00195 for model 195
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         196    8.0000000000000002D-03
+log_dt 5.635   age 4.983E+06   model  196   iters    0   steps    1   retries    0   nzlo  463   nzhi  681   n  219   nz  681   diffusion_call_number  132
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         197    8.0000000000000002D-03
+log_dt 5.688   age 5.414E+06   model  197   iters    0   steps    1   retries    0   nzlo  458   nzhi  681   n  224   nz  681   diffusion_call_number  133
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         198    8.0000000000000002D-03
+log_dt 5.641   age 5.902E+06   model  198   iters    0   steps    1   retries    0   nzlo  455   nzhi  684   n  230   nz  684   diffusion_call_number  134
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         199    8.0000000000000002D-03
+log_dt 5.628   age 6.339E+06   model  199   iters    0   steps    1   retries    0   nzlo  449   nzhi  684   n  236   nz  684   diffusion_call_number  135
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         200    8.9999999999999993D-03
+log_dt 5.707   age 6.764E+06   model  200   iters    0   steps    1   retries    0   nzlo  446   nzhi  684   n  239   nz  684   diffusion_call_number  136
+        200   6.752341   4839.596  -3.207344  -3.207344   0.679989   0.679989   0.719874   0.000006   0.280024   0.719875  -2.278773    684      0
+   5.707475   1.148518  -0.039993 -71.498672  -4.607624 -12.738042   0.000000   0.280026   0.000059   0.000100   0.280025   0.110211      5      0
+ 7.2741E+06  16.033624  -0.387268   4.350378   5.519374  -5.975526   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00  max increase
+                               rel_E_err    6.6686918258749121D-09
+                       log_rel_run_E_err       -2.8441436693908355
+
+save LOGS/profile9.data for model 200
+save z_Photos/Photos_Z=1d-4_M=0p68/x00200 for model 200
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         201    8.9999999999999993D-03
+log_dt 5.778   age 7.274E+06   model  201   iters    0   steps    1   retries    0   nzlo  442   nzhi  684   n  243   nz  684   diffusion_call_number  137
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         202    8.9999999999999993D-03
+log_dt 5.721   age 7.874E+06   model  202   iters    0   steps    1   retries    0   nzlo  442   nzhi  687   n  246   nz  687   diffusion_call_number  138
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         203    8.9999999999999993D-03
+log_dt 5.700   age 8.400E+06   model  203   iters    0   steps    1   retries    0   nzlo  438   nzhi  687   n  250   nz  687   diffusion_call_number  139
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         204    8.9999999999999993D-03
+log_dt 5.695   age 8.901E+06   model  204   iters    0   steps    1   retries    0   nzlo  437   nzhi  688   n  252   nz  688   diffusion_call_number  140
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         205    8.9999999999999993D-03
+log_dt 5.775   age 9.397E+06   model  205   iters    0   steps    1   retries    0   nzlo  435   nzhi  690   n  256   nz  690   diffusion_call_number  141
+save z_Photos/Photos_Z=1d-4_M=0p68/x00205 for model 205
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         206    8.9999999999999993D-03
+log_dt 5.854   age 9.992E+06   model  206   iters    0   steps    1   retries    0   nzlo  431   nzhi  690   n  260   nz  690   diffusion_call_number  142
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         207    8.9999999999999993D-03
+log_dt 5.783   age 1.071E+07   model  207   iters    0   steps    1   retries    0   nzlo  426   nzhi  690   n  265   nz  690   diffusion_call_number  143
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         208    1.0000000000000000D-02
+log_dt 5.751   age 1.131E+07   model  208   iters    0   steps    1   retries    0   nzlo  424   nzhi  692   n  269   nz  692   diffusion_call_number  144
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         209    8.9999999999999993D-03
+log_dt 5.738   age 1.188E+07   model  209   iters    0   steps    1   retries    0   nzlo  421   nzhi  694   n  274   nz  694   diffusion_call_number  145
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         210    1.0000000000000000D-02
+log_dt 5.733   age 1.242E+07   model  210   iters    0   steps    1   retries    0   nzlo  419   nzhi  696   n  278   nz  696   diffusion_call_number  146
+save z_Photos/Photos_Z=1d-4_M=0p68/x00210 for model 210
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         211    1.0000000000000000D-02
+log_dt 5.732   age 1.297E+07   model  211   iters    0   steps    1   retries    0   nzlo  416   nzhi  697   n  282   nz  697   diffusion_call_number  147
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         212    1.0000000000000000D-02
+log_dt 5.811   age 1.351E+07   model  212   iters    0   steps    1   retries    0   nzlo  412   nzhi  697   n  286   nz  697   diffusion_call_number  148
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         213    1.0999999999999999D-02
+log_dt 5.891   age 1.415E+07   model  213   iters    0   steps    1   retries    0   nzlo  414   nzhi  704   n  291   nz  704   diffusion_call_number  149
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         214    8.9999999999999993D-03
+log_dt 5.813   age 1.493E+07   model  214   iters    0   steps    1   retries    0   nzlo  410   nzhi  706   n  297   nz  706   diffusion_call_number  150
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         215    1.0000000000000000D-02
+log_dt 5.776   age 1.558E+07   model  215   iters    0   steps    1   retries    0   nzlo  405   nzhi  706   n  302   nz  706   diffusion_call_number  151
+save z_Photos/Photos_Z=1d-4_M=0p68/x00215 for model 215
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         216    1.0999999999999999D-02
+log_dt 5.760   age 1.618E+07   model  216   iters    0   steps    1   retries    0   nzlo  407   nzhi  712   n  306   nz  712   diffusion_call_number  152
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         217    1.0000000000000000D-02
+log_dt 5.754   age 1.675E+07   model  217   iters    0   steps    1   retries    0   nzlo  402   nzhi  712   n  311   nz  712   diffusion_call_number  153
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         218    1.0999999999999999D-02
+log_dt 5.753   age 1.732E+07   model  218   iters    0   steps    1   retries    0   nzlo  398   nzhi  712   n  315   nz  712   diffusion_call_number  154
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         219    1.0999999999999999D-02
+log_dt 5.832   age 1.789E+07   model  219   iters    0   steps    1   retries    0   nzlo  395   nzhi  713   n  319   nz  713   diffusion_call_number  155
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         220    1.0999999999999999D-02
+log_dt 5.911   age 1.857E+07   model  220   iters    0   steps    1   retries    0   nzlo  391   nzhi  714   n  324   nz  714   diffusion_call_number  156
+save z_Photos/Photos_Z=1d-4_M=0p68/x00220 for model 220
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         221    1.2999999999999999D-02
+log_dt 5.839   age 1.938E+07   model  221   iters    0   steps    1   retries    0   nzlo  391   nzhi  719   n  329   nz  719   diffusion_call_number  157
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         222    1.2999999999999999D-02
+log_dt 5.807   age 2.007E+07   model  222   iters    0   steps    1   retries    0   nzlo  388   nzhi  722   n  335   nz  722   diffusion_call_number  158
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         223    1.2000000000000000D-02
+log_dt 5.793   age 2.071E+07   model  223   iters    0   steps    1   retries    0   nzlo  384   nzhi  725   n  342   nz  725   diffusion_call_number  159
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         224    1.2999999999999999D-02
+log_dt 5.787   age 2.133E+07   model  224   iters    0   steps    1   retries    0   nzlo  382   nzhi  729   n  348   nz  729   diffusion_call_number  160
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         225    1.2000000000000000D-02
+log_dt 5.781   age 2.195E+07   model  225   iters    0   steps    1   retries    0   nzlo  380   nzhi  733   n  354   nz  733   diffusion_call_number  161
+save LOGS/profile10.data for model 225
+save z_Photos/Photos_Z=1d-4_M=0p68/x00225 for model 225
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         226    1.2999999999999999D-02
+log_dt 5.770   age 2.255E+07   model  226   iters    0   steps    1   retries    0   nzlo  377   nzhi  728   n  352   nz  739   diffusion_call_number  162
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         227    1.2000000000000000D-02
+log_dt 5.849   age 2.314E+07   model  227   iters    0   steps    1   retries    0   nzlo  377   nzhi  728   n  352   nz  744   diffusion_call_number  163
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         228    1.2000000000000000D-02
+log_dt 5.928   age 2.384E+07   model  228   iters    0   steps    1   retries    0   nzlo  374   nzhi  723   n  350   nz  748   diffusion_call_number  164
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         229    1.2000000000000000D-02
+log_dt 6.007   age 2.469E+07   model  229   iters    0   steps    1   retries    0   nzlo  372   nzhi  721   n  350   nz  754   diffusion_call_number  165
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         230    1.4000000000000000D-02
+log_dt 6.086   age 2.571E+07   model  230   iters    0   steps    1   retries    0   nzlo  372   nzhi  722   n  351   nz  761   diffusion_call_number  166
+save z_Photos/Photos_Z=1d-4_M=0p68/x00230 for model 230
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         231    1.2000000000000000D-02
+log_dt 6.165   age 2.693E+07   model  231   iters    0   steps    1   retries    0   nzlo  373   nzhi  718   n  346   nz  765   diffusion_call_number  167
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         232    1.2000000000000000D-02
+log_dt 6.245   age 2.839E+07   model  232   iters    0   steps    1   retries    0   nzlo  378   nzhi  717   n  340   nz  767   diffusion_call_number  168
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         233    1.2000000000000000D-02
+log_dt 6.324   age 3.015E+07   model  233   iters    0   steps    1   retries    0   nzlo  381   nzhi  719   n  339   nz  770   diffusion_call_number  169
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         234    1.2999999999999999D-02
+log_dt 6.403   age 3.226E+07   model  234   iters    0   steps    1   retries    0   nzlo  385   nzhi  720   n  336   nz  770   diffusion_call_number  170
+        234   7.082449   5710.815  -0.447873  -0.447873   0.679985   0.679985   0.719434   0.000006   0.279980   0.719779  -1.244743    770      0
+   6.402990   2.015958  -0.214472 -49.890408  -2.070303 -12.969109   0.000000   0.280466   0.000059   0.000100   0.280121   0.100317      5      0
+ 3.4785E+07  17.237453  -0.448669   4.699333   5.175236  -6.393607   0.000000   0.000021   0.000000  1.000E-04  1.000E-04  0.000E+00  max increase
+                               rel_E_err    2.7396297469740261D-08
+                       log_rel_run_E_err       -3.1521616212281365
+
+save LOGS/profile11.data for model 234
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         235    1.0999999999999999D-02
+log_dt 6.482   age 3.479E+07   model  235   iters    0   steps    1   retries    0   nzlo  390   nzhi  722   n  333   nz  770   diffusion_call_number  171
+save z_Photos/Photos_Z=1d-4_M=0p68/x00235 for model 235
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         236    1.2000000000000000D-02
+log_dt 6.561   age 3.782E+07   model  236   iters    0   steps    1   retries    0   nzlo  390   nzhi  728   n  339   nz  773   diffusion_call_number  172
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         237    1.0999999999999999D-02
+log_dt 6.641   age 4.146E+07   model  237   iters    0   steps    1   retries    0   nzlo  390   nzhi  729   n  340   nz  773   diffusion_call_number  173
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         238    1.2999999999999999D-02
+log_dt 6.720   age 4.583E+07   model  238   iters    0   steps    1   retries    0   nzlo  390   nzhi  732   n  343   nz  774   diffusion_call_number  174
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         239    1.2999999999999999D-02
+log_dt 6.799   age 5.108E+07   model  239   iters    0   steps    1   retries    0   nzlo  390   nzhi  728   n  339   nz  768   diffusion_call_number  175
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         240    1.4000000000000000D-02
+log_dt 6.878   age 5.737E+07   model  240   iters    0   steps    1   retries    0   nzlo  390   nzhi  735   n  346   nz  773   diffusion_call_number  176
+save z_Photos/Photos_Z=1d-4_M=0p68/x00240 for model 240
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         241    1.2000000000000000D-02
+log_dt 6.957   age 6.492E+07   model  241   iters    0   steps    1   retries    0   nzlo  388   nzhi  731   n  344   nz  767   diffusion_call_number  177
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         242    1.2000000000000000D-02
+log_dt 7.036   age 7.399E+07   model  242   iters    0   steps    1   retries    0   nzlo  388   nzhi  731   n  344   nz  765   diffusion_call_number  178
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         243    1.2999999999999999D-02
+log_dt 7.116   age 8.486E+07   model  243   iters    0   steps    1   retries    0   nzlo  388   nzhi  731   n  344   nz  764   diffusion_call_number  179
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         244    1.2000000000000000D-02
+log_dt 7.195   age 9.791E+07   model  244   iters    0   steps    1   retries    0   nzlo  389   nzhi  731   n  343   nz  761   diffusion_call_number  180
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         245    1.2000000000000000D-02
+log_dt 7.274   age 1.136E+08   model  245   iters    0   steps    1   retries    0   nzlo  389   nzhi  732   n  344   nz  761   diffusion_call_number  181
+save z_Photos/Photos_Z=1d-4_M=0p68/x00245 for model 245
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         246    1.2999999999999999D-02
+log_dt 7.353   age 1.324E+08   model  246   iters    0   steps    1   retries    0   nzlo  389   nzhi  735   n  347   nz  762   diffusion_call_number  182
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         247    1.2999999999999999D-02
+log_dt 7.432   age 1.549E+08   model  247   iters    0   steps    1   retries    0   nzlo  389   nzhi  734   n  346   nz  759   diffusion_call_number  183
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         248    1.2999999999999999D-02
+log_dt 7.512   age 1.820E+08   model  248   iters    0   steps    1   retries    0   nzlo  389   nzhi  733   n  345   nz  757   diffusion_call_number  184
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         249    1.2000000000000000D-02
+log_dt 7.591   age 2.145E+08   model  249   iters    0   steps    1   retries    0   nzlo  389   nzhi  734   n  346   nz  758   diffusion_call_number  185
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         250    1.2000000000000000D-02
+log_dt 7.670   age 2.534E+08   model  250   iters    0   steps    1   retries    0   nzlo  389   nzhi  733   n  345   nz  756   diffusion_call_number  186
+save LOGS/profile12.data for model 250
+save z_Photos/Photos_Z=1d-4_M=0p68/x00250 for model 250
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         251    1.2999999999999999D-02
+log_dt 7.749   age 3.002E+08   model  251   iters    0   steps    1   retries    0   nzlo  389   nzhi  734   n  346   nz  756   diffusion_call_number  187
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         252    1.2000000000000000D-02
+log_dt 7.828   age 3.563E+08   model  252   iters    0   steps    1   retries    0   nzlo  389   nzhi  735   n  347   nz  756   diffusion_call_number  188
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         253    1.2000000000000000D-02
+log_dt 7.907   age 4.236E+08   model  253   iters    0   steps    1   retries    0   nzlo  389   nzhi  733   n  345   nz  754   diffusion_call_number  189
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         254    1.2000000000000000D-02
+log_dt 7.987   age 5.044E+08   model  254   iters    0   steps    1   retries    0   nzlo  388   nzhi  733   n  346   nz  753   diffusion_call_number  190
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         255    1.2000000000000000D-02
+log_dt 8.066   age 6.014E+08   model  255   iters    0   steps    1   retries    0   nzlo  388   nzhi  737   n  350   nz  756   diffusion_call_number  191
+save z_Photos/Photos_Z=1d-4_M=0p68/x00255 for model 255
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         256    1.2000000000000000D-02
+log_dt 8.145   age 7.178E+08   model  256   iters    0   steps    1   retries    0   nzlo  388   nzhi  733   n  346   nz  751   diffusion_call_number  192
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         257    1.2999999999999999D-02
+log_dt 8.224   age 8.574E+08   model  257   iters    0   steps    1   retries    0   nzlo  388   nzhi  736   n  349   nz  753   diffusion_call_number  193
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         258    1.0999999999999999D-02
+log_dt 8.303   age 1.025E+09   model  258   iters    0   steps    1   retries    0   nzlo  387   nzhi  735   n  349   nz  751   diffusion_call_number  194
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         259    1.2000000000000000D-02
+log_dt 8.383   age 1.226E+09   model  259   iters    0   steps    1   retries    0   nzlo  387   nzhi  737   n  351   nz  752   diffusion_call_number  195
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         260    1.2000000000000000D-02
+log_dt 8.462   age 1.467E+09   model  260   iters    0   steps    1   retries    0   nzlo  386   nzhi  736   n  351   nz  751   diffusion_call_number  196
+save z_Photos/Photos_Z=1d-4_M=0p68/x00260 for model 260
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         261    1.2000000000000000D-02
+log_dt 8.391   age 1.757E+09   model  261   iters    0   steps    1   retries    0   nzlo  385   nzhi  738   n  354   nz  752   diffusion_call_number  197
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         262    1.2999999999999999D-02
+log_dt 8.351   age 2.003E+09   model  262   iters    0   steps    1   retries    0   nzlo  385   nzhi  735   n  351   nz  747   diffusion_call_number  198
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         263    1.0999999999999999D-02
+log_dt 8.325   age 2.227E+09   model  263   iters    0   steps    1   retries    0   nzlo  385   nzhi  735   n  351   nz  747   diffusion_call_number  199
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         264    1.2000000000000000D-02
+log_dt 8.306   age 2.439E+09   model  264   iters    0   steps    1   retries    0   nzlo  385   nzhi  739   n  355   nz  749   diffusion_call_number  200
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         265    1.4000000000000000D-02
+log_dt 8.291   age 2.641E+09   model  265   iters    0   steps    1   retries    0   nzlo  384   nzhi  747   n  364   nz  747   diffusion_call_number  201
+save z_Photos/Photos_Z=1d-4_M=0p68/x00265 for model 265
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         266    1.2999999999999999D-02
+log_dt 8.279   age 2.837E+09   model  266   iters    0   steps    1   retries    0   nzlo  384   nzhi  750   n  367   nz  750   diffusion_call_number  202
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         267    1.4000000000000000D-02
+log_dt 8.271   age 3.027E+09   model  267   iters    0   steps    1   retries    0   nzlo  383   nzhi  750   n  368   nz  750   diffusion_call_number  203
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         268    1.0999999999999999D-02
+log_dt 8.266   age 3.213E+09   model  268   iters    0   steps    1   retries    0   nzlo  383   nzhi  753   n  371   nz  753   diffusion_call_number  204
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         269    1.2999999999999999D-02
+log_dt 8.264   age 3.398E+09   model  269   iters    0   steps    1   retries    0   nzlo  382   nzhi  752   n  371   nz  752   diffusion_call_number  205
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         270    1.2999999999999999D-02
+log_dt 8.264   age 3.582E+09   model  270   iters    0   steps    1   retries    0   nzlo  382   nzhi  752   n  371   nz  752   diffusion_call_number  206
+save z_Photos/Photos_Z=1d-4_M=0p68/x00270 for model 270
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         271    1.2999999999999999D-02
+log_dt 8.263   age 3.765E+09   model  271   iters    0   steps    1   retries    0   nzlo  381   nzhi  752   n  372   nz  752   diffusion_call_number  207
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         272    1.2999999999999999D-02
+log_dt 8.263   age 3.948E+09   model  272   iters    0   steps    1   retries    0   nzlo  381   nzhi  751   n  371   nz  751   diffusion_call_number  208
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         273    1.2000000000000000D-02
+log_dt 8.263   age 4.132E+09   model  273   iters    0   steps    1   retries    0   nzlo  381   nzhi  755   n  375   nz  755   diffusion_call_number  209
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         274    1.2999999999999999D-02
+log_dt 8.342   age 4.315E+09   model  274   iters    0   steps    1   retries    0   nzlo  381   nzhi  755   n  375   nz  755   diffusion_call_number  210
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         275    1.2999999999999999D-02
+log_dt 8.421   age 4.535E+09   model  275   iters    0   steps    1   retries    0   nzlo  380   nzhi  752   n  373   nz  752   diffusion_call_number  211
+save LOGS/profile13.data for model 275
+save z_Photos/Photos_Z=1d-4_M=0p68/x00275 for model 275
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         276    1.2999999999999999D-02
+log_dt 8.342   age 4.798E+09   model  276   iters    0   steps    1   retries    0   nzlo  379   nzhi  751   n  373   nz  751   diffusion_call_number  212
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         277    1.2999999999999999D-02
+log_dt 8.303   age 5.018E+09   model  277   iters    0   steps    1   retries    0   nzlo  380   nzhi  752   n  373   nz  752   diffusion_call_number  213
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         278    1.2999999999999999D-02
+log_dt 8.283   age 5.219E+09   model  278   iters    0   steps    1   retries    0   nzlo  379   nzhi  754   n  376   nz  754   diffusion_call_number  214
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         279    1.2999999999999999D-02
+log_dt 8.273   age 5.411E+09   model  279   iters    0   steps    1   retries    0   nzlo  379   nzhi  753   n  375   nz  753   diffusion_call_number  215
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         280    1.2999999999999999D-02
+log_dt 8.268   age 5.598E+09   model  280   iters    0   steps    1   retries    0   nzlo  378   nzhi  753   n  376   nz  753   diffusion_call_number  216
+save z_Photos/Photos_Z=1d-4_M=0p68/x00280 for model 280
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         281    1.2999999999999999D-02
+log_dt 8.266   age 5.784E+09   model  281   iters    0   steps    1   retries    0   nzlo  378   nzhi  753   n  376   nz  753   diffusion_call_number  217
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         282    1.2000000000000000D-02
+log_dt 8.265   age 5.968E+09   model  282   iters    0   steps    1   retries    0   nzlo  377   nzhi  753   n  377   nz  753   diffusion_call_number  218
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         283    1.2000000000000000D-02
+log_dt 8.264   age 6.152E+09   model  283   iters    0   steps    1   retries    0   nzlo  377   nzhi  754   n  378   nz  754   diffusion_call_number  219
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         284    1.2000000000000000D-02
+log_dt 8.264   age 6.336E+09   model  284   iters    0   steps    1   retries    0   nzlo  377   nzhi  755   n  379   nz  755   diffusion_call_number  220
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         285    1.2999999999999999D-02
+log_dt 8.264   age 6.519E+09   model  285   iters    0   steps    1   retries    0   nzlo  377   nzhi  754   n  378   nz  754   diffusion_call_number  221
+save z_Photos/Photos_Z=1d-4_M=0p68/x00285 for model 285
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         286    1.2999999999999999D-02
+log_dt 8.343   age 6.703E+09   model  286   iters    0   steps    1   retries    0   nzlo  376   nzhi  754   n  379   nz  754   diffusion_call_number  222
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         287    1.2999999999999999D-02
+log_dt 8.422   age 6.923E+09   model  287   iters    0   steps    1   retries    0   nzlo  374   nzhi  752   n  379   nz  752   diffusion_call_number  223
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         288    1.2999999999999999D-02
+log_dt 8.343   age 7.187E+09   model  288   iters    0   steps    1   retries    0   nzlo  374   nzhi  754   n  381   nz  754   diffusion_call_number  224
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         289    1.2999999999999999D-02
+log_dt 8.304   age 7.407E+09   model  289   iters    0   steps    1   retries    0   nzlo  374   nzhi  757   n  384   nz  757   diffusion_call_number  225
+        289   7.147238   5941.112  -0.262925  -0.262925   0.678968   0.678968   0.325552   0.000032   0.256733   0.671537  -1.004556    757      0
+   8.303628   2.319211  -0.155891 -44.972800  -1.916143 -12.753443   0.000000   0.674343   0.000059   0.000084   0.328362   0.146001      5      0
+ 7.6085E+09  17.455375  -0.262829   4.581521   4.963300  -6.632446   0.000000   0.000000   0.000000  1.055E-04  1.007E-04  0.000E+00      XHe_cntr
+                               rel_E_err    3.4915519329858645D-06
+                       log_rel_run_E_err       -3.0918540257480567
+
+save LOGS/profile14.data for model 289
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         290    1.4000000000000000D-02
+log_dt 8.284   age 7.609E+09   model  290   iters    0   steps    1   retries    0   nzlo  373   nzhi  756   n  384   nz  756   diffusion_call_number  226
+save z_Photos/Photos_Z=1d-4_M=0p68/x00290 for model 290
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         291    1.2999999999999999D-02
+log_dt 8.275   age 7.801E+09   model  291   iters    0   steps    1   retries    0   nzlo  372   nzhi  756   n  385   nz  756   diffusion_call_number  227
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         292    1.4999999999999999D-02
+log_dt 8.270   age 7.989E+09   model  292   iters    0   steps    1   retries    0   nzlo  372   nzhi  758   n  387   nz  758   diffusion_call_number  228
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         293    1.4000000000000000D-02
+log_dt 8.269   age 8.176E+09   model  293   iters    0   steps    1   retries    0   nzlo  370   nzhi  756   n  387   nz  756   diffusion_call_number  229
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         294    1.4000000000000000D-02
+log_dt 8.268   age 8.361E+09   model  294   iters    0   steps    1   retries    0   nzlo  370   nzhi  756   n  387   nz  756   diffusion_call_number  230
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         295    1.2999999999999999D-02
+log_dt 8.347   age 8.547E+09   model  295   iters    0   steps    1   retries    0   nzlo  369   nzhi  756   n  388   nz  756   diffusion_call_number  231
+save z_Photos/Photos_Z=1d-4_M=0p68/x00295 for model 295
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         296    1.4000000000000000D-02
+log_dt 8.427   age 8.769E+09   model  296   iters    0   steps    1   retries    0   nzlo  368   nzhi  756   n  389   nz  756   diffusion_call_number  232
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         297    1.2999999999999999D-02
+log_dt 8.349   age 9.036E+09   model  297   iters    0   steps    1   retries    0   nzlo  365   nzhi  753   n  389   nz  753   diffusion_call_number  233
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         298    1.4000000000000000D-02
+log_dt 8.312   age 9.260E+09   model  298   iters    0   steps    1   retries    0   nzlo  364   nzhi  756   n  393   nz  756   diffusion_call_number  234
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         299    1.2999999999999999D-02
+log_dt 8.295   age 9.465E+09   model  299   iters    0   steps    1   retries    0   nzlo  363   nzhi  758   n  396   nz  758   diffusion_call_number  235
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         300    1.4000000000000000D-02
+log_dt 8.288   age 9.662E+09   model  300   iters    0   steps    1   retries    0   nzlo  362   nzhi  758   n  397   nz  758   diffusion_call_number  236
+        300   7.181007   6030.687  -0.186654  -0.186654   0.678520   0.678520   0.205816   0.000032   0.246777   0.652273  -0.875718    758      0
+   8.288075   2.460576  -0.130751 -42.803197  -1.806998 -12.653388   0.000000   0.794078   0.000057   0.000078   0.347627   0.173167      5      0
+ 9.8565E+09  17.573268  -0.186553   4.530954   4.878378  -6.727970   0.000000   0.000000   0.000000  1.064E-04  1.009E-04  0.000E+00      XHe_cntr
+                               rel_E_err    4.2847870031428500D-06
+                       log_rel_run_E_err       -3.0768807402550928
+
+save LOGS/profile15.data for model 300
+save z_Photos/Photos_Z=1d-4_M=0p68/x00300 for model 300
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         301    1.2999999999999999D-02
+log_dt 8.287   age 9.856E+09   model  301   iters    0   steps    1   retries    0   nzlo  361   nzhi  761   n  401   nz  761   diffusion_call_number  237
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         302    1.4000000000000000D-02
+log_dt 8.366   age 1.005E+10   model  302   iters    0   steps    1   retries    0   nzlo  361   nzhi  761   n  401   nz  761   diffusion_call_number  238
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         303    1.2999999999999999D-02
+log_dt 8.445   age 1.028E+10   model  303   iters    0   steps    1   retries    0   nzlo  359   nzhi  759   n  401   nz  759   diffusion_call_number  239
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         304    1.2999999999999999D-02
+log_dt 8.376   age 1.056E+10   model  304   iters    0   steps    1   retries    0   nzlo  358   nzhi  768   n  411   nz  768   diffusion_call_number  240
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         305    1.4999999999999999D-02
+log_dt 8.347   age 1.080E+10   model  305   iters    0   steps    1   retries    0   nzlo  356   nzhi  765   n  410   nz  765   diffusion_call_number  241
+save z_Photos/Photos_Z=1d-4_M=0p68/x00305 for model 305
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         306    1.4999999999999999D-02
+log_dt 8.340   age 1.102E+10   model  306   iters    0   steps    1   retries    0   nzlo  354   nzhi  765   n  412   nz  765   diffusion_call_number  242
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         307    1.4000000000000000D-02
+log_dt 8.419   age 1.124E+10   model  307   iters    0   steps    1   retries    0   nzlo  352   nzhi  768   n  417   nz  768   diffusion_call_number  243
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         308    1.4999999999999999D-02
+log_dt 8.498   age 1.150E+10   model  308   iters    0   steps    1   retries    0   nzlo  350   nzhi  767   n  418   nz  767   diffusion_call_number  244
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         309    1.4000000000000000D-02
+log_dt 8.444   age 1.182E+10   model  309   iters    0   steps    1   retries    0   nzlo  348   nzhi  770   n  423   nz  770   diffusion_call_number  245
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         310    1.6000000000000000D-02
+log_dt 8.430   age 1.209E+10   model  310   iters    0   steps    1   retries    0   nzlo  350   nzhi  775   n  426   nz  775   diffusion_call_number  246
+save z_Photos/Photos_Z=1d-4_M=0p68/x00310 for model 310
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         311    3.5000000000000003D-02
+log_dt 8.509   age 1.236E+10   model  311   iters    0   steps    2   retries    1   nzlo  347   nzhi  776   n  430   nz  776   diffusion_call_number  247
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         312    6.9000000000000006D-02
+log_dt 8.588   age 1.269E+10   model  312   iters    0   steps    3   retries    4   nzlo  343   nzhi  775   n  433   nz  775   diffusion_call_number  248
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         313    9.6000000000000002D-02
+log_dt 8.542   age 1.307E+10   model  313   iters    0   steps    4   retries    6   nzlo  337   nzhi  782   n  446   nz  782   diffusion_call_number  249
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         314    1.0400000000000000D-01
+log_dt 8.513   age 1.342E+10   model  314   iters    0   steps    4   retries    7   nzlo  333   nzhi  783   n  451   nz  783   diffusion_call_number  250
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         315    1.1799999999999999D-01
+log_dt 8.486   age 1.375E+10   model  315   iters    0   steps    5   retries    7   nzlo  330   nzhi  793   n  464   nz  793   diffusion_call_number  251
+save z_Photos/Photos_Z=1d-4_M=0p68/x00315 for model 315
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         316    1.0500000000000000D-01
+log_dt 8.457   age 1.405E+10   model  316   iters    0   steps    4   retries    7   nzlo  330   nzhi  793   n  464   nz  793   diffusion_call_number  252
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         317    1.0199999999999999D-01
+log_dt 8.424   age 1.434E+10   model  317   iters    0   steps    4   retries    6   nzlo  325   nzhi  797   n  473   nz  797   diffusion_call_number  253
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         318    7.4999999999999997D-02
+log_dt 8.382   age 1.461E+10   model  318   iters    0   steps    3   retries    4   nzlo  319   nzhi  799   n  481   nz  799   diffusion_call_number  254
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         319    1.7000000000000001D-02
+log_dt 8.330   age 1.485E+10   model  319   iters    0   steps    1   retries    0   nzlo  320   nzhi  818   n  499   nz  818   diffusion_call_number  255
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         320    1.7000000000000001D-02
+log_dt 8.265   age 1.506E+10   model  320   iters    0   steps    1   retries    0   nzlo  312   nzhi  814   n  503   nz  814   diffusion_call_number  256
+save z_Photos/Photos_Z=1d-4_M=0p68/x00320 for model 320
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         321    1.7000000000000001D-02
+log_dt 8.185   age 1.525E+10   model  321   iters    0   steps    1   retries    0   nzlo  310   nzhi  829   n  520   nz  829   diffusion_call_number  257
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         322    1.7999999999999999D-02
+log_dt 8.091   age 1.540E+10   model  322   iters    0   steps    1   retries    0   nzlo  307   nzhi  827   n  521   nz  827   diffusion_call_number  258
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         323    1.6000000000000000D-02
+log_dt 7.995   age 1.552E+10   model  323   iters    0   steps    1   retries    0   nzlo  304   nzhi  827   n  524   nz  827   diffusion_call_number  259
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         324    1.7000000000000001D-02
+log_dt 7.898   age 1.562E+10   model  324   iters    0   steps    1   retries    0   nzlo  302   nzhi  831   n  530   nz  831   diffusion_call_number  260
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         325    1.7999999999999999D-02
+log_dt 7.801   age 1.570E+10   model  325   iters    0   steps    1   retries    0   nzlo  302   nzhi  834   n  533   nz  834   diffusion_call_number  261
+save LOGS/profile16.data for model 325
+save z_Photos/Photos_Z=1d-4_M=0p68/x00325 for model 325
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         326    1.6000000000000000D-02
+log_dt 7.704   age 1.576E+10   model  326   iters    0   steps    1   retries    0   nzlo  302   nzhi  836   n  535   nz  836   diffusion_call_number  262
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         327    1.7000000000000001D-02
+log_dt 7.623   age 1.581E+10   model  327   iters    0   steps    1   retries    0   nzlo  301   nzhi  839   n  539   nz  839   diffusion_call_number  263
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         328    1.7000000000000001D-02
+log_dt 7.556   age 1.586E+10   model  328   iters    0   steps    1   retries    0   nzlo  299   nzhi  837   n  539   nz  837   diffusion_call_number  264
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         329    1.7000000000000001D-02
+log_dt 7.502   age 1.589E+10   model  329   iters    0   steps    1   retries    0   nzlo  298   nzhi  836   n  539   nz  836   diffusion_call_number  265
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         330    1.7999999999999999D-02
+log_dt 7.458   age 1.592E+10   model  330   iters    0   steps    1   retries    0   nzlo  297   nzhi  836   n  540   nz  836   diffusion_call_number  266
+save z_Photos/Photos_Z=1d-4_M=0p68/x00330 for model 330
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         331    1.7000000000000001D-02
+log_dt 7.421   age 1.595E+10   model  331   iters    0   steps    1   retries    0   nzlo  298   nzhi  838   n  541   nz  838   diffusion_call_number  267
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         332    1.9000000000000000D-02
+log_dt 7.390   age 1.598E+10   model  332   iters    0   steps    1   retries    0   nzlo  297   nzhi  840   n  544   nz  840   diffusion_call_number  268
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         333    1.9000000000000000D-02
+log_dt 7.363   age 1.600E+10   model  333   iters    0   steps    1   retries    0   nzlo  296   nzhi  840   n  545   nz  840   diffusion_call_number  269
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         334    2.0000000000000000D-02
+log_dt 7.340   age 1.603E+10   model  334   iters    0   steps    1   retries    0   nzlo  296   nzhi  844   n  549   nz  844   diffusion_call_number  270
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         335    1.9000000000000000D-02
+log_dt 7.320   age 1.605E+10   model  335   iters    0   steps    1   retries    0   nzlo  296   nzhi  845   n  550   nz  845   diffusion_call_number  271
+save z_Photos/Photos_Z=1d-4_M=0p68/x00335 for model 335
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         336    1.9000000000000000D-02
+log_dt 7.301   age 1.607E+10   model  336   iters    0   steps    1   retries    0   nzlo  296   nzhi  844   n  549   nz  844   diffusion_call_number  272
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         337    1.7999999999999999D-02
+log_dt 7.284   age 1.609E+10   model  337   iters    0   steps    1   retries    0   nzlo  293   nzhi  844   n  552   nz  844   diffusion_call_number  273
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         338    1.9000000000000000D-02
+log_dt 7.268   age 1.611E+10   model  338   iters    0   steps    1   retries    0   nzlo  293   nzhi  849   n  557   nz  849   diffusion_call_number  274
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         339    1.9000000000000000D-02
+log_dt 7.253   age 1.613E+10   model  339   iters    0   steps    1   retries    0   nzlo  293   nzhi  849   n  557   nz  849   diffusion_call_number  275
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         340    1.9000000000000000D-02
+log_dt 7.240   age 1.614E+10   model  340   iters    0   steps    1   retries    0   nzlo  292   nzhi  851   n  560   nz  851   diffusion_call_number  276
+save z_Photos/Photos_Z=1d-4_M=0p68/x00340 for model 340
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         341    1.9000000000000000D-02
+log_dt 7.226   age 1.616E+10   model  341   iters    0   steps    1   retries    0   nzlo  292   nzhi  853   n  562   nz  853   diffusion_call_number  277
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         342    2.0000000000000000D-02
+log_dt 7.214   age 1.618E+10   model  342   iters    0   steps    1   retries    0   nzlo  292   nzhi  853   n  562   nz  853   diffusion_call_number  278
+                                                     nr           0    0.0000000000000000D+00
+                                 diffusion model timing         343    2.0000000000000000D-02
+log_dt 7.201   age 1.619E+10   model  343   iters    0   steps    1   retries    0   nzlo  292   nzhi  857   n  566   nz  857   diffusion_call_number  279
+
+stop because log_center_density >= log_center_density_limit
+    0.3300997092E+01    0.3300000000E+01
+
+        343   7.366355   6321.802   0.258083   0.258083   0.675854   0.663257   0.000694   0.000082   0.245594   0.557603   0.489831    857      0
+   7.201449   3.300997   0.050722 -31.719874  -1.161726 -12.019178   0.012598   0.999204   0.000005   0.000079   0.442297   0.310201      5      0
+ 1.6211E+10  18.504987   0.258291   4.166298   4.478946  -7.149579   0.000000   0.000001   0.000000  1.018E-04  1.008E-04  0.000E+00    lg_XH_cntr
+                               rel_E_err    1.4724261491544854D-06
+                       log_rel_run_E_err       -3.0140380913990370
+
+save LOGS/profile17.data for model 343
+save z_Photos/Photos_Z=1d-4_M=0p68/x00343 for model 343
+ saved to z_Mods/mod_Z=1d-4_M=0p68.mod
+termination code: log_center_density_limit
+
+        runtime (minutes), retries, backups, steps        1.28         0         0       343
+__________________________________________________________________________________________________________________________________________________
+
+       step    lg_Tcntr    Teff     lg_LH       lg_Lnuc     Mass       H_rich     H_cntr     N_cntr     Y_surf     X_avg     eta_cntr  zones retry
+   lg_dt_yr    lg_Dcntr    lg_R     lg_L3a      lg_Lneu     lg_Mdot    He_core    He_cntr    O_cntr     Z_surf     Y_avg     gam_cntr  iters bckup
+     age_yr    lg_Pcntr    lg_L     lg_gsurf    lg_Psurf    lg_Dsurf   C_core     C_cntr     Ne_cntr    Z_cntr     Z_avg     v_div_cs     dt_limit
+__________________________________________________________________________________________________________________________________________________
+
+        343   7.366355   6321.802   0.258083   0.258083   0.675854   0.663257   0.000694   0.000082   0.245594   0.557603   0.489831    857      0
+   7.201449   3.300997   0.050722 -31.719874  -1.161726 -12.019178   0.012598   0.999204   0.000005   0.000079   0.442297   0.310201      5      0
+ 1.6211E+10  18.504987   0.258291   4.166298   4.478946  -7.149579   0.000000   0.000001   0.000000  1.018E-04  1.008E-04  0.000E+00    lg_XH_cntr
+                               rel_E_err    1.4724261491544854D-06
+                       log_rel_run_E_err       -3.0140380913990370
+
+DATE: 2021-08-06
+TIME: 20:20:00
+Okay
+
+Finished z_Inlists/inlist_Z=1d-4_M=0p68 .
+
+***
+
+Elapsed: 0 hrs 1 min 27 sec.
+Finished all inlists.
