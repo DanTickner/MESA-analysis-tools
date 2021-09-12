@@ -1,0 +1,85 @@
+#!/bin/bash
+
+function check_okay {
+	if [ $? -ne 0 ]
+	then
+		exit 1
+	fi
+	echo "Okay"
+}
+
+
+function do_one {
+	cp $1 inlist
+	check_okay
+	rm -rf $2
+	echo 'run' $1
+	./rn1
+	check_okay
+  if [ ! -r $2 ]
+  then
+  	echo
+  	echo "******************************************************************"
+  	echo 'Failed to create' $2 'when running' $1
+  	echo "******************************************************************"
+  	echo
+  	exit 1
+  fi
+  echo
+  echo 'Finished' $1 '.'
+  rm -rf $3
+  mkdir $3
+  mv LOGS/* $3
+  echo
+  echo '***'
+  echo
+}
+
+SECONDS=0
+
+
+do_one z_Inlists/inlist_Z=1d-4_M=0p66 z_Mods/mod_Z=1d-4_M=0p66.mod z_Logs/LOGS_Z=1d-4_M=0p66
+do_one z_Inlists/inlist_Z=1d-4_M=0p661 z_Mods/mod_Z=1d-4_M=0p661.mod z_Logs/LOGS_Z=1d-4_M=0p661
+do_one z_Inlists/inlist_Z=1d-4_M=0p662 z_Mods/mod_Z=1d-4_M=0p662.mod z_Logs/LOGS_Z=1d-4_M=0p662
+do_one z_Inlists/inlist_Z=1d-4_M=0p663 z_Mods/mod_Z=1d-4_M=0p663.mod z_Logs/LOGS_Z=1d-4_M=0p663
+do_one z_Inlists/inlist_Z=1d-4_M=0p664 z_Mods/mod_Z=1d-4_M=0p664.mod z_Logs/LOGS_Z=1d-4_M=0p664
+do_one z_Inlists/inlist_Z=1d-4_M=0p665 z_Mods/mod_Z=1d-4_M=0p665.mod z_Logs/LOGS_Z=1d-4_M=0p665
+do_one z_Inlists/inlist_Z=1d-4_M=0p666 z_Mods/mod_Z=1d-4_M=0p666.mod z_Logs/LOGS_Z=1d-4_M=0p666
+do_one z_Inlists/inlist_Z=1d-4_M=0p667 z_Mods/mod_Z=1d-4_M=0p667.mod z_Logs/LOGS_Z=1d-4_M=0p667
+do_one z_Inlists/inlist_Z=1d-4_M=0p668 z_Mods/mod_Z=1d-4_M=0p668.mod z_Logs/LOGS_Z=1d-4_M=0p668
+do_one z_Inlists/inlist_Z=1d-4_M=0p669 z_Mods/mod_Z=1d-4_M=0p669.mod z_Logs/LOGS_Z=1d-4_M=0p669
+do_one z_Inlists/inlist_Z=1d-4_M=0p67 z_Mods/mod_Z=1d-4_M=0p67.mod z_Logs/LOGS_Z=1d-4_M=0p67
+do_one z_Inlists/inlist_Z=1d-4_M=0p671 z_Mods/mod_Z=1d-4_M=0p671.mod z_Logs/LOGS_Z=1d-4_M=0p671
+do_one z_Inlists/inlist_Z=1d-4_M=0p672 z_Mods/mod_Z=1d-4_M=0p672.mod z_Logs/LOGS_Z=1d-4_M=0p672
+do_one z_Inlists/inlist_Z=1d-4_M=0p673 z_Mods/mod_Z=1d-4_M=0p673.mod z_Logs/LOGS_Z=1d-4_M=0p673
+do_one z_Inlists/inlist_Z=1d-4_M=0p674 z_Mods/mod_Z=1d-4_M=0p674.mod z_Logs/LOGS_Z=1d-4_M=0p674
+do_one z_Inlists/inlist_Z=1d-4_M=0p675 z_Mods/mod_Z=1d-4_M=0p675.mod z_Logs/LOGS_Z=1d-4_M=0p675
+do_one z_Inlists/inlist_Z=1d-4_M=0p676 z_Mods/mod_Z=1d-4_M=0p676.mod z_Logs/LOGS_Z=1d-4_M=0p676
+do_one z_Inlists/inlist_Z=1d-4_M=0p677 z_Mods/mod_Z=1d-4_M=0p677.mod z_Logs/LOGS_Z=1d-4_M=0p677
+do_one z_Inlists/inlist_Z=1d-4_M=0p678 z_Mods/mod_Z=1d-4_M=0p678.mod z_Logs/LOGS_Z=1d-4_M=0p678
+do_one z_Inlists/inlist_Z=1d-4_M=0p679 z_Mods/mod_Z=1d-4_M=0p679.mod z_Logs/LOGS_Z=1d-4_M=0p679
+do_one z_Inlists/inlist_Z=1d-4_M=0p68 z_Mods/mod_Z=1d-4_M=0p68.mod z_Logs/LOGS_Z=1d-4_M=0p68
+do_one z_Inlists/inlist_Z=1d-4_M=0p681 z_Mods/mod_Z=1d-4_M=0p681.mod z_Logs/LOGS_Z=1d-4_M=0p681
+do_one z_Inlists/inlist_Z=1d-4_M=0p682 z_Mods/mod_Z=1d-4_M=0p682.mod z_Logs/LOGS_Z=1d-4_M=0p682
+do_one z_Inlists/inlist_Z=1d-4_M=0p683 z_Mods/mod_Z=1d-4_M=0p683.mod z_Logs/LOGS_Z=1d-4_M=0p683
+do_one z_Inlists/inlist_Z=1d-4_M=0p684 z_Mods/mod_Z=1d-4_M=0p684.mod z_Logs/LOGS_Z=1d-4_M=0p684
+do_one z_Inlists/inlist_Z=1d-4_M=0p685 z_Mods/mod_Z=1d-4_M=0p685.mod z_Logs/LOGS_Z=1d-4_M=0p685
+do_one z_Inlists/inlist_Z=1d-4_M=0p686 z_Mods/mod_Z=1d-4_M=0p686.mod z_Logs/LOGS_Z=1d-4_M=0p686
+do_one z_Inlists/inlist_Z=1d-4_M=0p687 z_Mods/mod_Z=1d-4_M=0p687.mod z_Logs/LOGS_Z=1d-4_M=0p687
+do_one z_Inlists/inlist_Z=1d-4_M=0p688 z_Mods/mod_Z=1d-4_M=0p688.mod z_Logs/LOGS_Z=1d-4_M=0p688
+do_one z_Inlists/inlist_Z=1d-4_M=0p689 z_Mods/mod_Z=1d-4_M=0p689.mod z_Logs/LOGS_Z=1d-4_M=0p689
+do_one z_Inlists/inlist_Z=1d-4_M=0p69 z_Mods/mod_Z=1d-4_M=0p69.mod z_Logs/LOGS_Z=1d-4_M=0p69
+do_one z_Inlists/inlist_Z=1d-4_M=0p691 z_Mods/mod_Z=1d-4_M=0p691.mod z_Logs/LOGS_Z=1d-4_M=0p691
+do_one z_Inlists/inlist_Z=1d-4_M=0p692 z_Mods/mod_Z=1d-4_M=0p692.mod z_Logs/LOGS_Z=1d-4_M=0p692
+do_one z_Inlists/inlist_Z=1d-4_M=0p693 z_Mods/mod_Z=1d-4_M=0p693.mod z_Logs/LOGS_Z=1d-4_M=0p693
+do_one z_Inlists/inlist_Z=1d-4_M=0p694 z_Mods/mod_Z=1d-4_M=0p694.mod z_Logs/LOGS_Z=1d-4_M=0p694
+do_one z_Inlists/inlist_Z=1d-4_M=0p695 z_Mods/mod_Z=1d-4_M=0p695.mod z_Logs/LOGS_Z=1d-4_M=0p695
+do_one z_Inlists/inlist_Z=1d-4_M=0p696 z_Mods/mod_Z=1d-4_M=0p696.mod z_Logs/LOGS_Z=1d-4_M=0p696
+do_one z_Inlists/inlist_Z=1d-4_M=0p697 z_Mods/mod_Z=1d-4_M=0p697.mod z_Logs/LOGS_Z=1d-4_M=0p697
+do_one z_Inlists/inlist_Z=1d-4_M=0p698 z_Mods/mod_Z=1d-4_M=0p698.mod z_Logs/LOGS_Z=1d-4_M=0p698
+do_one z_Inlists/inlist_Z=1d-4_M=0p699 z_Mods/mod_Z=1d-4_M=0p699.mod z_Logs/LOGS_Z=1d-4_M=0p699
+do_one z_Inlists/inlist_Z=1d-4_M=0p70 z_Mods/mod_Z=1d-4_M=0p70.mod z_Logs/LOGS_Z=1d-4_M=0p70
+
+
+echo "Elapsed: $(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 60)) sec."
+echo 'Finished all inlists.'
