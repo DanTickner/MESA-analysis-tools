@@ -1,0 +1,106 @@
+! General
+ model_number
+ num_zones
+ star_age
+ log_dt ! log10( timestep in yr )
+ star_mass
+ log_Teff ! Needed in pgstar for live chart, and by my code for HRD.
+ log_L ! Needed in pgstar for live chart, and by my code for HRD.
+ log_center_T ! Needed by my code for T-Rho diagram.
+ log_center_Rho ! Needed by my code for T-Rho diagram.
+ surface_optical_depth ! "Surface" really means "at or near the surface". This allows you to cross-check with profiles.csv for exact point
+
+! Nuclear reactions (log10 total luminosity in Lsun units)
+ pp
+ cno
+ tri_alfa
+
+! Mass fractions near center or surface, and average
+ center h1
+ center he4
+ !center li6
+ !center li7
+ !center c12
+ !center o16
+
+ !average h1
+ !average he4
+ !average li6
+ !average li7
+ !average c12
+ !average o16
+
+! Conditions at location of max hydrogen burning
+ max_eps_h_lgT ! log10 temperature
+ max_eps_h_lgRho ! log10 density
+ max_eps_h_m ! mass location (msun units)
+ max_eps_h_xm ! total mass exterior
+ max_eps_h_lgR ! log10 radius
+
+! Envelope
+ h_rich_layer_mass ! = star_mass - he_core_mass
+
+! Core information
+ !he_core_mass
+ !he_core_radius
+ !he_core_omega_div_omega_crit
+ !center_omega_div_omega_crit
+
+! Convection and mixing
+ !mx1_top
+ !mx1_bot
+ !mx2_top
+ !mx2_bot
+ !conv_mx1_top
+ !conv_mx1_bot
+ !conv_mx2_top
+ !conv_mx2_bot
+
+! Rotation
+ surf_avg_omega ! Angular velocity
+ surf_avg_omega_crit
+ !center_omega
+ !center_omega_div_omega_crit ! center_omega_crit does not exist
+ surf_avg_omega_div_omega_crit
+ surf_avg_v_rot
+
+! Failed attempt to get mass of outer layer. Can't do it because don't have \Delta R or \Delta M to work-out shell mass. Can be done in profiles.csv though.
+ photosphere_m
+ photosphere_xm ! Mass exterior to point (Msun units), so star_mass - xm = (mass interior to cell) or mass of cell
+ photosphere_cell_density
+ photosphere_r
+ radius
+ log_surf_cell_density
+ surf_avg_logRho
+ Lsurf_m
+
+
+
+
+! Debugging (was useful when troubleshooting RD star, which had convegence issues for a long time.)
+ !run_deltaE
+ !rel_run_E_err
+ !log_rel_run_DeltaE
+ !abs_rel_E_err
+ !log_rel_E_err
+ !rel_cumulative_energy_error
+ !rel_error_in_energy_conservation
+ !log_total_energy
+ !log_total_gravitational_energy
+ !log_total_internal_energy
+ !log_total_radial_kinetic_energy
+ !log_total_turbulent_energy
+ !total_energy_change
+ !total_gravitational_energy_change
+ !total_internal_energy_change
+ !total_radial_kinetic_energy_change
+ !total_turbulent_energy_change
+ !num_retries
+ !rotation_solver_steps
+ !diffusion_solver_steps
+ !log_max_abs_lgE_residual
+ !log_max_abs_v_residual
+ !log_max_abs_dlnEdt_residual
+ !log_max_abs_drdt_residual
+ !log_max_abs_dvdt_residual
+ !log_max_abs_dlnd_residual

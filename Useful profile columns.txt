@@ -1,0 +1,73 @@
+! General
+ zone       ! numbers start with 1 at the surface
+ mass       ! m/Msun. mass coordinate of outer boundary of cell.
+ logR       ! log10(radius/Rsun) at outer boundary of zone
+ logT       ! log10(temperature) at center of zone
+ logRho     ! log10(density) at center of zone
+ logP       ! log10(pressure) at center of zone
+ q ! fraction of star mass interior to outer boundary of this zone
+ x_mass_fraction_H
+ y_mass_fraction_He
+ z_mass_fraction_metals
+
+! Convection and mixing
+ !vel_km_per_s ! velocity at outer boundary of zone (km/s) -- 0 if no velocity variable
+ !conv_vel ! convection velocity (cm/sec)
+ !mlt_mixing_length ! mixing length for mlt (cm)
+ !mlt_mixing_type ! value returned by mlt
+
+ mixing_type ! mixing types are defined in mesa/const/public/const_def   
+ !log_D_mix ! log10 diffusion coefficient for mixing in units of cm^2/second (Eulerian)
+ !log_D_mix_non_rotation
+
+! D_mix for regions where mix_type = (subscript)_mixing
+ !log_D_conv ! convective_mixing
+ !log_D_soft ! softened_convective_mixing
+ !log_D_semi ! semiconvective_mixing
+ !log_D_ovr ! overshoot_mixing
+ !log_D_thrm ! thermohaline_mixing
+ !log_D_minimum ! minimum_mixing
+ !log_D_rayleigh_taylor ! rayleigh_taylor_mixing
+ !log_D_anon ! anonymous_mixing
+
+
+! Rotation and rotational diffusion coefficients
+ !am_log_D_visc
+ !am_log_D_DSI     
+ !am_log_D_SH   
+ !am_log_D_SSI
+ !am_log_D_ES
+ !am_log_D_GSF
+ !am_log_D_ST ! Spruit dynamo mixing diffusivity
+ !am_log_nu_ST ! Spruit dynamo effective viscosity
+
+ !am_log_nu_omega ! for diffusion of omega
+ !am_log_nu_j ! for diffusion of angular momentum
+ !am_log_sig_omega ! for diffusion of omega
+ !am_log_sig_j ! for diffusion of angular momentum
+      
+ !am_log_nu_rot ! diffusion of angular momentum driven by rotation
+ !am_log_nu_non_rot ! diffusion driven by other sources, e.g. convection
+
+ omega ! angular velocity = j_rot / i_rot
+ omega_crit ! breakup angular velocity = sqrt(G M / equatorial^3)
+ omega_div_omega_crit
+ !richardson_number
+
+
+! Attempt to get mass and hence total number of elements in each layer.
+ dm ! cell mass (grams)
+ radius_cm ! radius at outer boundary of zone (in cm)
+ dr ! radial extent of zone (in cm)
+ tau
+ tau_eff
+
+! Velocities from element diffusion
+ edv h1
+ edv li7
+ edv c12
+
+! Velocities from radiative levitation (will be zero unless RL activated through diffusion_min_T_for_radacell and ...Z... in inlist controls section.)
+ v_rad h1
+ v_rad li7
+ v_rad c12

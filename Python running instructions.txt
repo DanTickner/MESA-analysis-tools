@@ -1,0 +1,7 @@
+Open terminal. Type:
+python3 &
+cd to the desired folder. Let the code be called "my_script.py". Type:
+python3 my_script.py
+
+Using "&" allows you to keep using terminal commands such as "cd", "ls"
+Typing just "python" will launch python version 2.

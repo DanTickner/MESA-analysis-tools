@@ -1,0 +1,21 @@
+! Exmaples of history_columns.list and profile_columns.list can be found in $MESA_DIR/star/defaults
+! Names of chemicals can be found at line 596 in $MESA_DIR/chem/public/chem_def.f90
+
+! General
+ zone       ! numbers start with 1 at the surface
+ mass       ! m/Msun. Mass coordinate of outer boundary of cell.
+ logR       ! log10(radius/Rsun) at outer boundary of zone.
+ logT       ! log10(temperature) at center of zone.
+ logRho     ! log10(density) at center of zone.
+ logP       ! log10(pressure) at center of zone.
+
+! Needed to calculate partial densities of each element
+ radius_cm ! radius at outer boundary of zone (in cm)
+ dr ! radial extent of zone (in cm)
+ dm ! cell mass (grams)
+
+! Abundances
+x_mass_fraction_H
+y_mass_fraction_He
+z_mass_fraction_metals
+add_abundances ! Mass fractions of all isotopes in the current net. Keep at end of list - unspecified number of columns.

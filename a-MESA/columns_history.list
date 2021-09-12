@@ -1,0 +1,20 @@
+! Exmaples of history_columns.list and profiles.list can be found in: $MESA_DIR/star/defaults
+! Names of chemicals can be found at line 596 in: $MESA_DIR/chem/public/chem_def.f90
+
+! General
+ model_number
+ star_age
+ star_mass
+ log_Teff ! Needed in pgstar for live chart, and by my code for HRD.
+ log_L ! Needed in pgstar for live chart, and by my code for HRD.
+ log_center_T ! Needed by my code for T-Rho diagram.
+ log_center_Rho ! Needed by my code for T-Rho diagram.
+
+! Rotation
+ surf_avg_omega ! Angular velocity
+ surf_avg_omega_div_omega_crit
+ surf_avg_v_rot
+
+! Mass totals
+ add_total_mass
+ add_surface_abundances

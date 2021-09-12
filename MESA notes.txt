@@ -1,0 +1,84 @@
+HOW TO RUN MESA CODE FOR THE FIRST TIME
+Use the tutorial on MESA's "getting started" page
+http://mesa.sourceforge.net/starting.html
+
+Open a terminal and type in the following commands:
+cp -r $MESA_DIR/star/work a-MESA/Project_Name
+cd a-MESA/Project_name
+./mk
+( Fill out inlists. )
+./rn
+
+
+
+
+HOW TO RUN MESA CODE WHEN A DIRECTORY HAS ALREADY BEEN SETUP
+This is what you'll be doing the majority of the time. If there was a previous run, empty the "logs" and "photos" folders you're using, and delete any ".mod" files created (not sure if necessary, but I always do it). Then simply navigate to the correct folder and run the file "rn". No "MESA-specific" terminal inputs are required.
+
+cd a-MESA/0p8M_all
+./rn
+
+To write terminal output to a file (instead of the terminal itself) with arbitrary name "log" (file extension optional), the second line becomes
+./rn > log
+I recommend saving ALL terminal output; you never know when you may need to look at an old run when troubleshooting. It also prevents the extreme cluttering of the terminal that MESA produces. Use a good naming convention, e.g. terminal_YYYYMMDD_briefdescription.txt
+
+
+
+
+USEFUL MESA FILES DEFINING INLIST COMMANDS, OUTPUT COLUMNS, INTERNAL VARIABLES ETC
+Many are contained within the folder at
+$MESA_DIR/star/defaults
+The following files are also extremely useful:
+$MESA_DIR/chem/public/chem_def.f90 # Has a list of all isotopes included in the code, and their initial abundances
+$MESA_DIR/chem/public/chem_lib.f90
+$MESA_DIR/const/public/const_def.f90
+$MESA_DIR/const/public/const_lib.f90
+$MESA_DIR/net/public/net_def.f90
+$MESA_DIR/net/public/net_lib.f90
+It's recommended to copy these to a convenient location so you can refer to them whenever needed.
+
+
+
+
+CUSTOMISING OUTPUT
+You can choose the data columns to include in output files by placing "history_columns.list" and "profile_columns.list" in the directory.
+History: Global quantities at each timestep, eg M, L
+Profile: Spatially-varying quantities at each timestep, eg rho, P
+
+
+
+
+USEFUL COMMAND LINE PROMPTS
+
+grep -lr "hello world" ./ -s > "hello world files"
+Searches the current directory (including all subfolders) for all files containing "hello world" within their contents. Outputs the list to a file "hello world files". Useful for locating a subroutine that fails during a code.
+
+dir /b/s *file.txt*
+Searches the entire directory (including nested files) for the file any file containing "file.txt". Doesn't seem to work though.
+
+find . -name file.txt
+As above, but works. This is a linux command.
+
+
+
+
+USING TEST_SUITE
+Open "make" / "makefile" and delete the line
+MESA_DIR = ../../../
+Then open the inlist files and delete the line
+mesa_dir = ../../../
+
+These are "relative paths" and tell the code to go up three levels. But this is no longer true when we have made a copy (i.e. not saved in $MESA_dir/star/test_suite).
+
+May need to go into each inlist file and change other paths to absolute paths. So check each project fully before running it.
+
+
+
+
+THE "mkdir failed" ERROR
+Immediately after you run the "./rn" file, the following error message appears:
+ mkdir failed for usr/local/mesa/data/eosDT_data/cache
+ error code
+File: ../public/utils_lib.f, line:  836
+followed by 11 backtrace steps.
+There is nothing that you're doing wrong if this happens! It is a strange random error; it happened roughly once every few months for me. I don't know why it happens, but it looks like MESA tries to create some empty folders as a "cache" for temporary output when you run it, but something prevents it from making these folders and it fails immediately. There is no solution that I know of; just keep trying to run it occasionally and it will suddenly work again. For me, it took 1-4 days.
