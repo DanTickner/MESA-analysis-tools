@@ -1,0 +1,54 @@
+#!/bin/bash
+
+function check_okay {
+	if [ $? -ne 0 ]
+	then
+		exit 1
+	fi
+	echo "Okay"
+}
+
+
+function do_one {
+	cp $1 inlist
+	check_okay
+	rm -rf $2
+	echo 'run' $1
+	./rn1
+	check_okay
+  if [ ! -r $2 ]
+  then
+  	echo
+  	echo "******************************************************************"
+  	echo 'Failed to create' $2 'when running' $1
+  	echo "******************************************************************"
+  	echo
+  	exit 1
+  fi
+  echo
+  echo 'Finished' $1 '.'
+  rm -rf $3
+  mkdir $3
+  mv LOGS/* $3
+  echo
+  echo '***'
+  echo
+}
+
+SECONDS=0
+
+#do_one inlist_ztest_1AG89 mod_ztest_1AG89.mod ztest_LOGS_1AG89
+#do_one inlist_ztest_2GN93 mod_ztest_2GN93.mod ztest_LOGS_2GN93
+#do_one inlist_ztest_3GS98 mod_ztest_3GS98.mod ztest_LOGS_3GS98
+#do_one inlist_ztest_4L03 mod_ztest_4L03.mod ztest_LOGS_4L03
+#do_one inlist_ztest_5AGS05 mod_ztest_5AGS05.mod ztest_LOGS_5AGS05
+#do_one inlist_ztest_6AGSS09 mod_ztest_6AGSS09.mod ztest_LOGS_6AGSS09
+#do_one inlist_ztest_7L09 mod_ztest_7L09.mod ztest_LOGS_7L09
+#do_one inlist_ztest_8A09Prz mod_ztest_8A09Prz.mod ztest_LOGS_8A09Prz
+#do_one inlist_ztest_9test mod_ztest_9test.mod ztest_LOGS_9test
+do_one inlist_ztest_10originalzfracs mod_ztest_10originalzfracs.mod ztest_LOGS_10originalzfracs
+do_one inlist_ztest_11enforceALi mod_ztest_11enforceALi.mod ztest_LOGS_11enforceALi
+
+
+echo "Elapsed: $(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 60)) sec."
+echo 'Finished all inlists for 0p8M with and without rotation and atomic diffusion.'
