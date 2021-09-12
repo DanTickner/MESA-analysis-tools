@@ -1,0 +1,41 @@
+! 0.8 Msun, Z=0.003, MS, stop at 10 Gyr.
+
+&star_job
+
+    load_saved_model = .true.
+    saved_model_name = '1.mod'
+
+  ! Save model and set stopping condition
+    save_model_when_terminate = .true.
+    save_model_filename = '2.mod'
+    required_termination_code_string = 'max_age'
+
+  ! Specify the "net" of elements and reactions
+    change_initial_net = .true.
+    new_net_name = 'agb.net'
+
+    pgstar_flag = .true.
+
+/ !end of star_job namelist
+
+
+&controls
+
+  ! options for energy conservation (see MESA V, Section 3)
+    use_dedt_form_of_energy_eqn = .true.
+    use_gold_tolerances = .true.
+
+  ! use C/O enhanced opacities (important for He-burning onwards)
+    use_Type2_opacities = .true.
+    Zbase = 0.001
+
+  ! configure mass loss on RGB & AGB
+    cool_wind_RGB_scheme = 'Dutch'
+    cool_wind_AGB_scheme = 'Dutch'
+    RGB_to_AGB_wind_switch = 1d-4
+    Dutch_scaling_factor = 0.8
+
+  ! Stopping condition  ( 10 Gyr )
+    max_age = 1d10
+
+/ ! end of controls namelist

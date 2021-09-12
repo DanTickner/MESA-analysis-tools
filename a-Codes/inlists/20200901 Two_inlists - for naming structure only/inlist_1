@@ -1,0 +1,47 @@
+! 0.8 Msun, Z=0.003, pre-MS, stop when L < 10 L_sun.
+
+&star_job
+
+    create_pre_main_sequence_model = .true.
+
+  ! Specify the "net" of elements and reactions
+    change_initial_net = .true.
+    new_net_name = 'agb.net'
+
+  ! Save model and set stopping condition
+    save_model_when_terminate = .true.
+    save_model_filename = '1.mod'
+    required_termination_code_string = 'log_L_lower_limit'
+
+    pgstar_flag = .true.
+
+/ !end of star_job namelist
+
+
+&controls
+
+  ! starting specifications
+    initial_mass = 0.8
+    initial_z = 0.001
+
+  ! options for energy conservation (see MESA V, Section 3)
+    use_dedt_form_of_energy_eqn = .true.
+    use_gold_tolerances = .true.
+
+  ! use C/O enhanced opacities (important for He-burning onwards)
+    use_Type2_opacities = .true.
+    Zbase = 0.001
+
+  ! configure mass loss on RGB & AGB
+    cool_wind_RGB_scheme = 'Dutch'
+    cool_wind_AGB_scheme = 'Dutch'
+    RGB_to_AGB_wind_switch = 1d-4
+    Dutch_scaling_factor = 0.8
+
+  ! Stopping condition ( L = 10 L_sun )
+    log_L_loewr_limit = 1
+  ! Stop at 10 Gyr (delete in 1 )
+    max_age = 1d10
+
+
+/ ! end of controls namelist

@@ -1,0 +1,25 @@
+! inlist 1: Additional information to enable rotation.
+
+&star_job
+
+ ! Rotation
+   change_rotation_flag = .true.
+   new_rotation_flag = .true. ! False = rotation switched off until near ZAMS
+   !set_omega_div_omega_crit = .true.
+   !new_omega_div_omega_crit = 0.200
+   ! Things to try 2020-10-11 (see test_suite 25M_z2m2 and conserve_am)
+   change_v_flag = .true.
+   new_v_flag = .true.
+   set_initial_surface_rotation_v = .true.
+   new_surface_rotation_v = 0.1 ! km/s was 10
+   !near_zams_relax_omega_div_omega_crit = .true.
+   !num_steps_to_relax_rotation = 50
+
+/ ! end of star_job namelist
+
+&controls
+
+   !mdot_omega_power = 0
+   !max_rotational_mdot_boost = 0
+
+/ ! end of controls namelist

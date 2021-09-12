@@ -1,0 +1,106 @@
+! general inlist: All models require the information here. Create a Pre-MS star and stop once the extends to 0.2Msun in mass coordinates (these are "enclosed-mass coordinates" starting at 0.8Msun at the outer boundary and decreasing inwards.)
+
+&star_job
+
+ ! Save model; needed by "rn" file
+   save_model_when_terminate = .true.
+   save_model_filename = 'mod_B.mod'
+
+ ! Stopping condition
+   required_termination_code_string = 'log_center_density_limit'
+
+ ! Pre-MS model
+   create_pre_main_sequence_model = .true.
+   pre_ms_relax_num_steps = 50
+
+ ! Specify the "net" of elements and reactions
+   change_initial_net = .true.
+   new_net_name = 'agb.net'
+
+ ! Initial values
+   set_initial_cumulative_energy_error = .true.
+   new_cumulative_energy_error = 0d0
+
+ ! Other
+   kappa_file_prefix = 'gs98'
+   pgstar_flag = .true. ! False means much faster runtimes. Turn off if possible when testing.
+   history_columns_file = 'columns_history.list'
+   profile_columns_file = 'columns_profile.list'
+
+/ ! end of star_job namelist
+
+
+
+&controls
+
+ ! Starting specifications and model parameters
+   initial_mass = 0.8
+   initial_z = 0.001
+   mixing_length_alpha = 1.8d0
+   MLT_option = 'Henyey'
+   use_Ledoux_criterion = .true.
+   use_gold_tolerances = .true.
+   use_eps_mdot = .true.
+   convergence_ignore_equL_residuals = .true. ! needed during flash. Note: can get rid of this if turn on conv_vel's. just takes more steps.
+   
+ ! Termination condition
+   log_center_density_limit = 5.35d0 ! This is after the first dredge-up.
+
+   use_Type2_opacities = .true.
+   Zbase = 0.001d0 ! Must be same as initial_z
+   use_dedt_form_of_energy_eqn = .true.
+   min_cell_energy_fraction_for_dedt_form = 0
+   use_correction_for_KE_plus_PE_with_eps_grav_in_energy_eqn = .true.
+
+   num_trace_history_values = 2
+   trace_history_value_name(1) = 'rel_E_err'
+   trace_history_value_name(2) = 'log_rel_run_E_err'
+            
+   varcontrol_target = 1d-3
+   delta_lgL_He_limit = 0.01d0
+
+   ! Stellar wind (has not been looked at!)  
+   cool_wind_full_on_T = 9.99d9
+   hot_wind_full_on_T = 1d10 
+   cool_wind_RGB_scheme = 'Reimers'
+   cool_wind_AGB_scheme = 'Blocker'
+   RGB_to_AGB_wind_switch = 1d-4
+   Reimers_scaling_factor = 0.8d0  
+   Blocker_scaling_factor = 0.7d0 ! 0.8d0     
+
+ ! Check for retries and backups
+   max_number_backups = 0
+   max_number_retries = 160
+   retry_limit = 100
+   backup_hold = 3
+   
+ ! Recording frequency
+   photo_interval = 5
+   profile_interval = 25
+   history_interval = 10
+   terminal_interval = 100
+   write_header_frequency = 10
+   max_num_profile_models = 2000
+   photo_digits = 5
+   photo_directory = 'Photos_B'
+      
+/ ! end of controls namelist
+
+
+
+&pgstar
+
+   HR_win_flag = .true.
+   HR_title = 'Basic'
+
+ ! set window size (aspect_ratio = height/width)
+   HR_win_width = 6
+   HR_win_aspect_ratio = 1.0
+
+ ! set static plot bounds
+   HR_logT_min = 3.57
+   HR_logT_max = 3.82
+   HR_logL_min = -0.7
+   HR_logL_max = 3.4
+
+/ ! end of pgstar namelist

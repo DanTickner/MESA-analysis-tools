@@ -1,0 +1,28 @@
+! inlist 2: Evolve 1_prems.mod from ZAMS to end of AGB and stop when the envelope reaches 0.01 Msun.
+&star_job
+
+ read_extra_star_job_inlist1 = .true.
+ extra_star_job_inlist1_name = 'inlist_2agb'
+ 
+ saved_model_name = 'mod_R_1prems.mod'
+ save_model_filename = 'mod_R_2agb.mod'
+
+/ ! end of star_job namelist
+
+&controls
+
+ read_extra_controls_inlist1 = .true.
+ extra_controls_inlist1_name = 'inlist_2agb'
+ read_extra_controls_inlist2 = .true.
+ extra_controls_inlist2_name = 'inlist_2agb_rotation'
+ 
+ photo_directory = 'Photos_R'
+
+/ ! end of controls namelist
+
+&pgstar
+
+ read_extra_pgstar_inlist1 = .true.
+ extra_pgstar_inlist1_name = 'inlist_2agb'
+   
+/ ! end of pgstar namelist

@@ -1,0 +1,49 @@
+! inlist: Additional information to enable rotation.
+
+&star_job
+
+ ! Rotation
+   change_rotation_flag = .true.
+   new_rotation_flag = .false. ! False = rotation switched off until near ZAMS
+   set_omega_div_omega_crit = .true.
+   new_omega_div_omega_crit = 0.200
+
+   ! Things to try 2020-10-11 (see test_suite 25M_z2m2 and conserve_am)
+   !near_zams_relax_omega_div_omega_crit = .true.
+   !num_steps_to_relax_rotation = 50
+
+/ ! end of star_job namelist
+
+
+
+&controls
+
+ ! Rotation
+   am_D_mix_factor = 0.0333d0 ! gobal multiplier
+   D_DSI_factor = 1.0
+   D_SH_factor = 1.0
+   D_SSI_factor = 1.0
+   D_ES_factor = 1.0
+   D_GSF_factor = 1.0
+   D_ST_factor = 1.0
+
+ ! Extra (testing as of 8th October 2020)
+   !D_visc_factor = 1.0
+   !am_nu_factor = 1.0
+   !am_gradmu_factor = 0.05
+   !max_rotational_mdot_boost = 10
+
+ ! Limit Omega / Omega_crit < 1 to avoid mass loss ( see controls.defaults "! For critical rotation mass loss" ). NOT CURRENTLY USED.
+   !max_mdot_redo_cnt = 0
+   !min_years_dt_for_redo_mdot = 0
+   !surf_w_div_w_crit_limit = 0.99d0
+   !mdot_revise_factor = 1.1d0
+   !implicit_mdot_boost = 0.1d0
+
+ ! no_wind_if_no_rotation = .true. ! delay wind until rotation starts. HAVE NOT TRIED YET.
+   
+ ! Change rate of mass loss (or disable by setting to zero). NOT CURRENTLY USED - causes spikes in Omega/Omega_crit because energy is not lost.
+   !mdot_omega_power = 0
+   !max_rotational_mdot_boost = 0
+
+/ ! end of controls namelist

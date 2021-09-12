@@ -1,0 +1,121 @@
+! general inlist: All models require the information here. Create a Pre-MS star and stop once the envelope reaches 1% of the total mass.
+
+&star_job
+
+ ! Stopping condition
+   !required_termination_code_string = 'envelope_mass_limit' ! For full runs. TAKES TOO LONG TO REACH; FIND BETTER CONDITION.
+   required_termination_code_string = 'max_model_number' ! For testing only. Comment-out and use the line above for proper runs. Comment-out max_model_number below and re-define it in the specific inlist being used.
+
+ ! Pre-MS model
+   create_pre_main_sequence_model = .true.
+   pre_ms_relax_num_steps = 50
+
+ ! Specify the "net" of elements and reactions
+   change_initial_net = .true.
+   new_net_name = 'agb.net'
+
+ ! Initial values
+   set_initial_cumulative_energy_error = .true.
+   new_cumulative_energy_error = 0d0
+
+ ! Other
+   kappa_file_prefix = 'gs98'
+   pgstar_flag = .true. ! False means much faster runtimes. Turn off if possible when testing.
+   history_columns_file = 'columns_history.list'
+   profile_columns_file = 'columns_profile.list'
+
+
+ ! Rotation
+   change_rotation_flag = .true.
+   new_rotation_flag = .false. ! False = rotation switched off until near ZAMS
+   near_zams_relax_omega_div_omega_crit = .true. ! Must be used if new_rotation_flag = false, or rotation will never start.
+   num_steps_to_relax_rotation = 50
+   set_omega_div_omega_crit = .true.
+   new_omega_div_omega_crit = 0.200
+
+/ ! end of star_job namelist
+
+
+
+&controls
+
+ ! Starting specifications and model parameters
+   initial_mass = 0.8
+   initial_z = 0.001
+   mixing_length_alpha = 1.8d0
+   MLT_option = 'Henyey'
+   use_Ledoux_criterion = .true.
+   use_gold_tolerances = .true.
+   use_eps_mdot = .true.
+   convergence_ignore_equL_residuals = .true. ! needed during flash. Note: can get rid of this if turn on conv_vel's. just takes more steps.
+   
+ ! Termination conditions - comment-out the one NOT required.
+   !envelope_mass_limit = 1d-2 ! Msun
+   max_model_number = 1000
+      
+   use_Type2_opacities = .true.
+   Zbase = 0.001d0 ! Must be same as initial_z
+   use_dedt_form_of_energy_eqn = .true.
+   min_cell_energy_fraction_for_dedt_form = 0
+   use_correction_for_KE_plus_PE_with_eps_grav_in_energy_eqn = .true.
+
+   num_trace_history_values = 2
+   trace_history_value_name(1) = 'rel_E_err'
+   trace_history_value_name(2) = 'log_rel_run_E_err'
+            
+   varcontrol_target = 1d-3
+   delta_lgL_He_limit = 0.01d0
+
+   ! Stellar wind (has not been looked at!)  
+   cool_wind_full_on_T = 9.99d9
+   hot_wind_full_on_T = 1d10 
+   cool_wind_RGB_scheme = 'Reimers'
+   cool_wind_AGB_scheme = 'Blocker'
+   RGB_to_AGB_wind_switch = 1d-4
+   Reimers_scaling_factor = 0.8d0  
+   Blocker_scaling_factor = 0.7d0 ! 0.8d0     
+
+ ! Check for retries and backups
+   max_number_backups = 0
+   max_number_retries = 160
+   retry_limit = 100
+   backup_hold = 3
+   
+ ! Recording frequency
+   photo_interval = 5
+   profile_interval = 50
+   history_interval = 50
+   terminal_interval = 10
+   write_header_frequency = 10
+   max_num_profile_models = 500
+   photo_digits = 5
+
+
+ ! Rotation
+   am_D_mix_factor = 0.0333d0 ! gobal multiplier
+   D_DSI_factor = 1.0
+   D_SH_factor = 1.0
+   D_SSI_factor = 1.0
+   D_ES_factor = 1.0
+   D_GSF_factor = 1.0
+   D_ST_factor = 1.0
+      
+/ ! end of controls namelist
+
+
+
+&pgstar
+
+   HR_win_flag = .true.
+
+ ! set window size (aspect_ratio = height/width)
+   HR_win_width = 6
+   HR_win_aspect_ratio = 1.0
+
+ ! set static plot bounds
+   HR_logT_min = 3.57
+   HR_logT_max = 3.82
+   HR_logL_min = -0.7
+   HR_logL_max = 3.4
+
+/ ! end of pgstar namelist

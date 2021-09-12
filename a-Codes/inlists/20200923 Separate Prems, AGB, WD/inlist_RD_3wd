@@ -1,0 +1,29 @@
+! inlist 3: Evolve an AGB star as a WD, and stop when L < 0.1 Lsun.
+
+&star_job
+
+ read_extra_star_job_inlist1 = .true.
+ extra_star_job_inlist1_name = 'inlist_3wd'
+
+ saved_model_name = 'mod_RD_2agb.mod'
+ save_model_filename = 'mod_RD_3wd.mod'
+
+/ ! end of star_job namelist
+
+&controls
+
+ read_extra_controls_inlist1 = .true.
+ extra_controls_inlist1_name = 'inlist_3wd'
+ read_extra_controls_inlist2 = .true.
+ extra_controls_inlist2_name = 'inlist_3wd_rotation'
+ 
+ photo_directory = 'Photos_RD'
+
+/ ! end of controls namelist
+
+&pgstar
+
+ read_extra_pgstar_inlist1 = .true.
+ extra_pgstar_inlist1_name = 'inlist_3wd'
+
+ / ! end of pgstar namelist

@@ -1,0 +1,62 @@
+! inlist 2: Extra controls for atomic diffusion.
+
+&star_job
+/ ! end of star_job namelist
+
+&controls
+
+      ! Diffusion
+      do_element_diffusion = .true.
+      diffusion_dt_limit = 3.15d7 ! no element diffusion if dt < this limit (in seconds)
+      
+      diffusion_T_full_on = 1d3
+      diffusion_T_full_off = 1d3
+
+      D_mix_ignore_diffusion = 1d2 ! turn off diffusion in any region with D_mix greater than this
+      
+      diffusion_calculates_ionization = .true.
+      
+      diffusion_num_classes = 8 ! number of classes of species for diffusion calculations
+      diffusion_class_representative(1) = 'h1'
+      diffusion_class_representative(2) = 'he3'
+      diffusion_class_representative(3) = 'he4'
+      diffusion_class_representative(4) = 'c12'
+      diffusion_class_representative(5) = 'n14'
+      diffusion_class_representative(6) = 'o16'
+      diffusion_class_representative(7) = 'ne20'
+      diffusion_class_representative(8) = 'mg24'
+   
+      ! in ascending order.  species goes into 1st class with A_max >= species A
+      diffusion_class_A_max(1) = 2
+      diffusion_class_A_max(2) = 3
+      diffusion_class_A_max(3) = 4
+      diffusion_class_A_max(4) = 12
+      diffusion_class_A_max(5) = 14
+      diffusion_class_A_max(6) = 16
+      diffusion_class_A_max(7) = 20
+      diffusion_class_A_max(8) = 10000
+         
+      diffusion_use_isolve = .true.
+      diffusion_rtol_for_isolve = 1d-4
+      diffusion_atol_for_isolve = 1d-5
+      diffusion_maxsteps_for_isolve = 1000
+      diffusion_isolve_solver = 'ros2_solver'
+
+      predictive_mix(1) = .true.
+      predictive_zone_type(1) = 'any'
+      predictive_zone_loc(1) = 'core'
+      predictive_bdy_loc(1) = 'any'
+      predictive_superad_thresh(1) = 0.005
+
+      predictive_mix(2) = .true.
+      predictive_zone_type(2) = 'any'
+      predictive_zone_loc(2) = 'surf'
+      predictive_bdy_loc(2) = 'any'
+      predictive_superad_thresh(2) = 0.005
+
+      num_cells_for_smooth_gradL_composition_term = 10
+      threshold_for_smooth_gradL_composition_term = 0.02
+      num_cells_for_smooth_brunt_B = 10
+      threshold_for_smooth_brunt_B = 0.1
+
+/ ! end of controls namelist

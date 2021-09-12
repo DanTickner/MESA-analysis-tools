@@ -1,0 +1,30 @@
+! inlist 1: Create a pre-MS star and stop once it reaches the MS.
+
+&star_job
+
+ read_extra_star_job_inlist1 = .true.
+ extra_star_job_inlist1_name = 'inlist_1prems'
+ read_extra_star_job_inlist2 = .true.
+ extra_star_job_inlist2_name = 'inlist_1prems_rotation'
+ 
+ save_model_filename = 'mod_R_1prems.mod'
+
+/ ! end of star_job namelist
+
+&controls
+
+ read_extra_controls_inlist1 = .true.
+ extra_controls_inlist1_name = 'inlist_1prems'
+ read_extra_controls_inlist2 = .true. ! Only needed for setting mdot factors to zero (Sept 24th). RD not yet updated.
+ extra_controls_inlist2_name = 'inlist_1prems_rotation'
+ 
+ photo_directory = 'Photos_R'
+
+/ ! end of controls namelist
+
+&pgstar
+
+ read_extra_pgstar_inlist1 = .true.
+ extra_pgstar_inlist1_name = 'inlist_1prems'
+   
+/ ! end of pgstar namelist

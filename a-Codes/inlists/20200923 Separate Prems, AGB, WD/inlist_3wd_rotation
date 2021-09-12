@@ -1,0 +1,15 @@
+! inlist 3: Extra controls for rotation.
+&star_job
+/ ! end of star_job namelist
+
+&controls
+
+ ! Rotation
+   D_DSI_factor = 1.0
+   D_SH_factor = 1.0
+   D_SSI_factor = 1.0
+   D_ES_factor = 1.0
+   D_GSF_factor = 1.0
+   D_ST_factor = 1.0
+
+/ ! end of controls namelist
