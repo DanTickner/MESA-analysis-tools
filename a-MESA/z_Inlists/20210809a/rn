@@ -1,0 +1,59 @@
+#!/bin/bash
+
+function check_okay {
+	if [ $? -ne 0 ]
+	then
+		exit 1
+	fi
+	echo "Okay"
+}
+
+
+function do_one {
+	cp $1 inlist
+	check_okay
+	rm -rf $2
+	echo 'run' $1
+	./rn1
+	check_okay
+  if [ ! -r $2 ]
+  then
+  	echo
+  	echo "******************************************************************"
+  	echo 'Failed to create' $2 'when running' $1
+  	echo "******************************************************************"
+  	echo
+  	exit 1
+  fi
+  echo
+  echo 'Finished' $1 '.'
+  rm -rf $3
+  mkdir $3
+  mv LOGS/* $3
+  echo
+  echo '***'
+  echo
+}
+
+SECONDS=0
+
+
+#do_one z_Inlists/inlist_1_Omega=5d-5 z_Mods/mod_1_Omega=5d-5.mod z_Logs/LOGS_1_Omega=5d-5
+#do_one z_Inlists/inlist_2_Omega=1d-4 z_Mods/mod_2_Omega=1d-4.mod z_Logs/LOGS_2_Omega=1d-4
+#do_one z_Inlists/inlist_3_Omega=2d-4 z_Mods/mod_3_Omega=2d-4.mod z_Logs/LOGS_3_Omega=2d-4
+#do_one z_Inlists/inlist_4_Omega=5d-4 z_Mods/mod_4_Omega=5d-4.mod z_Logs/LOGS_4_Omega=5d-4
+#do_one z_Inlists/inlist_5_Omega=1d-3 z_Mods/mod_5_Omega=1d-3.mod z_Logs/LOGS_5_Omega=1d-3
+#do_one z_Inlists/inlist_6_Omega=2d-3 z_Mods/mod_6_Omega=2d-3.mod z_Logs/LOGS_6_Omega=2d-3
+do_one z_Inlists/inlist_7_Omega=5d-3 z_Mods/mod_7_Omega=5d-3.mod z_Logs/LOGS_7_Omega=5d-3
+do_one z_Inlists/inlist_8_Omega=0p01 z_Mods/mod_8_Omega=0p01.mod z_Logs/LOGS_8_Omega=0p01
+do_one z_Inlists/inlist_9_Omega=0p05 z_Mods/mod_9_Omega=0p05.mod z_Logs/LOGS_9_Omega=0p05
+do_one z_Inlists/inlist_10_Omega=0p1 z_Mods/mod_10_Omega=0p1.mod z_Logs/LOGS_10_Omega=0p1
+do_one z_Inlists/inlist_11_Omega=0p2 z_Mods/mod_11_Omega=0p2.mod z_Logs/LOGS_11_Omega=0p2
+do_one z_Inlists/inlist_12_Omega=0p5 z_Mods/mod_12_Omega=0p5.mod z_Logs/LOGS_12_Omega=0p5
+do_one z_Inlists/inlist_13_Omega=1 z_Mods/mod_13_Omega=1.mod z_Logs/LOGS_13_Omega=1
+do_one z_Inlists/inlist_14_Omega=2 z_Mods/mod_14_Omega=2.mod z_Logs/LOGS_14_Omega=2
+do_one z_Inlists/inlist_15_Omega=5 z_Mods/mod_15_Omega=5.mod z_Logs/LOGS_15_Omega=5
+
+
+echo "Elapsed: $(($SECONDS / 3600)) hrs $((($SECONDS / 60) % 60)) min $(($SECONDS % 60)) sec."
+echo 'Finished all inlists.'
