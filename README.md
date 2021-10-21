@@ -1,7 +1,7 @@
 # MESA-analysis-tools
 Analysis and automation tools for the MESA stellar evolution code, implementation of rotation and atomic diffusion, toward reproduction of the Spite plateau.
 
-Documents supporting MSc final project. PDF to be added once grades have been finalised.
+Documents supporting MSc final project (writeup included).
 
 We develop improved and enhanced analysis tools for the stellar evolution code MESA (Modules for Experiments in Stellar Astrophysics), aimed at giving rapid turnaround when working on large, repetitive simulation tasks.
 
